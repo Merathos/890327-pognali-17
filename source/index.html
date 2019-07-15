@@ -1,12 +1,213 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <a>
+      <img src="http://placehold.it/100x19" alt="Логотип" class="page-header__logo">
+    </a>
+    <button aria-label="Меню" class="page-header__menu-btn"></button>
+    <div class="menu-wrapper">
+      <a>
+        <img src="http://placehold.it/100x19" alt="Логотип" class="menu-wrapper__logo">
+      </a>
+      <button aria-label="Меню" class="menu-wrapper__close-btn"></button>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a href="#">О сервисе</a></li>
+          <li class="site-list__item"><a href="#">Направления</a></li>
+          <li class="site-list__item"><a href="#">Попутчики</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="menu-wrapper__auth-btn">Авторизация</a>
+      <a href="#" class="menu-wrapper__phone">8 800 555-86-28</a>
+      <a href="#" class="menu-wrapper__email">mail@htmlacademy.ru</a>
+      <ul class="menu-wrapper__socials social-list">
+        <li class="social-list__item">
+          <a href="#"><span class="visually-hidden">Facebook</span></a>
+        </li>
+        <li class="social-list__item">
+          <a href="#"><span class="visually-hidden">Vkontakte</span></a>
+        </li>
+        <li class="social-list__item">
+          <a href="#"><span class="visually-hidden">Instagram</span></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="intro">
+      <b class="intro__lead">В путешествие с крутыми попутчиками!</b>
+      <button class="intro__call-us" aria-label="Позвонить нам"></button>
+      <button class="intro__email" aria-label="Написать email"></button>
+      <a href="#" class="intro__auth-btn">Авторизация</a>
+      <blockquote>
+        <p class="intro__feedback">
+          «Лучшее приложение, что я видел в жизни!»
+        </p>
+        <cite class="intro__feedback-author">
+          Мурат Эльтазинглавный редактор газеты «гаджетлайф»
+        </cite>
+      </blockquote>
+      <ul class="intro__steps steps-list">
+        <li class="steps-list__item">Выберите направление</li>
+        <li class="steps-list__item">Изучите идеи путешественников</li>
+        <li class="steps-list__item">Находите тех, кто похож на вас</li>
+        <li class="steps-list__item">Путешествуйте вместе!</li>
+      </ul>
+    </section>
+    <section class="about-service">
+      <h2 class="about-service__header">О сервисе</h2>
+      <p class="about-service__text">
+        Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
+        Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+      </p>
+      <p class="about-service__text--bold">
+        А если найдёте кого-то близкого по духу - скорее зовите в совместный трип!
+      </p>
+    </section>
+    <section class="countries">
+      <h2 class="countries__header">Направления</h2>
+      <p class="countries-text">
+        Мы не продаем туры и ничего не рекламируем.
+        Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
+      </p>
+      <ul class="countries__options countries-list">
+        <li class="countries-list__item countries-card">
+          <img src="http://placehold.it/270x110" alt="Тайланд" class="countries-card__image">
+          <div class="countries-card__footer">
+            <h3 class="countries-card__header">Тайланд</h3>
+            <span class="countries-card__lead">Джунгли зовут!</span>
+            <span class="countries-card__views">18321</span>
+          </div>
+        </li>
+        <li class="countries-list__item countries-card">
+          <img src="http://placehold.it/270x110" alt="Франция" class="countries-card__image">
+          <div class="countries-card__footer">
+            <h3 class="countries-card__header">Франция</h3>
+            <span class="countries-card__lead">Трэ бьен, манифик!</span>
+            <span class="countries-card__views">12518</span>
+          </div>
+        </li>
+        <li class="countries-list__item countries-card">
+          <img src="http://placehold.it/270x110" alt="Чехия" class="countries-card__image">
+          <div class="countries-card__footer">
+            <h3 class="countries-card__header">Чехия</h3>
+            <span class="countries-card__lead">Закоулки старой Европы</span>
+            <span class="countries-card__views">5326</span>
+          </div>
+        </li>
+      </ul>
+      <a href="#" class="countries__show-all-btn">Показать все</a>
+    </section>
+    <section class="travelmates">
+      <h2 class="travelmates__header">Попутчики</h2>
+      <p class="travelmates__text">
+        Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
+        Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+      </p>
+      <p class="travelmates__text--bold">
+        Теперь можно легко найти единомышленников!
+      </p>
+      <ul class="travelmates__list">
+        <li class="travelmate-card">
+          <img src="http://placehold.it/270x270" alt="Фото попутчика" class="travelmate-card__photo">
+          <div class="travelmate-card__footer">
+            <ul class="travelmate-card__countries-list">
+              <li class="travelmate-card__country"></li>
+              <li class="travelmate-card__country"></li>
+              <li class="travelmate-card__country"></li>
+            </ul>
+            <span class="travelmate-card__name">Таня Фирсова</span>
+            <span class="travelmate-card__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</span>
+            <ul class="travelmate-card__transport transport-list">
+              <li class="transport-list__item"></li>
+              <li class="transport-list__item"></li>
+              <li class="transport-list__item"></li>
+              <li class="transport-list__item"></li>
+            </ul>
+          </div>
+        </li>
+        <li class="travelmate-card">
+          <img src="http://placehold.it/270x270" alt="Фото попутчика" class="travelmate-card__photo">
+          <div class="travelmate-card__footer">
+            <ul class="travelmate-card__countries-list">
+              <li class="travelmate-card__country"></li>
+              <li class="travelmate-card__country"></li>
+            </ul>
+            <span class="travelmate-card__name">Петя Демин</span>
+            <span class="travelmate-card__tags">#бургер #бар #футбол #концерт #крафт</span>
+            <ul class="travelmate-card__transport transport-list">
+              <li class="transport-list__item"></li>
+              <li class="transport-list__item"></li>
+              <li class="transport-list__item"></li>
+              <li class="transport-list__item"></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <a href="#" class="countries__show-all-btn">Показать всех</a>
+    </section>
+    <section class="rates">
+      <span class="rates__add-profile">Добавьте свой профиль</span>
+      <ul class="rates__list rates-list">
+        <li class="rates-list__item">Базовое размещение Бесплатно</li>
+        <li class="rates-list__item">Вывод на первых позициях 99руб./мес</li>
+        <li class="rates-list__item">Кастомный цвет карточки 59 руб./мес</li>
+      </ul>
+      <a href="#" class="rates__buisuness">Показать тарифы для бизнеса</a>
+    </section>
+    <section class="cta-form">
+      <h2 class="cta-form__header">Заинтересовались?</h2>
+      <p class="cta-form__text">
+        Зарегестрируйтесь, это быстро и бесплатно! Уже зарегестрированы?
+        Тогда скорее <a href="#" class="cta-form__auth">авторизуйтесь</a>
+      </p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <input type="email" name="email" id="email" class="cta-form__email-input">
+        <button type="submit" class="cta-form__submit-btn"></button>
+      </form>
+      <p class="cta-form__text">
+        Остались вопросы? Мы с радостью на них ответим!
+      </p>
+      <a href="#" class="cta-form__phone">8 800 555-86-28</a>
+      <a href="#" class="cta-form__email">mail@htmlacademy.ru</a>
+    </section>
+    <section class="location">
+      <div class="location__wrapper">
+        <address class="location__address">
+          ул. Большая Конюшенная, 19/8
+        </address>
+        <button class="location__route-btn">Проложить маршрут</button>
+      </div>
+      /* Карта */
+    </section>
+  </main>
+  <footer class="page-footer">
+    <a>
+      <img src="http://placehold.it/100x19" alt="Логотип" class="page-footer__logo">
+    </a>
+    <ul class="page-footer__socials">
+      <li class="social-list__item">
+        <a href="#"><span class="visually-hidden">Facebook</span></a>
+      </li>
+      <li class="social-list__item">
+        <a href="#"><span class="visually-hidden">Vkontakte</span></a>
+      </li>
+      <li class="social-list__item">
+        <a href="#"><span class="visually-hidden">Instagram</span></a>
+      </li>
+    </ul>
+    <span>Разработано</span>
+    <a href="#" target="_blank">
+      <img src="http://placehold.it/27x34" alt="HTML academy">
+    </a>
+  </footer>
+</body>
+
 </html>
