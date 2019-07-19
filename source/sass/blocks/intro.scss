@@ -1,0 +1,18 @@
+.intro__lead-wrapper {
+  min-height: 410px;
+  background-image: url('../../img/traveller-illustration-mobile@1x.png'),
+                    url('../../img/globe-back-mobile@1x.jpg');
+  background-size: 192px 255px, cover;
+  background-repeat: no-repeat;
+  background-position: 62% 100%, center;
+}
+
+.intro__lead {
+  display: block;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  width: 250px;
+  text-align: center;
+  margin: 0 auto;
+}

@@ -1,0 +1,25 @@
+.page-header__menu-wrapper{
+  display: none;
+}
+
+.page-header {
+  background-color: $bg-darkblue;
+}
+
+.page-header__container {
+  width: 270px;
+  margin: 0 auto;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__menu-btn {
+  width: 25px;
+  height: 11px;
+  border: none;
+  background-image: url('../../img/menu.svg');
+  background-color: $bg-darkblue;
+  margin-top: 4px;
+}

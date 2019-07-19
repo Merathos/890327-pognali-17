@@ -3,42 +3,49 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <a>
-      <img src="http://placehold.it/100x19" alt="Логотип" class="page-header__logo">
-    </a>
-    <button aria-label="Меню" class="page-header__menu-btn"></button>
-    <div class="menu-wrapper">
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="#">О сервисе</a></li>
-          <li class="site-list__item"><a href="#">Направления</a></li>
-          <li class="site-list__item"><a href="#">Попутчики</a></li>
+    <div class="page-header__container">
+      <a>
+        <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип" class="page-header__logo">
+      </a>
+      <button aria-label="Меню" class="page-header__menu-btn"></button>
+      <div class="page-header__menu-wrapper menu">
+        <nav class="page-header__nav main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a href="#">О сервисе</a></li>
+            <li class="site-list__item"><a href="#">Направления</a></li>
+            <li class="site-list__item"><a href="#">Попутчики</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="menu__auth-btn">Авторизация</a>
+        <a href="#" class="menu__contacts menu__contacts--phone">8 800 555-86-28</a>
+        <a href="#" class="menu__contacts menu__contacts--email">mail@htmlacademy.ru</a>
+        <ul class="menu__socials social-list">
+          <li class="social-list__item social-list__item--fb">
+            <a href="#"><span class="visually-hidden">Facebook</span></a>
+          </li>
+          <li class="social-list__item social-list__item--vk">
+            <a href="#"><span class="visually-hidden">Vkontakte</span></a>
+          </li>
+          <li class="social-list__item social-list__item--inst">
+            <a href="#"><span class="visually-hidden">Instagram</span></a>
+          </li>
         </ul>
-      </nav>
-      <a href="#" class="menu-wrapper__auth-btn">Авторизация</a>
-      <a href="#" class="menu-wrapper__contacts--phone">8 800 555-86-28</a>
-      <a href="#" class="menu-wrapper__contacts--email">mail@htmlacademy.ru</a>
-      <ul class="menu-wrapper__socials social-list">
-        <li class="social-list__item social-list__item--fb">
-          <a href="#"><span class="visually-hidden">Facebook</span></a>
-        </li>
-        <li class="social-list__item social-list__item--vk">
-          <a href="#"><span class="visually-hidden">Vkontakte</span></a>
-        </li>
-        <li class="social-list__item social-list__item--inst">
-          <a href="#"><span class="visually-hidden">Instagram</span></a>
-        </li>
-      </ul>
+      </div>
     </div>
   </header>
   <main>
+    <h1 class="visually-hidden">Погнали! Приложение поиска попутчиков</h1>
     <section class="intro">
-      <b class="intro__lead">В путешествие с крутыми попутчиками!</b>
+      <div class="intro__lead-wrapper">
+        <b class="intro__lead">В путешествие с крутыми попутчиками!</b>
+      </div>
       <ul class="intro__actions user-actions">
         <li class="user-actions__item">
           <a href="#" class="user-actions__contacts user-actions__contacts--phone" aria-label="Позвонить нам"></a>
@@ -55,7 +62,7 @@
           «Лучшее приложение, что я видел в жизни!»
         </p>
         <cite class="intro__feedback-author">
-          Мурат Эльтазинглавный редактор газеты «гаджетлайф»
+          Мурат Эльтазин главный редактор газеты «гаджетлайф»
         </cite>
       </blockquote>
       <ul class="intro__steps steps-list">
@@ -65,23 +72,23 @@
         <li class="steps-list__item">Путешествуйте вместе!</li>
       </ul>
     </section>
-    <section class="about-service">
-      <h2 class="about-service__header">О сервисе</h2>
-      <p class="about-service__text">
+    <section class="basic">
+      <h2 class="basic__header">О сервисе</h2>
+      <p class="basic__text">
         Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
         Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
       </p>
-      <p class="about-service__text--bold">
+      <p class="basic__text basic__text--bold">
         А если найдёте кого-то близкого по духу - скорее зовите в совместный трип!
       </p>
     </section>
-    <section class="countries">
-      <h2 class="countries__header">Направления</h2>
-      <p class="countries-text">
+    <section class="basic">
+      <h2 class="basic__header">Направления</h2>
+      <p class="basic-text">
         Мы не продаем туры и ничего не рекламируем.
         Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
       </p>
-      <ul class="countries__options countries-list">
+      <ul class="basic__countries countries-list">
         <li class="countries-list__item countries-card">
           <img src="http://placehold.it/270x110" alt="Тайланд" class="countries-card__image">
           <div class="countries-card__footer">
@@ -113,19 +120,19 @@
           </div>
         </li>
       </ul>
-      <a href="#" class="countries__show-all-btn">Показать все</a>
+      <a href="#" class="basic__btn">Показать все</a>
     </section>
-    <section class="travelmates">
-      <h2 class="travelmates__header">Попутчики</h2>
-      <p class="travelmates__text">
+    <section class="basic">
+      <h2 class="basic__header">Попутчики</h2>
+      <p class="basic__text">
         Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
         Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
       </p>
-      <p class="travelmates__text--bold">
+      <p class="basic__text basic__text--bold">
         Теперь можно легко найти единомышленников!
       </p>
-      <ul class="travelmates__list">
-        <li class="travelmate-card">
+      <ul class="basic__travelmates travelmates-list">
+        <li class="travelmates-list__item travelmate-card">
           <img src="http://placehold.it/270x270" alt="Фото попутчика" class="travelmate-card__photo">
           <div class="travelmate-card__footer">
             <ul class="travelmate-card__countries-list">
@@ -170,7 +177,7 @@
             </ul>
           </div>
         </li>
-        <li class="travelmate-card">
+        <li class="travelmates-list__item travelmate-card">
           <img src="http://placehold.it/270x270" alt="Фото попутчика" class="travelmate-card__photo">
           <div class="travelmate-card__footer">
             <ul class="travelmate-card__countries-list">
@@ -208,7 +215,7 @@
           </div>
         </li>
       </ul>
-      <a href="#" class="countries__show-all-btn">Показать всех</a>
+      <a href="#" class="basic__btn">Показать всех</a>
     </section>
     <section class="rates">
       <span class="rates__add-profile">Добавьте свой профиль</span>
@@ -249,14 +256,14 @@
     <a>
       <img src="http://placehold.it/100x19" alt="Логотип" class="page-footer__logo">
     </a>
-    <ul class="page-footer__socials">
-      <li class="social-list__item">
+    <ul class="page-footer__socials footer-socials">
+      <li class="footer-socials__item">
         <a href="#"><span class="visually-hidden">Facebook</span></a>
       </li>
-      <li class="social-list__item">
+      <li class="footer-socials__item">
         <a href="#"><span class="visually-hidden">Vkontakte</span></a>
       </li>
-      <li class="social-list__item">
+      <li class="footer-socials__item">
         <a href="#"><span class="visually-hidden">Instagram</span></a>
       </li>
     </ul>
