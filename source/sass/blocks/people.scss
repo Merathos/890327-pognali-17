@@ -1,0 +1,24 @@
+.people {
+  background-color: $bg-lightgrey;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.people__container {
+  width: 270px;
+  margin: 0 auto;
+}
+
+.people__list {
+  @include reset-list;
+}
+
+.people__more-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1d2e5b;
+}

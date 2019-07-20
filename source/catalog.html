@@ -3,245 +3,258 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Направления</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="page-header">
-    <a>
-      <img src="http://placehold.it/100x19" alt="Логотип" class="page-header__logo">
-    </a>
-    <button aria-label="Меню" class="page-header__menu-btn"></button>
-    <div class="page-header__menu-wrapper menu">
+  <header class="page-header border-bottom-radius">
+    <div class="page-header__container">
+      <div class="page-header__top-wrapper">
+        <a>
+          <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип" class="page-header__logo">
+        </a>
+        <button aria-label="Меню" class="page-header__menu-btn"></button>
+      </div>
       <h1 class="page-header__header">Попутчики</h1>
-      <nav class="page-header__nav main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="#">О сервисе</a></li>
-          <li class="site-list__item"><a href="#">Направления</a></li>
-          <li class="site-list__item"><a href="#">Попутчики</a></li>
+      <div class="page-header__menu-wrapper menu">
+        <nav class="page-header__nav main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a href="#">О сервисе</a></li>
+            <li class="site-list__item"><a href="#">Направления</a></li>
+            <li class="site-list__item"><a href="#">Попутчики</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="menu__auth-btn">Авторизация</a>
+        <a href="#" class="menu__contacts menu__contacts--phone">8 800 555-86-28</a>
+        <a href="#" class="menu__contacts menu__contacts--email">mail@htmlacademy.ru</a>
+        <ul class="menu__socials social-list">
+          <li class="social-list__item social-list__item--fb">
+            <a href="#"><span class="visually-hidden">Facebook</span></a>
+          </li>
+          <li class="social-list__item social-list__item--vk">
+            <a href="#"><span class="visually-hidden">Vkontakte</span></a>
+          </li>
+          <li class="social-list__item social-list__item--inst">
+            <a href="#"><span class="visually-hidden">Instagram</span></a>
+          </li>
         </ul>
-      </nav>
-      <a href="#" class="menu__auth-btn">Авторизация</a>
-      <a href="#" class="menu__contacts menu__contacts--phone">8 800 555-86-28</a>
-      <a href="#" class="menu__contacts menu__contacts--email">mail@htmlacademy.ru</a>
-      <ul class="menu__socials social-list">
-        <li class="social-list__item social-list__item--fb">
-          <a href="#"><span class="visually-hidden">Facebook</span></a>
-        </li>
-        <li class="social-list__item social-list__item--vk">
-          <a href="#"><span class="visually-hidden">Vkontakte</span></a>
-        </li>
-        <li class="social-list__item social-list__item--inst">
-          <a href="#"><span class="visually-hidden">Instagram</span></a>
-        </li>
-      </ul>
+      </div>
     </div>
   </header>
   <main>
     /* Фильтр */
 
     <section class="people">
-      <ul class="people__list">
-        <li class="people-card">
-          <img src="http://placehold.it/70x70" alt="Фото попутчика" class="people-card__photo">
-          <span class="people-card__name">Таня фирсова</span>
-          <small class="people-card__likes">1,5 M</small>
-          <ul class="people-card__tags tag-list">
-            <li class="tag-list__item">
-              <a href="#">
-                #ЗОЖ
-              </a>
-            </li>
-            <li class="tag-list__item">
-              <a href="#">#ПП</a>
-            </li>
-            <li class="tag-list__item">
-              <a href="#">#Фитнес</a>
-            </li>
-            <li class="tag-list__item">
-              <a href="#">#пляж</a>
-            </li>
-            <li class="tag-list__item">
-              <a href="#">#авокадо</a>
-            </li>
-            <li class="tag-list__item">
-              <a href="#">#смузи</a>
-            </li>
-          </ul>
-          <span class="people-card__text">хочет посетить:</span>
-          <ul class="people-card__countries">
-            <li class="people-card__country">
-              <img src="http://placehold.it/35x24" alt="Шри-Ланка">
-              Шри Ланка</li>
-            <li class="people-card__country">
-              <img src="http://placehold.it/35x24" alt="Тайланд">
-              Тайланд</li>
-            <li class="people-card__country">
-              <img src="http://placehold.it/35x24" alt="Сейшелы">
-              Сейшелы</li>
-          </ul>
-          <span class="people-card__text">транспорт:</span>
-          <span class="people-card__text">левел:</span>
-          <ul class="people-card__transport-list">
-            <li class="people-card__transport people-card__transport--active"></li>
-            <li class="people-card__transport"></li>
-            <li class="people-card__transport"></li>
-            <li class="people-card__transport"></li>
-          </ul>
-          <a href="#" class="people-card__invite-btn">Позвать!</a>
-        </li>
-        <li class="people-card">
-          <img src="http://placehold.it/70x70" alt="Фото попутчика" class="people-card__photo">
-          <span class="people-card__name">Петя Демин</span>
-          <small class="people-card__likes">150</small>
-          <ul class="people-card__tags tag-list">
-            <li class="tag-list__item">
-              <a href="#">#бургер</a>
-            </li>
-            <li class="tag-list__item">
-              <a href="#">#бар</a>
-            </li>
-            <li class="tag-list__item">
-              <a href="#">#футбол</a>
-            </li>
-            <li class="tag-list__item">
-              <a href="#">#концерт</a>
-            </li>
-            <li class="tag-list__item">
-              <a href="#">#крафт</a>
-            </li>
-          </ul>
-          <span class="people-card__text">хочет посетить:</span>
-          <ul class="people-card__countries">
-            <li class="people-card__country">
-              <img src="http://placehold.it/35x24" alt="Бельгия">
-              Бельгия</li>
-            <li class="people-card__country">
-              <img src="http://placehold.it/35x24" alt="Чехия">
-              Чехия</li>
-          </ul>
-          <span class="people-card__text">транспорт:</span>
-          <span class="people-card__text">левел:</span>
-          <ul class="people-card__transport-list">
-            <li class="people-card__transport people-card__transport--active"></li>
-            <li class="people-card__transport people-card__transport--active"></li>
-            <li class="people-card__transport"></li>
-            <li class="people-card__transport people-card__transport--active"></li>
-          </ul>
-          <a href="#" class="people-card__invite-btn">Позвать!</a>
-        </li>
-        <li class="people-card">
-          <img src="http://placehold.it/70x70" alt="Фото попутчика" class="people-card__photo">
-          <span class="people-card__name">Марк Смолов</span>
-          <small class="people-card__likes">1700</small>
-          <ul class="people-card__tags tag-list">
-            <li class="tag-list__item">
-              <a href="#">#рэп</a>
-            </li>
-            <li class="tag-list__item">
-              <a href="#">#тату</a>
-            </li>
-            <li class="tag-list__item">
-              <a href="#">#хайпбист</a>
-            </li>
-            <li class="tag-list__item">
-              <a href="#">#кроссовки</a>
-            </li>
-            <li class="tag-list__item">
-              <a href="#">#суприм</a>
-            </li>
-          </ul>
-          <span class="people-card__text">хочет посетить:</span>
-          <ul class="people-card__countries">
-            <li class="people-card__country">
-              <img src="http://placehold.it/35x24" alt="США">
-              США</li>
-            <li class="people-card__country">
-              <img src="http://placehold.it/35x24" alt="Австралия">
-              Австралия</li>
-            <li class="people-card__country">
-              <img src="http://placehold.it/35x24" alt="Доминикана">
-              Доминикана</li>
-          </ul>
-          <span class="people-card__text">транспорт:</span>
-          <span class="people-card__text">левел:</span>
-          <ul class="people-card__transport-list">
-            <li class="people-card__transport people-card__transport--active"></li>
-            <li class="people-card__transport"></li>
-            <li class="people-card__transport people-card__transport--active"></li>
-            <li class="people-card__transport"></li>
-          </ul>
-          <a href="#" class="people-card__invite-btn">Позвать!</a>
-        </li>
-        <li class="people-card">
-          <img src="http://placehold.it/70x70" alt="Фото попутчика" class="people-card__photo">
-          <span class="people-card__name">Лариса Роговая</span>
-          <small class="people-card__likes">23</small>
-          <ul class="people-card__tags tag-list">
-            <li class="tag-list__item">
-              <a href="#">#образование</a>
-            </li>
-            <li class="tag-list__item">
-              <a href="#">#карьера</a>
-            </li>
-            <li class="tag-list__item">
-              <a href="#">#учеба</a>
-            </li>
-            <li class="tag-list__item">
-              <a href="#">#линкедин</a>
-            </li>
-          </ul>
-          <span class="people-card__text">хочет посетить:</span>
-          <ul class="people-card__countries">
-            <li class="people-card__country">
-              <img src="http://placehold.it/35x24" alt="Великобритания">
-              Великобритания</li>
-            <li class="people-card__country">
-              <img src="http://placehold.it/35x24" alt="Германия">
-              Германия</li>
-          </ul>
-          <span class="people-card__text">транспорт:</span>
-          <span class="people-card__text">левел:</span>
-          <ul class="people-card__transport-list">
-            <li class="people-card__transport people-card__transport--active"></li>
-            <li class="people-card__transport people-card__transport--active"></li>
-            <li class="people-card__transport"></li>
-            <li class="people-card__transport"></li>
-          </ul>
-          <a href="#" class="people-card__invite-btn">Позвать!</a>
-        </li>
-      </ul>
-      <button class="people__more-btn" aria-label="Показать еще">+ Показать еще</button>
-      <ul class="people__nav catalog-nav">
-        <li class="catalog-nav__item">
-          <button class="catalog-nav__back" aria-label="Назад"></button>
-        </li>
-        <li class="catalog-nav__item">
-          <button class="catalog-nav__forward" aria-label="Вперёд"></button>
-        </li>
-      </ul>
+      <div class="people__container">
+        <ul class="people__list">
+          <li class="people-card">
+            <img src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="Фото попутчика" class="people-card__photo">
+            <span class="people-card__name">Таня фирсова</span>
+            <small class="people-card__likes">1,5 M</small>
+            <ul class="people-card__tags tag-list">
+              <li>
+                <a href="#" class="tag-list__item">#ЗОЖ</a>
+              </li>
+              <li>
+                <a href="#" class="tag-list__item">#ПП</a>
+              </li>
+              <li>
+                <a href="#" class="tag-list__item">#Фитнес</a>
+              </li>
+              <li>
+                <a href="#" class="tag-list__item">#пляж</a>
+              </li>
+              <li>
+                <a href="#" class="tag-list__item">#авокадо</a>
+              </li>
+              <li>
+                <a href="#" class="tag-list__item">#смузи</a>
+              </li>
+            </ul>
+            <span class="people-card__text">хочет посетить:</span>
+            <ul class="people-card__countries">
+              <li class="people-card__country">
+                <img src="img/Sri-Lanka.png" width="35" height="24" alt="Шри-Ланка">
+                Шри Ланка</li>
+              <li class="people-card__country">
+                <img src="img/Thailand.png" width="35" height="24" alt="Тайланд">
+                Тайланд</li>
+              <li class="people-card__country">
+                <img src="img/Seychelles.png" width="35" height="24" alt="Сейшелы">
+                Сейшелы</li>
+            </ul>
+            <span class="people-card__text">транспорт:</span>
+            <span class="people-card__text">левел:</span>
+            <ul class="people-card__transport-list transport-list">
+              <li class="transport-list__item transport-list__item--plane transport-list__item--active"></li>
+              <li class="transport-list__item transport-list__item--bus"></li>
+              <li class="transport-list__item transport-list__item--bicycle"></li>
+              <li class="transport-list__item transport-list__item--onfoot"></li>
+            </ul>
+            <a href="#" class="people-card__invite-btn">Позвать!</a>
+          </li>
+          <li class="people-card">
+            <img src="img/demin-mobile@1x.jpg" width="70" height="70" alt="Фото попутчика" class="people-card__photo">
+            <span class="people-card__name">Петя Демин</span>
+            <small class="people-card__likes">150</small>
+            <ul class="people-card__tags tag-list">
+              <li>
+                <a href="#" class="tag-list__item">#бургер</a>
+              </li>
+              <li>
+                <a href="#" class="tag-list__item">#бар</a>
+              </li>
+              <li>
+                <a href="#" class="tag-list__item">#футбол</a>
+              </li>
+              <li>
+                <a href="#" class="tag-list__item">#концерт</a>
+              </li>
+              <li>
+                <a href="#" class="tag-list__item">#крафт</a>
+              </li>
+            </ul>
+            <span class="people-card__text">хочет посетить:</span>
+            <ul class="people-card__countries">
+              <li class="people-card__country">
+                <img src="img/Belgium.png" width="35" height="24" alt="Бельгия">
+                Бельгия</li>
+              <li class="people-card__country">
+                <img src="img/Czech.png" width="35" height="24" alt="Чехия">
+                Чехия</li>
+            </ul>
+            <span class="people-card__text">транспорт:</span>
+            <span class="people-card__text">левел:</span>
+            <ul class="people-card__transport-list transport-list">
+              <li class="transport-list__item transport-list__item--plane transport-list__item--active"></li>
+              <li class="transport-list__item transport-list__item--bus"></li>
+              <li class="transport-list__item transport-list__item--bicycle"></li>
+              <li class="transport-list__item transport-list__item--onfoot"></li>
+            </ul>
+            <a href="#" class="people-card__invite-btn">Позвать!</a>
+          </li>
+          <li class="people-card">
+            <img src="img/smolov-mobile@1x.jpg" width="70" height="70" alt="Фото попутчика" class="people-card__photo">
+            <span class="people-card__name">Марк Смолов</span>
+            <small class="people-card__likes">1700</small>
+            <ul class="people-card__tags tag-list">
+              <li>
+                <a href="#" class="tag-list__item">#рэп</a>
+              </li>
+              <li>
+                <a href="#" class="tag-list__item">#тату</a>
+              </li>
+              <li>
+                <a href="#" class="tag-list__item">#хайпбист</a>
+              </li>
+              <li>
+                <a href="#" class="tag-list__item">#кроссовки</a>
+              </li>
+              <li>
+                <a href="#" class="tag-list__item">#суприм</a>
+              </li>
+            </ul>
+            <span class="people-card__text">хочет посетить:</span>
+            <ul class="people-card__countries">
+              <li class="people-card__country">
+                <img src="img/USA.png" width="35" height="24" alt="США">
+                США</li>
+              <li class="people-card__country">
+                <img src="img/Australia.png" width="35" height="24" alt="Австралия">
+                Австралия</li>
+              <li class="people-card__country">
+                <img src="img/Dominica.png" width="35" height="24" alt="Доминикана">
+                Доминикана</li>
+            </ul>
+            <span class="people-card__text">транспорт:</span>
+            <span class="people-card__text">левел:</span>
+            <ul class="people-card__transport-list transport-list">
+              <li class="transport-list__item transport-list__item--plane transport-list__item--active"></li>
+              <li class="transport-list__item transport-list__item--bus"></li>
+              <li class="transport-list__item transport-list__item--bicycle"></li>
+              <li class="transport-list__item transport-list__item--onfoot"></li>
+            </ul>
+            <a href="#" class="people-card__invite-btn">Позвать!</a>
+          </li>
+          <li class="people-card">
+            <img src="img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="Фото попутчика"
+              class="people-card__photo">
+            <span class="people-card__name">Лариса Роговая</span>
+            <small class="people-card__likes">23</small>
+            <ul class="people-card__tags tag-list">
+              <li>
+                <a href="#" class="tag-list__item">#образование</a>
+              </li>
+              <li>
+                <a href="#" class="tag-list__item">#карьера</a>
+              </li>
+              <li>
+                <a href="#" class="tag-list__item">#учеба</a>
+              </li>
+              <li>
+                <a href="#" class="tag-list__item">#линкедин</a>
+              </li>
+            </ul>
+            <span class="people-card__text">хочет посетить:</span>
+            <ul class="people-card__countries">
+              <li class="people-card__country">
+                <img src="img/UK.png" width="35" height="24" alt="Великобритания">
+                Великобритания</li>
+              <li class="people-card__country">
+                <img src="img/Germany.png" width="35" height="24" alt="Германия">
+                Германия</li>
+            </ul>
+            <span class="people-card__text">транспорт:</span>
+            <span class="people-card__text">левел:</span>
+            <ul class="people-card__transport-list transport-list">
+              <li class="transport-list__item transport-list__item--plane transport-list__item--active"></li>
+              <li class="transport-list__item transport-list__item--bus"></li>
+              <li class="transport-list__item transport-list__item--bicycle"></li>
+              <li class="transport-list__item transport-list__item--onfoot"></li>
+            </ul>
+            <a href="#" class="people-card__invite-btn">Позвать!</a>
+          </li>
+        </ul>
+        <a class="people__more-btn" aria-label="Показать еще">+ Показать еще</a>
+        <ul class="people__nav catalog-nav">
+          <li class="catalog-nav__item">
+            <button class="catalog-nav__btn catalog-nav__btn--back" aria-label="Назад"></button>
+          </li>
+          <li class="catalog-nav__item">
+            <button class="catalog-nav__btn catalog-nav__btn--next" aria-label="Вперёд"></button>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
-  <footer class="page-footer">
-    <a>
-      <img src="http://placehold.it/100x19" alt="Логотип" class="page-footer__logo">
-    </a>
-    <ul class="page-footer__socials footer-socials">
-      <li class="footer-socials__item">
-        <a href="#"><span class="visually-hidden">Facebook</span></a>
-      </li>
-      <li class="footer-socials__item">
-        <a href="#"><span class="visually-hidden">Vkontakte</span></a>
-      </li>
-      <li class="footer-socials__item">
-        <a href="#"><span class="visually-hidden">Instagram</span></a>
-      </li>
-    </ul>
-    <span>Разработано</span>
-    <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-      <img src="http://placehold.it/27x34" alt="HTML academy">
-    </a>
+  <footer class="page-footer border-top-radius">
+    <div class="page-footer__container">
+      <a>
+        <img src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип" class="page-footer__logo">
+      </a>
+      <ul class="page-footer__socials footer-socials">
+        <li>
+          <a href="#" class="footer-socials__item footer-socials__item--fb"><span
+              class="visually-hidden">Facebook</span></a>
+        </li>
+        <li>
+          <a href="#" class="footer-socials__item footer-socials__item--vk"><span
+              class="visually-hidden">Vkontakte</span></a>
+        </li>
+        <li>
+          <a href="#" class="footer-socials__item footer-socials__item--inst"><span
+              class="visually-hidden">Instagram</span></a>
+        </li>
+      </ul>
+      <div class="page-footer__bottom-wrapper">
+        <span>Разработано</span>
+        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML academy">
+        </a>
+      </div>
+    </div>
   </footer>
 </body>
 

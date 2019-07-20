@@ -1,44 +1,44 @@
-.basic__container {
-  width: 270px;
-  margin: 0 auto;
-}
-
 .basic {
   position: relative;
-}
 
-.basic--blue {
-  background-color: $bg-lightblue;
-  min-height: 352px;
-  padding-top: 30px;
-  margin-bottom: -30px;
-  z-index: 6;
-}
+  &--blue {
+    background-color: $bg-lightblue;
+    min-height: 352px;
+    padding-top: 30px;
+    margin-bottom: -30px;
+    z-index: 6;
+  }
 
-.basic--grey {
-  background-color: $bg-lightgrey;
-  padding-top: 100px;
-  z-index: 5;
+  &--grey {
+    background-color: $bg-lightgrey;
+    padding-top: 100px;
+    z-index: 5;
 
-  .basic__text {
-    color: #444444;
+    .basic__text {
+      color: #444444;
+    }
+  }
+
+  &--aboutbg {
+    background-image: url("../../img/about-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--travelmatesbg {
+    background-image: url("../../img/smolov-back-desktop@1x.png"),
+      url("../../img/rogovaya-back-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: 150px 65px, -10px 335px;
+    margin-top: -30px;
+    z-index: 4;
+    padding-top: 100px;
   }
 }
 
-.basic--aboutbg {
-  background-image: url("../../img/about-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.basic--travelmatesbg {
-  background-image: url("../../img/smolov-back-desktop@1x.png"),
-    url("../../img/rogovaya-back-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: 150px 65px, -10px 335px;
-  margin-top: -30px;
-  z-index: 4;
-  padding-top: 100px;
+.basic__container {
+  width: 270px;
+  margin: 0 auto;
 }
 
 .basic__header {
@@ -56,11 +56,11 @@
   width: 220px;
   margin-left: 25px;
   padding-bottom: 20px;
-}
 
-.basic__text--bold {
-  font-weight: 700;
-  margin-left: 25px;
+  &--bold {
+    font-weight: 700;
+    margin-left: 25px;
+  }
 }
 
 .basic__btn {

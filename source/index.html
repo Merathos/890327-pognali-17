@@ -11,10 +11,12 @@
 <body>
   <header class="page-header">
     <div class="page-header__container">
-      <a>
-        <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип" class="page-header__logo">
-      </a>
-      <button aria-label="Меню" class="page-header__menu-btn"></button>
+      <div class="page-header__top-wrapper">
+        <a class="page-header__logo">
+          <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип">
+        </a>
+        <button aria-label="Меню" class="page-header__menu-btn"></button>
+      </div>
       <div class="page-header__menu-wrapper menu">
         <nav class="page-header__nav main-nav">
           <ul class="main-nav__list site-list">
@@ -266,33 +268,40 @@
       /* Карта */
     </section>
   </main>
-  <footer class="page-footer">
-    <a>
-      <img src="http://placehold.it/100x19" alt="Логотип" class="page-footer__logo">
-    </a>
-    <ul class="page-footer__socials footer-socials">
-      <li class="footer-socials__item">
-        <a href="#"><span class="visually-hidden">Facebook</span></a>
-      </li>
-      <li class="footer-socials__item">
-        <a href="#"><span class="visually-hidden">Vkontakte</span></a>
-      </li>
-      <li class="footer-socials__item">
-        <a href="#"><span class="visually-hidden">Instagram</span></a>
-      </li>
-    </ul>
-    <span>Разработано</span>
-    <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-      <img src="http://placehold.it/27x34" alt="HTML academy">
-    </a>
+  <footer class="page-footer border-top-radius">
+    <div class="page-footer__container">
+      <a>
+        <img src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип" class="page-footer__logo">
+      </a>
+      <ul class="page-footer__socials footer-socials">
+        <li>
+          <a href="#" class="footer-socials__item footer-socials__item--fb"><span
+              class="visually-hidden">Facebook</span></a>
+        </li>
+        <li>
+          <a href="#" class="footer-socials__item footer-socials__item--vk"><span
+              class="visually-hidden">Vkontakte</span></a>
+        </li>
+        <li>
+          <a href="#" class="footer-socials__item footer-socials__item--inst"><span
+              class="visually-hidden">Instagram</span></a>
+        </li>
+      </ul>
+      <div class="page-footer__bottom-wrapper">
+        <span>Разработано</span>
+        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML academy">
+        </a>
+      </div>
+    </div>
   </footer>
-  <section class="business-rates">
+  <section class="business-rates border-top-radius border-bottom-radius">
     <h2 class="business-rates__header">Бизнес-тарифы</h2>
     <ul class="business-rates__list">
-      <li class="business-rates__text">Реклама у блоггера 300 000 руб./пост</li>
-      <li class="business-rates__text">Накрутка подписчиков от 1 руб./шт.</li>
-      <li class="business-rates__text">Лайки от ботов от 20 коп./лайк</li>
-      <li class="business-rates__text">Ваш продакт-плейсмент Индивидуально</li>
+      <li class="business-rates__text">Реклама у блоггера<br> 300 000 руб./пост</li>
+      <li class="business-rates__text">Накрутка подписчиков<br> от 1 руб./шт.</li>
+      <li class="business-rates__text">Лайки от ботов<br> от 20 коп./лайк</li>
+      <li class="business-rates__text">Ваш продакт-плейсмент<br> Индивидуально</li>
     </ul>
     <button class="business-rates__close-btn">Закрыть окно</button>
   </section>
