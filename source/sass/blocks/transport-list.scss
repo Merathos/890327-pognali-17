@@ -1,0 +1,32 @@
+.transport-list {
+  @include reset-list;
+  display: flex;
+}
+
+.transport-list__item {
+  margin-right: 15px;
+}
+
+.transport-list__item--plane {
+  width: 19px;
+  height: 21px;
+  background: url("../../img/plane.svg") no-repeat;
+}
+
+.transport-list__item--bus {
+  width: 17px;
+  height: 21px;
+  background: url("../../img/bus.svg") no-repeat;
+}
+
+.transport-list__item--bicycle {
+  width: 24px;
+  height: 21px;
+  background: url("../../img/bike.svg") no-repeat;
+}
+
+.transport-list__item--onfoot {
+  width: 20px;
+  height: 21px;
+  background: url("../../img/run.svg") no-repeat;
+}

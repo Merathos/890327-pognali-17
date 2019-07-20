@@ -1,0 +1,37 @@
+.steps-list {
+  @include reset-list;
+}
+
+.steps-list__item {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+  height: 90px;
+  padding: 20px 20px 20px 25px;
+  background-color: #ff8d30;
+  color: $bg-darkblue;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.steps-list__number {
+  color: #ffffff;
+}
+
+.steps-list__item--second {
+  background-color: #ffa530;
+  margin-top: -15px;
+}
+
+.steps-list__item--third {
+  background-color: #ffbd30;
+  margin-top: -15px;
+}
+
+.steps-list__item--fourth {
+  background-color: #ffd74b;
+  margin-top: -15px;
+  height: 80px;
+}
