@@ -1,0 +1,43 @@
+.intro {
+  min-height: 930px;
+  background-image: url("../../img/traveller-illustration-mobile@1x.png"),
+    url("../../img/globe-back-mobile@1x.jpg"),
+    linear-gradient(to bottom, $bg-darkblue 665px, $bg-lightblue 665px);
+  background-repeat: no-repeat;
+  background-size: 192px 255px, 100% 400px, cover;
+  background-position: 80px 135px, 0 -10px, 0 0;
+  padding-top: 27px;
+}
+
+.intro__container {
+  width: 270px;
+  margin: 0 auto;
+}
+
+.intro__lead {
+  display: block;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  width: 250px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 250px;
+}
+
+.intro__actions {
+  margin: 0 auto;
+}
+
+.intro__blockquote {
+  margin: 0;
+  padding: 0;
+  width: 170px;
+  margin-left: 21px;
+  margin-bottom: 30px;
+}
+
+.intro__feedback-author {
+  font-weight: 700;
+  font-style: normal;
+}

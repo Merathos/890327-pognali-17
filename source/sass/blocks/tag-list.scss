@@ -1,0 +1,15 @@
+.tag-list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  width: 210px;
+  justify-content: center;
+}
+
+.tag-list__item {
+  margin-right: 5px;
+  text-decoration: none;
+  color: #444444;
+  line-height: 18px;
+  font-weight: 400;
+}

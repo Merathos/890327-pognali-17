@@ -1,0 +1,62 @@
+.people-card {
+  border-radius: 20px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  min-height: 415px;
+}
+
+.people-card__photo {
+  border-radius: 50%;
+}
+
+.people-card__tags {
+  justify-content: flex-start;
+  margin-left: 25px;
+}
+
+.people-card__name {
+  display: inline-block;
+  width: 100px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #1d2e5b;
+}
+
+.people-card__likes {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #161c35;
+}
+
+.people-card__text {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.people-card__country {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #1d2e5b;
+  text-transform: uppercase;
+}
+
+.people-card__invite-btn {
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 40px;
+  background-color: #ffd74b;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #161c35;
+}

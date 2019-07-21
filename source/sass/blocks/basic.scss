@@ -1,0 +1,98 @@
+.basic {
+  position: relative;
+
+  &--blue {
+    background-color: $bg-lightblue;
+    min-height: 352px;
+    padding-top: 30px;
+    margin-bottom: -30px;
+    z-index: 6;
+  }
+
+  &--grey {
+    background-color: $bg-lightgrey;
+    padding-top: 100px;
+    z-index: 5;
+
+    .basic__text {
+      color: #444444;
+    }
+  }
+
+  &--aboutbg {
+    background-image: url("../../img/about-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--travelmatesbg {
+    background-image: url("../../img/smolov-back-desktop@1x.png"),
+      url("../../img/rogovaya-back-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: 150px 65px, -10px 335px;
+    margin-top: -30px;
+    z-index: 4;
+    padding-top: 100px;
+  }
+}
+
+.basic__container {
+  width: 270px;
+  margin: 0 auto;
+}
+
+.basic__header {
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  color: #ff8d30;
+  font-weight: 700;
+  margin-left: 25px;
+  padding-bottom: 20px;
+}
+
+.basic__text {
+  margin: 0;
+  width: 220px;
+  margin-left: 25px;
+  padding-bottom: 20px;
+
+  &--bold {
+    font-weight: 700;
+    margin-left: 25px;
+  }
+}
+
+.basic__btn {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #ffd74b;
+  width: 270px;
+  height: 62px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #1d2e5b;
+  padding-left: 25px;
+  margin-bottom: 30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background-image: url("../../img/triangle-arrow-right.svg");
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 14px;
+  }
+}
+
+.basic__travelmates {
+  @include reset-list;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
