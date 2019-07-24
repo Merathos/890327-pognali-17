@@ -1,4 +1,5 @@
 .page-footer {
+  position: relative;
   background-color: #ffffff;
   padding-top: 35px;
   color: #444444;
@@ -6,7 +7,7 @@
 }
 
 .page-footer__container {
-  width: 270px;
+  width: 84.376%;
   margin: 0 auto;
 }
 
@@ -24,4 +25,49 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    margin-top: -60px;
+    padding-top: 48px;
+    padding-bottom: 36px;
+  }
+
+  .page-footer__container {
+    width: 89.6%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+    margin-top: 21px;
+  }
+
+  .page-footer__socials {
+    margin: 0;
+  }
+
+  .page-footer__bottom-wrapper {
+    justify-content: flex-start;
+    padding: 0;
+    font-size: 20px;
+    line-height: 24px;
+    align-items: center;
+  }
+
+  .page-footer__text {
+    margin-top: -10px;
+  }
+
+  .page-footer__academy {
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__container {
+    width: 1320px;
+  }
 }

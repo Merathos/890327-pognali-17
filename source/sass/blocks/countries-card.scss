@@ -2,7 +2,7 @@
   width: 270px;
   height: 190px;
   position: relative;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .countries-card__image {
@@ -18,7 +18,7 @@
   background-color: #ffffff;
   width: 270px;
   min-height: 90px;
-  margin-top: -14px;
+  margin-top: -10px;
   padding-top: 27px;
   padding-left: 25px;
 }
@@ -63,5 +63,67 @@
     background-image: url("../../img/user.svg");
     background-repeat: no-repeat;
     opacity: 0.1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .countries-card {
+    display: flex;
+    border-radius: 20px;
+    width: 618px;
+    height: 140px;
+  }
+
+  .countries-card__image {
+    order: 2;
+    width: 186px;
+    height: 140px;
+    border-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .countries-card__footer {
+    order: 1;
+    width: 433px;
+    height: 140px;
+    margin: 0;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-top: 32px;
+    padding-left: 31px;
+  }
+
+  .countries-card__flag {
+    width: 70px;
+    height: 47px;
+    top: 18px;
+    left: 398px;
+  }
+
+  .countries-card__header {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .countries-card__lead {
+    font-size: 20px;
+    line-height: 17.68px;
+  }
+
+  .countries-card__views {
+    top: 95px;
+    right: 0;
+    left: 59px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &::before {
+      width: 20px;
+      height: 20px;
+      top: 3px;
+      left: -30px;
+    }
   }
 }

@@ -1,14 +1,12 @@
-.footer-socials {
+.header-socials {
   @include reset-list;
   display: flex;
   width: 140px;
   margin: 0 auto;
 }
 
-.footer-socials__item {
+.header-socials__item {
   display: inline-block;
-  border-radius: 50%;
-  background-color: #ffd74b;
   width: 45px;
   height: 45px;
   background-position: center;
@@ -27,24 +25,5 @@
   &--inst {
     background-image: url("../../img/instagram.svg");
     background-size: 18px 18px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .footer-socials__item {
-    width: 60px;
-    height: 60px;
-  }
-
-  &--fb {
-    background-size: 14px 28px;
-  }
-
-  &--vk {
-    background-size: 31px 16px;
-  }
-
-  &--inst {
-    background-size: 24px 24px;
   }
 }

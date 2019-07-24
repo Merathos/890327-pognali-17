@@ -9,38 +9,52 @@
 </head>
 
 <body>
-  <header class="page-header border-bottom-radius">
+  <header class="page-header">
     <div class="page-header__container">
       <div class="page-header__top-wrapper">
-        <a>
-          <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип" class="page-header__logo">
+        <a href="index.html" class="page-header__logo">
+          <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип">
         </a>
         <button aria-label="Меню" class="page-header__menu-btn"></button>
-      </div>
-      <h1 class="page-header__header">Направления</h1>
-      <div class="page-header__menu-wrapper menu">
-        <nav class="page-header__nav main-nav">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="#">О сервисе</a></li>
-            <li class="site-list__item"><a href="#">Направления</a></li>
-            <li class="site-list__item"><a href="#">Попутчики</a></li>
-          </ul>
-        </nav>
-        <a href="#" class="menu__auth-btn">Авторизация</a>
-        <a href="#" class="menu__contacts menu__contacts--phone">8 800 555-86-28</a>
-        <a href="#" class="menu__contacts menu__contacts--email">mail@htmlacademy.ru</a>
-        <ul class="menu__socials social-list">
-          <li class="social-list__item social-list__item--fb">
-            <a href="#"><span class="visually-hidden">Facebook</span></a>
+        <ul class="page-header__actions user-actions">
+          <li class="user-actions__item">
+            <a href="#" class="user-actions__contacts user-actions__contacts--phone" aria-label="Позвонить нам"></a>
           </li>
-          <li class="social-list__item social-list__item--vk">
-            <a href="#"><span class="visually-hidden">Vkontakte</span></a>
+          <li class="user-actions__item">
+            <a href="#" class="user-actions__contacts user-actions__contacts--email" aria-label="Написать email"></a>
           </li>
-          <li class="social-list__item social-list__item--inst">
-            <a href="#"><span class="visually-hidden">Instagram</span></a>
+          <li class="user-actions__item">
+            <a href="#" class="user-actions__auth-btn">Авторизация</a>
           </li>
         </ul>
       </div>
+      <h1 class="page-header__header">Направления</h1>
+    </div>
+    <div class="page-header__menu-wrapper menu">
+      <nav>
+        <ul class="menu__nav site-list">
+          <li><a href="#" class="site-list__item">О сервисе</a></li>
+          <li><a href="form.html" class="site-list__item">Направления</a></li>
+          <li><a href="catalog.html" class="site-list__item">Попутчики</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="menu__auth-btn">Авторизация</a>
+      <a href="#" class="menu__contacts menu__contacts--phone">8 800 555-86-28</a>
+      <a href="#" class="menu__contacts menu__contacts--email">mail@htmlacademy.ru</a>
+      <ul class="menu__socials header-socials">
+        <li>
+          <a href="#" class="header-socials__item header-socials__item--fb"><span
+              class="visually-hidden">Facebook</span></a>
+        </li>
+        <li>
+          <a href="#" class="header-socials__item header-socials__item--vk"><span
+              class="visually-hidden">Vkontakte</span></a>
+        </li>
+        <li>
+          <a href="#" class="header-socials__item header-socials__item--inst"><span
+              class="visually-hidden">Instagram</span></a>
+        </li>
+      </ul>
     </div>
   </header>
   <main>

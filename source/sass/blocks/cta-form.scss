@@ -1,0 +1,256 @@
+.cta-form {
+  position: relative;
+  background-color: $bg-lightblue;
+  margin-top: -30px;
+  padding-top: 102px;
+  padding-bottom: 15px;
+  z-index: 2;
+}
+
+.cta-form__container {
+  width: 84.376%;
+  margin: 0 auto;
+}
+
+.cta-form__header {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ff8d30;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.cta-form__text {
+  width: 220px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.cta-form__tabletbr {
+  display: none;
+}
+
+.cta-form__auth {
+  color: #ffd74b;
+}
+
+.cta-form__form {
+  display: flex;
+}
+
+.cta-form__email-input {
+  border: none;
+  border-radius: 10px;
+  width: 220px;
+  height: 62px;
+  flex-grow: 1;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  padding-left: 25px;
+  margin-bottom: 8px;
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+}
+
+.cta-form__submit-btn {
+  position: relative;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffd74b;
+  width: 60px;
+  height: 62px;
+  margin-left: -20px;
+  background-image: url("../../img/triangle-arrow-right.svg");
+  background-size: 10px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cta-form__desktop-btn {
+  display: none;
+}
+
+.cta-form__contacts {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffd74b;
+  margin-left: 23%;
+  margin-bottom: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-color: #121936;
+    top: -14px;
+    left: -60px;
+  }
+
+  &--phone::before {
+    background-image: url("../../img/contacts-phone.svg");
+    background-size: 18px 18px;
+  }
+
+  &--email {
+    text-transform: uppercase;
+  }
+
+  &--email::before {
+    background-image: url("../../img/topmenu-mail.svg");
+    background-size: 18px 13px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .cta-form {
+    margin-top: -55px;
+    padding-top: 132px;
+    padding-bottom: 55px;
+  }
+
+  .cta-form__container {
+    width: 89.6%;
+    padding: 0;
+  }
+
+  .cta-form__header {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 55px;
+  }
+
+  .cta-form__text {
+    margin-bottom: 65px;
+
+    br {
+      display: none;
+    }
+
+    .cta-form__tabletbr {
+      display: block;
+    }
+
+    width: 620px;
+  }
+
+  .cta-form__form {
+    margin: 0 auto;
+    width: 620px;
+  }
+
+  .cta-form__email-input {
+    width: 100%;
+    height: 81px;
+    flex-grow: 0;
+    border-radius: 20px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .cta-form__submit-btn {
+    width: 90px;
+    height: 81px;
+    margin-left: -40px;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-bottom: 38px;
+  }
+
+  .cta-form__contacts {
+    font-size: 28px;
+    line-height: 28px;
+    margin-left: 18%;
+
+    &::before {
+      width: 68px;
+      height: 68px;
+      top: -22px;
+      left: -90px;
+    }
+
+    &--phone {
+      margin-top: -4px;
+      margin-bottom: 38px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cta-form {
+    padding-top: 162px;
+    padding-bottom: 95px;
+  }
+
+  .cta-form__container {
+    width: 1320px;
+  }
+
+  .cta-form__header {
+    margin-bottom: 56px;
+  }
+
+  .cta-form__text {
+    margin-bottom: 58px;
+  }
+
+  .cta-form__form {
+    width: 1175px;
+  }
+
+  .cta-form__email-input {
+    width: 900px;
+    padding-left: 35px;
+  }
+
+  .cta-form__submit-btn {
+    width: 325px;
+    flex-shrink: 0;
+    text-align: left;
+    padding-left: 35px;
+    background-position: center right 38px;
+    margin-bottom: 48px;
+  }
+
+  .cta-form__desktop-btn {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #1d2e5b;
+  }
+
+  .cta-form__contacts-wrapper {
+    display: flex;
+    margin-top: 79px;
+  }
+
+  .cta-form__contacts {
+    margin-left: 344px;
+
+    &::before {
+      width: 90px;
+      height: 90px;
+      top: -33px;
+      left: -120px;
+    }
+
+    &--phone {
+      margin-right: -111px;
+    }
+  }
+}

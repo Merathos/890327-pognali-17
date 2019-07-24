@@ -12,36 +12,49 @@
   background-repeat: no-repeat;
   background-size: 18px 18px;
   background-position: center;
+
+  &--phone {
+    background-image: url("../../img/topmenu-phone.svg");
+  }
+
+  &--email {
+    background-color: #ffbd30;
+    background-image: url("../../img/topmenu-mail.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .user-actions__auth-btn {
-  &::before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
-  }
-  display: inline-block;
+  display: inline-flex;
   border-radius: 25px;
   background-color: #ffd74b;
   width: 189px;
   height: 40px;
-  text-align: center;
-  vertical-align: middle;
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   color: $bg-darkblue;
-  padding-top: 3px;
+  justify-content: center;
+  align-items: center;
 }
 
-.user-actions__contacts--phone {
-  background-image: url("../../img/topmenu-phone.svg");
+@media (min-width: $tablet-width) {
+  .user-actions__auth-btn {
+    height: 50px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
-.user-actions__contacts--email {
-  background-color: #ffbd30;
-  background-image: url("../../img/topmenu-mail.svg");
+@media (min-width: $desktop-width) {
+  .user-actions__contacts {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
 }
