@@ -62,6 +62,10 @@
     color: #444444;
     width: 200px;
   }
+
+  br {
+    display: none;
+  }
 }
 
 .basic__countries {
@@ -132,6 +136,16 @@
       background-size: 289px 575px;
       background-position: top 23% right 8.5%;
     }
+
+    &--travelmatesbg {
+      margin-top: -60px;
+      padding-top: 203px;
+      padding-bottom: 88px;
+
+      br {
+        display: block;
+      }
+    }
   }
 
   .basic__container {
@@ -162,6 +176,12 @@
       font-size: 21px;
       line-height: 25px;
       width: 300px;
+    }
+
+    &--travelmates {
+      width: 480px;
+      margin-top: 16px;
+      margin-bottom: 20px;
     }
   }
 
@@ -218,6 +238,15 @@
       right: 35px;
     }
   }
+
+  .basic__travelmates {
+    flex-direction: row;
+    width: 620px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 38px;
+    margin-bottom: 71px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -228,6 +257,42 @@
       background-repeat: no-repeat;
       background-size: 630px 665px;
       background-position: bottom right 7.3%;
+    }
+
+    &--grey {
+      padding-top: 217px;
+      padding-bottom: 138px;
+
+      .basic__container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .basic__btn {
+        order: 3;
+        margin: 0;
+        width: 274px;
+        flex-shrink: 0;
+        margin-left: 805px;
+        margin-top: -80px;
+      }
+    }
+
+    &--travelmatesbg {
+      padding-top: 190px;
+      padding-bottom: 55px;
+
+      .basic__container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .basic__btn {
+        width: 280px;
+        margin: 0;
+        margin-left: 70px;
+        margin-top: -160px;
+      }
     }
   }
 
@@ -251,11 +316,42 @@
     &--bold {
       width: 410px;
     }
+
+    &--countries {
+      margin-left: 113px;
+      margin-top: 0;
+    }
+
+    &--travelmates {
+      margin-top: 0;
+    }
   }
 
   .basic__btn-about {
     margin-left: 70px;
     margin-top: 45px;
     margin-bottom: 102px;
+  }
+
+  .basic__countries {
+    margin: 0;
+    padding: 0;
+    order: 1;
+    margin-left: 70px;
+  }
+
+  .basic__countries-wrapper {
+    order: 2;
+    height: 300px;
+    margin-top: 4px;
+
+    .basic__header {
+      margin-left: 113px;
+    }
+  }
+
+  .basic__travelmates {
+    margin-top: 3px;
+    margin-left: 140px;
   }
 }

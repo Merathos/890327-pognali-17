@@ -127,3 +127,15 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .countries-card__footer {
+    width: 374px;
+    padding-top: 25px;
+  }
+
+  .countries-card__flag {
+    top: 23px;
+    left: 340px;
+  }
+}
