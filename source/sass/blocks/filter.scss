@@ -151,6 +151,9 @@
 
   .filter__regions {
     order: 1;
+    display: flex;
+    margin-top: 16px;
+    margin-left: 33px;
   }
 
   .filter__open-btn {
@@ -172,12 +175,6 @@
       background-size: 18px 18px;
       background-position: right 5px top 2px;
     }
-  }
-
-  .filter__regions {
-    display: flex;
-    margin-top: 16px;
-    margin-left: 33px;
   }
 
   .filter__regions-item {

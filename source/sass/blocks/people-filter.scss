@@ -34,6 +34,12 @@
 
 .people-filter__list {
   @include reset-list;
+  margin-top: 5px;
+  margin-bottom: 15px;
+
+  input[type="checkbox"] {
+    display: none;
+  }
 }
 
 .people-filter__top-wrapper {
@@ -67,15 +73,6 @@
   &--open {
     background-image: url("../../img/dropdown.svg");
     transform: rotate(0);
-  }
-}
-
-.people-filter__list {
-  margin-top: 5px;
-  margin-bottom: 15px;
-
-  input[type="checkbox"] {
-    display: none;
   }
 }
 
@@ -160,14 +157,11 @@
   .people-filter__top-wrapper {
     border: none;
     float: left;
+    width: 127px;
   }
 
   .people-filter__btn {
     display: none;
-  }
-
-  .people-filter__top-wrapper {
-    width: 127px;
   }
 
   .people-filter__bottom-wrapper {
