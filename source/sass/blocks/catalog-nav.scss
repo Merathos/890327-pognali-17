@@ -3,11 +3,16 @@
   display: flex;
 }
 
-.catalog-nav__item {
+.catalog-nav__num {
+  display: none;
+}
+
+.catalog-nav__arrow {
   margin-right: 2px;
 }
 
 .catalog-nav__btn {
+  display: inline-block;
   width: 135px;
   height: 50px;
   border: none;
@@ -26,5 +31,54 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     background-image: url("../../img/triangle-arrow-right.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-nav {
+    border-radius: 20px;
+    width: 688px;
+    height: 100px;
+    background-color: #ffffff;
+    padding-left: 28px;
+    padding-right: 19px;
+  }
+
+  .catalog-nav__num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #161c35;
+
+    &--active {
+      background-color: #ffd74b;
+    }
+  }
+
+  .catalog-nav__arrow {
+    height: 100px;
+    margin-right: 0;
+
+    &--back {
+      margin-left: auto;
+    }
+  }
+
+  .catalog-nav__btn {
+    width: 43px;
+    height: 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-nav {
+    padding-right: 28px;
   }
 }

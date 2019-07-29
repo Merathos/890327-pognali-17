@@ -12,6 +12,12 @@
   color: #444444;
   line-height: 18px;
   font-weight: 400;
+
+  &--catalog {
+    font-size: 15px;
+    line-height: 15px;
+    margin-right: 5px;
+  }
 }
 
 @media (min-width: $tablet-width) {

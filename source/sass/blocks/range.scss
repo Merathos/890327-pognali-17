@@ -1,0 +1,150 @@
+.range__block {
+  position: relative;
+  width: 220px;
+  height: 2px;
+  background-color: #d2b54e;
+  margin-top: 24px;
+  margin-bottom: 28px;
+}
+
+.range__inputs {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 3px;
+}
+
+.range__input {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(203, 206, 217);
+  background-color: rgb(255, 255, 255);
+  width: 110px;
+  height: 35px;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 500;
+  color: #1d2e5b;
+  text-align: center;
+  padding-top: 5px;
+
+  &--min {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-right: none;
+  }
+
+  &--max {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+}
+
+
+.range__line {
+  width: 144px;
+  height: 2px;
+  margin-left: auto;
+  background-color: #1d2e5b;
+}
+
+.range__min-toggle {
+  position: absolute;
+  border-radius: 50%;
+  top: -4px;
+  left: 66px;
+  width: 10px;
+  height: 10px;
+  background-color: #1d2e5b;
+  cursor: pointer;
+}
+
+.range__max-toggle {
+  position: absolute;
+  border-radius: 50%;
+  top: -4px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #1d2e5b;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) and (max-width: 1439px) {
+  .range {
+    display: flex;
+  }
+
+  .range__block {
+    width: 277px;
+    height: 3px;
+  }
+
+  .range__line {
+    width: 201px;
+    height: 3px;
+  }
+
+  .range__inputs {
+    order: 2;
+    margin-left: 70px;
+  }
+
+  .range__input {
+    width: 75px;
+    height: 46px;
+    font-size: 20px;
+    line-height: 18px;
+  }
+
+  .range__min-toggle {
+    width: 13px;
+    height: 13px;
+    top: -5px;
+    left: 69px;
+  }
+
+  .range__max-toggle {
+    width: 13px;
+    height: 13px;
+    top: -5px;
+    right: -5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range__block {
+    width: 191px;
+    height: 3px;
+  }
+
+  .range__line {
+    width: 125px;
+    height: 3px;
+  }
+
+  .range__inputs {
+    margin-top: 7px;
+    margin-bottom: 37px;
+  }
+
+  .range__input {
+    width: 95px;
+    height: 45px;
+    font-size: 20px;
+    line-height: 18px;
+  }
+
+  .range__min-toggle {
+    width: 13px;
+    height: 13px;
+    top: -5px;
+    left: 60px;
+  }
+
+  .range__max-toggle {
+    width: 13px;
+    height: 13px;
+    top: -5px;
+    right: 0;
+  }
+}

@@ -1,0 +1,291 @@
+.people-filter {
+  width: 270px;
+  margin: 0 auto;
+  padding: 25px 25px;
+  border-radius: 20px;
+  background-color: #ffd74b;
+  padding-bottom: 20px;
+}
+
+.people-filter__header {
+  font-size: 22.49px;
+  line-height: 22.49px;
+  font-weight: 700;
+  color: #1d2e5b;
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.people-filter__section {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.people-filter__section-header {
+  font-size: 16px;
+  line-height: 18px;
+  color: #1d2e5b;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  width: fit-content;
+}
+
+.people-filter__list {
+  @include reset-list;
+}
+
+.people-filter__top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 13px;
+  padding-bottom: 8px;
+  border-top: 1px solid #f3c72b;
+}
+
+.people-filter__bottom-wrapper {
+  &--hobby,
+  &--food {
+    display: none;
+  }
+}
+
+.people-filter__btn {
+  position: relative;
+  top: 6px;
+  right: -2px;
+  border: none;
+  background-color: transparent;
+  width: 8px;
+  height: 4px;
+  background-image: url("../../img/dropdown.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+
+  &--open {
+    background-image: url("../../img/dropdown.svg");
+    transform: rotate(0);
+  }
+}
+
+.people-filter__list {
+  margin-top: 5px;
+  margin-bottom: 15px;
+
+  input[type="checkbox"] {
+    display: none;
+  }
+}
+
+.people-filter__item {
+  padding-left: 27px;
+
+  label {
+    position: relative;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 400;
+    color: #444444;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -4px;
+      left: -27px;
+      border-radius: 4px;
+      width: 18px;
+      height: 18px;
+      background-color: #ffffff;
+    }
+  }
+
+  input:checked + label::before {
+    background-color: red;
+  }
+}
+
+.people-filter__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.people-filter__transport {
+  margin-top: 7px;
+  margin-bottom: 18px;
+}
+
+.people-filter__submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -6px;
+  padding: 0;
+  border-radius: 20px;
+  width: 230px;
+  height: 40px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #161c35;
+}
+
+@media (min-width: $tablet-width) and (max-width: 1439px) {
+  .people-filter {
+    width: 688px;
+    margin: 0 auto;
+    padding: 36px 34px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+  }
+
+  .people-filter__header {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 58px;
+  }
+
+  .people-filter__section-header {
+    font-size: 20px;
+    line-height: 30px;
+
+    &::after {
+      content: ":";
+    }
+  }
+
+  .people-filter__top-wrapper {
+    border: none;
+    float: left;
+  }
+
+  .people-filter__btn {
+    display: none;
+  }
+
+  .people-filter__top-wrapper {
+    width: 127px;
+  }
+
+  .people-filter__bottom-wrapper {
+    display: block;
+    width: 100%;
+
+    &--food {
+      margin-bottom: 12px;
+    }
+  }
+
+  .people-filter__list {
+    display: flex;
+    margin-top: 11px;
+    margin-bottom: 7px;
+  }
+
+  .people-filter__item {
+    width: 155px;
+
+    label {
+      font-size: 20px;
+      line-height: 20px;
+      padding-left: 9px;
+
+      &::before {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  .people-filter__item:not(:last-child) {
+    margin: 0;
+    margin-right: 18px;
+  }
+
+  .people-filter__transport {
+    position: relative;
+    left: -5px;
+    margin-top: 2px;
+    margin-bottom: 13px;
+  }
+
+  .people-filter__submit-btn {
+    margin: 0 auto;
+    margin-top: 67px;
+    margin-bottom: 18px;
+    border-radius: 30px;
+    width: 618px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .people-filter {
+    width: 285px;
+    padding: 48px 47px;
+  }
+
+  .people-filter__header {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+
+  .people-filter__section-header {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .people-filter__top-wrapper {
+    width: 191px;
+    border: none;
+    padding: 5px 0;
+  }
+
+  .people-filter__list {
+    margin-top: 11px;
+  }
+
+  .people-filter__item {
+    label {
+      font-size: 20px;
+      line-height: 20px;
+      padding-left: 10px;
+
+      &::before {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  .people-filter__btn {
+    top: 10px;
+    right: -1px;
+  }
+
+  .people-filter__transport {
+    margin-top: 9px;
+    margin-bottom: 28px;
+
+    li {
+      width: 43px;
+      height: 43px;
+    }
+  }
+
+  .people-filter__submit-btn {
+    border-radius: 30px;
+    width: 197px;
+    height: 50px;
+    margin-top: 17px;
+    margin-left: 2px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
