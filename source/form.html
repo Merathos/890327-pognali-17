@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header page-header--catalog border-bottom-radius border-bottom-radius--catalog">
     <div class="page-header__container">
       <div class="page-header__top-wrapper">
         <a href="index.html" class="page-header__logo">
@@ -58,7 +58,218 @@
     </div>
   </header>
   <main>
-    <div style="height: 100px"></div>
+    <section class="profile">
+      <h2 class="visually-hidden">Ваш профиль</h2>
+      <div class="profile__container">
+        <img src="http://placehold.it/94x94" alt="asdasd" class="profile__level">
+        <img src="img/photo-account-mobile@1x.jpg" alt="Ваше фото" width="99" height="100" class="profile__photo">
+        <button class="profile__photo-btn"><span class="profile__btn-text">Сменить фото</span><span
+            class="profile__btn-text--desktop">Фото</span></button>
+        <div class="profile__tags">
+          <h3 class="profile__header">Тэги</h3>
+          <ul class="profile__tag-list tag-list">
+            <li>
+              <a href="#" class="tag-list__item">#бургер</a>
+            </li>
+            <li>
+              <a href="#" class="tag-list__item">#бар</a>
+            </li>
+            <li>
+              <a href="#" class="tag-list__item">#футбол</a>
+            </li>
+            <li>
+              <a href="#" class="tag-list__item">#концерт</a>
+            </li>
+            <li>
+              <a href="#" class="tag-list__item">#крафт</a>
+            </li>
+          </ul>
+        </div>
+        <div class="profile__transport">
+          <h3 class="profile__header profile__header--transport">Транспорт</h3>
+          <ul class="profile__transport-list transport-list">
+            <li class="transport-list__item transport-list__item--plane transport-list__item--active"></li>
+            <li class="transport-list__item transport-list__item--bus transport-list__item--active"></li>
+            <li class="transport-list__item transport-list__item--bicycle"></li>
+            <li class="transport-list__item transport-list__item--onfoot transport-list__item--active"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="plans border-top-radius plans border-top-radius--form">
+      <div class="plans__container">
+        <h2 class="plans__header">Мои планы:</h2>
+        <ul class="plans__list">
+          <li class="plans__item plans-card">
+            <p class="plans-card__destination"><span class="plans-card__number">1. </span><span
+                class="plans-card__country">Франция, Италия</span></p>
+            <span class="plans-card__text plans-card__text--travelmates">3 попутчика</span>
+            <span class="plans-card__text plans-card__text--date">26 мар - 29 мар</span>
+            <button class="plans-card__btn" aria-label="Изменить планы">Изменить</button>
+          </li>
+          <li class="plans__item plans-card">
+            <p class="plans-card__destination"><span class="plans-card__number">2. </span><span
+                class="plans-card__country">Тайланд, Индонезия</span></p>
+            <span class="plans-card__text plans-card__text--thai">1 попутчик</span>
+            <span class="plans-card__text">1 июл - 15 июл</span>
+            <button class="plans-card__btn" aria-label="Изменить планы">Изменить</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="add-plan border-top-radius">
+      <h2 class="add-plan__header">Добавить план:</h2>
+      <div class="steps">
+        <h3 class="steps__header">Шаг 1.<br>Даты пребывания</h3>
+        <p class="steps__text">Укажите предпочтительное количество попутчиков, которых
+          вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+        <p class="steps__travelmates">
+          <button class="steps__num-btn">-</button>
+          <label for="travelmates">Ищу попутчиков
+            <input type="text" name="travelmates" id="travelmates"></label>
+          <button class="steps__num-btn">+</button>
+        </p>
+        <p class="steps__kids">
+          <label for="kids">Можно с детьми
+            <input type="checkbox" name="kids" id="kids"></label>
+        </p>
+        <p class="steps__duration">
+          <button class="steps__num-btn">-</button>
+          <label for="duration">Ищу попутчиков
+            <input type="text" name="duration" id="duration"></label>
+          <button class="steps__num-btn">+</button>
+        </p>
+        <div class="steps__calendar calendar">
+          <button class="calendar__month-btn" aria-label="Предыдущий месяц"></button>
+          <p class="calendar__month">Март 2019</p>
+          <button class="calendar__month-btn" aria-label="Следующий месяц"></button>
+          <table class="calendar__table">
+            <tr>
+              <th>Пн</td>
+              <th>Вт</td>
+              <th>Ср</td>
+              <th>Чт</td>
+              <th>Пт</td>
+              <th>Сб</td>
+              <th>Вс</th>
+            </tr>
+            <tr>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+              <td>22</td>
+            </tr>
+            <tr>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td class="calendar__bluebg">26</td>
+              <td class="calendar__bluebg">27</td>
+              <td class="calendar__bluebg">28</td>
+              <td class="calendar__graybg">29</td>
+            </tr>
+            <tr>
+              <td class="calendar__graybg">30</td>
+              <td class="calendar__graybg">31</td>
+              <td class="calendar__graybg">1</td>
+              <td class="calendar__graybg">2</td>
+              <td class="calendar__graybg">3</td>
+              <td class="calendar__graybg">4</td>
+              <td class="calendar__graybg">5</td>
+            </tr>
+          </table>
+        </div>
+        <button class="steps__next-btn">Следующий шаг</button>
+      </div>
+      <div class="steps">
+        <h3 class="steps__header">Шаг 2.<br>Маршрут</h3>
+        <p class="steps__text">Укажите страны, которые вы хотели по посетить.
+          Это может быть одна или сразу несколько.</p>
+        <ul class="steps__countries countries-select">
+          <li>
+            <div class="countries-select__dropdown">
+              <span class="countries-select__country-text">Босния и Герцеговина</span>
+              <button class="countries-select__dropdown-btn" aria-label="Выбрать страну"></button>
+            </div>
+            <img src="flag" alt="Флаг">
+            <button class="countries-select__clear-btn" aria-label="Сбросить выбор"></button>
+          </li>
+          <li>
+            <div class="countries-select__dropdown">
+              <span class="countries-select__country-text">Чехословакия</span>
+              <button class="countries-select__dropdown-btn" aria-label="Выбрать страну"></button>
+            </div>
+            <img src="flag" alt="Флаг">
+            <button class="countries-select__clear-btn" aria-label="Сбросить выбор"></button>
+          </li>
+          <li>
+            <div class="countries-select__dropdown">
+              <span class="countries-select__country-text">Выберите страну</span>
+              <button class="countries-select__dropdown-btn" aria-label="Выбрать страну"></button>
+            </div>
+            <button class="countries-select__clear-btn" aria-label="Сбросить выбор"></button>
+          </li>
+          <li>
+            <div class="countries-select__dropdown">
+              <span class="countries-select__country-text">Добавить страну</span>
+              <button class="countries-select__dropdown-btn countries-select__dropdown-btn--add"
+                aria-label="Выбрать страну"></button>
+            </div>
+          </li>
+        </ul>
+        <button class="steps__next-btn">Следующий шаг</button>
+        <button class="steps__back-btn">На шаг назад</button>
+      </div>
+      <div class="steps">
+        <h3 class="steps__header">Шаг 3.<br>Развлечения</h3>
+        <p class="steps__text">Наконец, расскажите о своих планах времяпровождения.
+          Можно писать в свободной форме и ставить тэги.
+        </p>
+        <p class="steps__text-area">
+          <label for="wishlist">Босния и герцеговина
+            <textarea name="wishlist" id="wishlist" cols="30" rows="10"></textarea></label>
+        </p>
+        <p class="steps__text-area">
+          <label for="wishlist">Чехословакия
+            <textarea name="wishlist" id="wishlist" cols="30" rows="10">
+                Пить пиво и лазить по старым замкам, наслаждаться аритектурой
+                и вот это все.
+            </textarea></label>
+        </p>
+        <button class="steps__next-btn">Отправить</button>
+        <button class="steps__back-btn">На шаг назад</button>
+      </div>
+    </section>
   </main>
   <footer class="page-footer border-top-radius">
     <div class="page-footer__container">
