@@ -107,11 +107,11 @@
 
   &--email {
     text-transform: uppercase;
-  }
 
-  &--email::before {
-    background-image: url("../../img/topmenu-mail.svg");
-    background-size: 18px 13px;
+    &::before {
+      background-image: url("../../img/topmenu-mail.svg");
+      background-size: 18px 13px;
+    }
   }
 }
 

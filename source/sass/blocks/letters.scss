@@ -10,8 +10,8 @@
 
 .letters__item {
   display: flex;
-  width: 44.2px;
-  height: 41.1px;
+  width: 44px;
+  height: 41px;
   background-color: #ffffff;
   flex-shrink: 0;
   border: 0.5px solid #cbced9;
@@ -33,6 +33,12 @@ input[type="radio"]:checked + label {
 @media (min-width: $tablet-width) {
   .letters {
     width: 400px;
+
+    input[type="radio"]:checked + label {
+      background-color: transparent;
+      color: #1d2e5b;
+      opacity: 1;
+    }
   }
 
   .letters__item {
@@ -44,11 +50,5 @@ input[type="radio"]:checked + label {
     line-height: 60px;
     font-weight: 700;
     opacity: 0.2;
-  }
-
-  input[type="radio"]:checked + label {
-    background-color: transparent;
-    color: #1d2e5b;
-    opacity: 1;
   }
 }

@@ -2,11 +2,11 @@
   background-color: #dfe3f0;
   margin-top: -27px;
   padding-top: 29px;
-  padding-bottom: 80px;
+  padding-bottom: 52px;
 }
 
 .plans__container {
-  width: 84.376%;
+  width: 270px;
   margin: 0 auto;
 }
 
@@ -27,6 +27,7 @@
   .plans {
     margin-top: -60px;
     padding-top: 50px;
+    padding-bottom: 122px;
   }
 
   .plans__container {
@@ -48,6 +49,7 @@
 @media (min-width: $desktop-width) {
   .plans {
     padding-top: 48px;
+    padding-bottom: 105px;
   }
 
   .plans__container {

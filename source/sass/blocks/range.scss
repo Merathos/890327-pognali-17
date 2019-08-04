@@ -69,7 +69,7 @@
   cursor: pointer;
 }
 
-@media (min-width: $tablet-width) and (max-width: 1439px) {
+@media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
   .range {
     display: flex;
   }

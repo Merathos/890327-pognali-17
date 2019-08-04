@@ -1,0 +1,56 @@
+.add-plan {
+  position: relative;
+  background-color: #d4d9eb;
+  margin-top: -30px;
+  padding-top: 30px;
+  padding-bottom: 74px;
+}
+
+.add-plan__container {
+  width: 84.376%;
+  margin: 0 auto;
+}
+
+.add-plan__header {
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #1d2e5b;
+  margin-bottom: 29px;
+}
+
+@media (min-width: $tablet-width) {
+  .add-plan {
+    margin-top: -57px;
+    padding-top: 50px;
+    padding-bottom: 79px;
+  }
+
+  .add-plan__container {
+    width: 89.6%;
+  }
+
+  .add-plan__header {
+    font-size: 36px;
+    line-height: 50px;
+    margin-left: 35px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-plan {
+    margin-top: -57px;
+    padding-top: 49px;
+    padding-bottom: 85px;
+  }
+
+  .add-plan__container {
+    width: 1320px;
+  }
+
+  .add-plan__header {
+    margin-left: 69px;
+  }
+}
