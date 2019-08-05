@@ -1,5 +1,9 @@
 .site-list {
   @include reset-list;
+
+  li {
+    text-align: center;
+  }
 }
 
 .site-list__item {
@@ -9,4 +13,45 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #192144;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    li {
+      text-align: left;
+    }
+  }
+
+  .site-list__item {
+    font-size: 60px;
+    line-height: 71px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    display: flex;
+    position: relative;
+
+    li {
+      margin-right: 33px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: -105px;
+      width: 60px;
+      height: 2px;
+      background-color: #ffffff;
+    }
+  }
+
+  .site-list__item {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #ffffff;
+  }
 }
