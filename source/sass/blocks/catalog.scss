@@ -21,10 +21,15 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    display: flex;
     padding: 0 60px;
-    justify-content: space-between;
     padding-top: 92px;
+  }
+
+  .catalog__container {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
   }
 
   .catalog__filter {

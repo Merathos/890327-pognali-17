@@ -1,12 +1,17 @@
 .page-header__menu-wrapper {
   display: none;
   background-color: #ffffff;
-  // position: absolute;
-  // top: 0;
-  // left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
   padding-top: 115px;
   width: 100%;
   min-height: 570px;
+  z-index: 19;
+
+  &--show {
+    display: flex;
+  }
 }
 
 .page-header {
@@ -35,6 +40,7 @@
 }
 
 .page-header__menu-btn {
+  z-index: 20;
   width: 25px;
   height: 11px;
   border: none;
@@ -43,6 +49,7 @@
 }
 
 .page-header__logo {
+  z-index: 20;
   width: 100px;
 }
 
@@ -86,6 +93,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header__menu-wrapper {
+    min-height: 912px;
+  }
+
   .page-header {
     background-color: #182044;
     padding-top: 40px;
@@ -109,6 +120,7 @@
     left: 0;
     bottom: 0;
     transform: translateX(0);
+    z-index: 19;
   }
 
   .page-header__header {
@@ -148,6 +160,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header__menu-wrapper {
+    display: inline-flex;
+    position: relative;
+    min-height: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+
   .page-header {
     background-color: $bg-darkblue;
     margin-top: 30px;
@@ -161,6 +181,11 @@
 
   .page-header__container {
     width: 1320px;
+  }
+
+  .page-header__logo {
+    width: 200px;
+    height: 52px;
   }
 
   .page-header__menu-btn {

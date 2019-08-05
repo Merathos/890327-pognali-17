@@ -15,6 +15,32 @@
         <a href="index.html" class="page-header__logo">
           <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип">
         </a>
+        <div class="page-header__menu-wrapper menu">
+          <nav>
+            <ul class="menu__nav site-list">
+              <li><a href="#" class="site-list__item">О сервисе</a></li>
+              <li><a href="form.html" class="site-list__item">Направления</a></li>
+              <li><a href="catalog.html" class="site-list__item">Попутчики</a></li>
+            </ul>
+          </nav>
+          <a href="#" class="menu__auth-btn">Авторизация</a>
+          <a href="#" class="menu__contacts menu__contacts--phone">8 800 555-86-28</a>
+          <a href="#" class="menu__contacts menu__contacts--email">mail@htmlacademy.ru</a>
+          <ul class="menu__socials header-socials">
+            <li>
+              <a href="#" class="header-socials__item header-socials__item--fb"><span
+                  class="visually-hidden">Facebook</span></a>
+            </li>
+            <li>
+              <a href="#" class="header-socials__item header-socials__item--vk"><span
+                  class="visually-hidden">Vkontakte</span></a>
+            </li>
+            <li>
+              <a href="#" class="header-socials__item header-socials__item--inst"><span
+                  class="visually-hidden">Instagram</span></a>
+            </li>
+          </ul>
+        </div>
         <button aria-label="Меню" class="page-header__menu-btn"></button>
         <ul class="page-header__actions user-actions">
           <li class="user-actions__item">
@@ -33,41 +59,15 @@
         <a href="index.html" class="page-header__main-btn"><span class="page-header__btn-text">На главную</span></a>
       </div>
     </div>
-    <div class="page-header__menu-wrapper menu">
-      <nav>
-        <ul class="menu__nav site-list">
-          <li><a href="#" class="site-list__item">О сервисе</a></li>
-          <li><a href="form.html" class="site-list__item">Направления</a></li>
-          <li><a href="catalog.html" class="site-list__item">Попутчики</a></li>
-        </ul>
-      </nav>
-      <a href="#" class="menu__auth-btn">Авторизация</a>
-      <a href="#" class="menu__contacts menu__contacts--phone">8 800 555-86-28</a>
-      <a href="#" class="menu__contacts menu__contacts--email">mail@htmlacademy.ru</a>
-      <ul class="menu__socials header-socials">
-        <li>
-          <a href="#" class="header-socials__item header-socials__item--fb"><span
-              class="visually-hidden">Facebook</span></a>
-        </li>
-        <li>
-          <a href="#" class="header-socials__item header-socials__item--vk"><span
-              class="visually-hidden">Vkontakte</span></a>
-        </li>
-        <li>
-          <a href="#" class="header-socials__item header-socials__item--inst"><span
-              class="visually-hidden">Instagram</span></a>
-        </li>
-      </ul>
-    </div>
   </header>
   <main>
     <section class="filter border-bottom-radius--catalog">
       <div class="filter__container">
         <div class="filter__top-wrapper">
           <button class="filter__header">Фильтрация по странам</button>
-          <button class="filter__open-btn filter__open-btn--close" aria-label="Фильтр"><span
-              class="filter__open-text">Показать все</span><span class="filter__close-text">Свернуть</span></button>
-          <ul class="filter__regions">
+          <button class="filter__open-btn" aria-label="Фильтр"><span class="filter__open-text">Показать все</span><span
+              class="filter__close-text">Свернуть</span></button>
+          <ul class="filter__regions filter__regions--mobile">
             <li class="filter__regions-item filter__regions-item--active">Европа</li>
             <li class="filter__regions-item">Азия</li>
             <li class="filter__regions-item">Америка</li>
@@ -76,7 +76,7 @@
         </div>
         <div class="filter__bottom-wrapper">
           <div class="filter__letters letters">
-            <input type="radio" name="letters" id="l1"><label for="l1" class="letters__item">а</label>
+            <input type="radio" name="letters" id="l1" checked><label for="l1" class="letters__item">а</label>
             <input type="radio" name="letters" id="l2"><label for="l2" class="letters__item">б</label>
             <input type="radio" name="letters" id="l3"><label for="l3" class="letters__item">в</label>
             <input type="radio" name="letters" id="l4"><label for="l4" class="letters__item">г</label>
@@ -344,351 +344,358 @@
       </div>
     </section>
     <section class="catalog">
-      <div class="catalog__filter">
-        <form action="https://echo.htmlacademy.ru" method="post" class="people-filter">
-          <h2 class="people-filter__header">Подберите идеального попутчика</h2>
-          <fieldset class="people-filter__section">
-            <div class="people-filter__top-wrapper">
-              <legend class="people-filter__section-header">Хобби</legend>
-              <button class="people-filter__btn people-filter__btn--open" aria-label="Свернуть" type="button"></button>
-            </div>
-            <div class="people-filter__bottom-wrapper people-filter__bottom-wrapper--hobby">
-              <ul class="people-filter__list">
-                <li class="people-filter__item">
-                  <input type="checkbox" checked name="hobby" id="sports">
-                  <label for="sports">Спортзал</label>
-                </li>
-                <li class="people-filter__item">
-                  <input type="checkbox" name="hobby" id="hookah">
-                  <label for="hookah">Кальян</label>
-                </li>
-                <li class="people-filter__item">
-                  <input type="checkbox" name="hobby" id="sofa">
-                  <label for="sofa">Диван</label>
-                </li>
-              </ul>
-            </div>
-          </fieldset>
-          <fieldset class="people-filter__section">
-            <div class="people-filter__top-wrapper">
-              <legend class="people-filter__section-header">Музыка</legend>
-              <button class="people-filter__btn people-filter__btn" aria-label="Свернуть" type="button"></button>
-            </div>
-            <div class="people-filter__bottom-wrapper">
-              <ul class="people-filter__list">
-                <li class="people-filter__item">
-                  <input type="checkbox" checked name="music" id="heavy">
-                  <label for="heavy">Тяжелый рок</label>
-                </li>
-                <li class="people-filter__item">
-                  <input type="checkbox" name="music" id="rap">
-                  <label for="rap">Русский рэп</label>
-                </li>
-                <li class="people-filter__item">
-                  <input type="checkbox" name="music" id="eurodance">
-                  <label for="eurodance">Евроденс</label>
-                </li>
-              </ul>
-            </div>
-          </fieldset>
-          <fieldset class="people-filter__section">
-            <div class="people-filter__top-wrapper">
-              <legend class="people-filter__section-header">Еда</legend>
-              <button class="people-filter__btn people-filter__btn--open" aria-label="Свернуть" type="button"></button>
-            </div>
-            <div class="people-filter__bottom-wrapper people-filter__bottom-wrapper--food">
-              <ul class="people-filter__list">
-                <li class="people-filter__item">
-                  <input type="checkbox" checked name="food" id="meat">
-                  <label for="meat">Мясоед</label>
-                </li>
-                <li class="people-filter__item">
-                  <input type="checkbox" name="food" id="healthy">
-                  <label for="healthy">Сидит на ПП</label>
-                </li>
-                <li class="people-filter__item">
-                  <input type="checkbox" name="food" id="vegan">
-                  <label for="vegan">Веган-сыроед</label>
-                </li>
-              </ul>
-            </div>
-          </fieldset>
-          <fieldset class="people-filter__section">
-            <div class="people-filter__top-wrapper">
-              <legend class="people-filter__section-header">Транспорт</legend>
-              <button class="people-filter__btn" aria-label="Свернуть" type="button"></button>
-            </div>
-            <div class="people-filter__bottom-wrapper">
-              <ul class="people-filter__transport transport-list">
-                <li
-                  class="transport-list__item transport-list__item--catalog transport-list__item--plane transport-list__item--active">
-                </li>
-                <li
-                  class="transport-list__item transport-list__item--catalog transport-list__item--bus transport-list__item--active">
-                </li>
-                <li class="transport-list__item transport-list__item--catalog transport-list__item--bicycle"></li>
-                <li
-                  class="transport-list__item transport-list__item--catalog transport-list__item--onfoot transport-list__item--active">
-                </li>
-              </ul>
-            </div>
-          </fieldset>
-          <fieldset class="people-filter__section">
-            <div class="people-filter__top-wrapper">
-              <legend class="people-filter__section-header">Левел</legend>
-              <button class="people-filter__btn" aria-label="Свернуть" type="button"></button>
-            </div>
-            <div class="people-filter__range range">
-              <div class="range__inputs">
-                <input type="text" name="range-min" id="range-min" value="30" class="range__input range__input--min" />
-                <input type="text" name="range-max" id="range-max" value="100" class="range__input range__input--max" />
+      <div class="catalog__container">
+        <div class="catalog__filter">
+          <form action="https://echo.htmlacademy.ru" method="post" class="people-filter">
+            <h2 class="people-filter__header">Подберите идеального попутчика</h2>
+            <fieldset class="people-filter__section">
+              <div class="people-filter__top-wrapper">
+                <legend class="people-filter__section-header">Хобби</legend>
+                <button class="people-filter__btn people-filter__btn--open" aria-label="Свернуть"
+                  type="button"></button>
               </div>
-              <div class="range__block">
-                <div class="range__wrapper">
-                  <div class="range__line"></div>
-                  <div class="range__min-toggle" tabindex="0" aria-label="Минимальная цена"></div>
-                  <div class="range__max-toggle" tabindex="0" aria-label="Максимальная цена"></div>
-                </div>
-              </div>
-            </div>
-          </fieldset>
-          <button type="submit" class="people-filter__submit-btn">Показать</button>
-        </form>
-      </div>
-      <div class="catalog__travelmates people">
-        <div class="people__container">
-          <ul class="people__list">
-            <li class="people-card">
-              <img src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="Фото попутчика"
-                class="people-card__photo">
-              <div class="people-card__top-wrapper">
-                <span class="people-card__name">Таня Фирсова</span>
-                <button class="people-card__likes-btn" aria-label="Лайкнуть"></button>
-                <small class="people-card__likes">1,5 M</small>
-                <ul class="people-card__tags tag-list">
-                  <li>
-                    <a href="#" class="tag-list__item tag-list__item--catalog">#ЗОЖ</a>
+              <div class="people-filter__bottom-wrapper people-filter__bottom-wrapper--hobby">
+                <ul class="people-filter__list">
+                  <li class="people-filter__item">
+                    <input type="checkbox" checked name="hobby" id="sports">
+                    <label for="sports">Спортзал</label>
                   </li>
-                  <li>
-                    <a href="#" class="tag-list__item tag-list__item--catalog">#ПП</a>
+                  <li class="people-filter__item">
+                    <input type="checkbox" name="hobby" id="hookah">
+                    <label for="hookah">Кальян</label>
                   </li>
-                  <li>
-                    <a href="#" class="tag-list__item tag-list__item--catalog">#Фитнес</a>
-                  </li>
-                  <li>
-                    <a href="#" class="tag-list__item tag-list__item--catalog">#пляж</a>
-                  </li>
-                  <li>
-                    <a href="#" class="tag-list__item tag-list__item--catalog">#авокадо</a>
-                  </li>
-                  <li>
-                    <a href="#" class="tag-list__item tag-list__item--catalog">#смузи</a>
+                  <li class="people-filter__item">
+                    <input type="checkbox" name="hobby" id="sofa">
+                    <label for="sofa">Диван</label>
                   </li>
                 </ul>
-                <a href="#" class="people-card__invite-btn">Позвать!</a>
               </div>
-              <span class="people-card__text people-card__text--countries">хочет посетить:</span>
-              <ul class="people-card__countries">
-                <li class="people-card__country">
-                  <img src="img/Sri-Lanka.png" width="26" height="18" alt="Шри-Ланка">
-                  Шри Ланка</li>
-                <li class="people-card__country">
-                  <img src="img/Thailand.png" width="26" height="18" alt="Тайланд">
-                  Тайланд</li>
-                <li class="people-card__country">
-                  <img src="img/Seychelles.png" width="26" height="18" alt="Сейшелы">
-                  Сейшелы</li>
-              </ul>
-              <div class="people-card__bottom-wrapper">
-                <div>
-                  <span class="people-card__text people-card__text--transport">транспорт:</span>
-                  <ul class="people-card__transport-list transport-list">
-                    <li
-                      class="transport-list__item transport-list__item--catalog transport-list__item--plane transport-list__item--active">
-                    </li>
-                    <li class="transport-list__item transport-list__item--bus transport-list__item--catalog"></li>
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--bicycle"></li>
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--onfoot"></li>
-                  </ul>
-                </div>
-                <div class="people-card__level-wrapper">
-                  <span class="people-card__text people-card__text--level">левел:</span>
-                  <img src="http://placehold.it/45x45" style="border-radius: 50%" class="people-card__level">
-                </div>
+            </fieldset>
+            <fieldset class="people-filter__section">
+              <div class="people-filter__top-wrapper">
+                <legend class="people-filter__section-header">Музыка</legend>
+                <button class="people-filter__btn people-filter__btn" aria-label="Свернуть" type="button"></button>
               </div>
-            </li>
-            <li class="people-card">
-              <img src="img/demin-mobile@1x.jpg" width="70" height="70" alt="Фото попутчика" class="people-card__photo">
-              <div class="people-card__top-wrapper">
-                <span class="people-card__name">Петя Демин</span>
-                <button class="people-card__likes-btn" aria-label="Лайкнуть"></button>
-                <small class="people-card__likes">150</small>
-                <ul class="people-card__tags tag-list">
-                  <li>
-                    <a href="#" class="tag-list__item">#бургер</a>
+              <div class="people-filter__bottom-wrapper">
+                <ul class="people-filter__list">
+                  <li class="people-filter__item">
+                    <input type="checkbox" checked name="music" id="heavy">
+                    <label for="heavy">Тяжелый рок</label>
                   </li>
-                  <li>
-                    <a href="#" class="tag-list__item">#бар</a>
+                  <li class="people-filter__item">
+                    <input type="checkbox" name="music" id="rap">
+                    <label for="rap">Русский рэп</label>
                   </li>
-                  <li>
-                    <a href="#" class="tag-list__item">#футбол</a>
-                  </li>
-                  <li>
-                    <a href="#" class="tag-list__item">#концерт</a>
-                  </li>
-                  <li>
-                    <a href="#" class="tag-list__item">#крафт</a>
+                  <li class="people-filter__item">
+                    <input type="checkbox" name="music" id="eurodance">
+                    <label for="eurodance">Евроденс</label>
                   </li>
                 </ul>
-                <a href="#" class="people-card__invite-btn">Позвать!</a>
               </div>
-              <span class="people-card__text people-card__text--countries">хочет посетить:</span>
-              <ul class="people-card__countries">
-                <li class="people-card__country">
-                  <img src="img/Belgium.png" width="26" height="18" alt="Бельгия">
-                  Бельгия</li>
-                <li class="people-card__country">
-                  <img src="img/Czech.png" width="26" height="18" alt="Чехия">
-                  Чехия</li>
-              </ul>
-              <div class="people-card__bottom-wrapper">
-                <div>
-                  <span class="people-card__text people-card__text--transport">транспорт:</span>
-                  <ul class="people-card__transport-list transport-list">
-                    <li
-                      class="transport-list__item transport-list__item--catalog transport-list__item--plane transport-list__item--active">
-                    </li>
-                    <li class="transport-list__item transport-list__item--bus transport-list__item--catalog"></li>
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--bicycle"></li>
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--onfoot"></li>
-                  </ul>
-                </div>
-                <div class="people-card__level-wrapper">
-                  <span class="people-card__text people-card__text--level">левел:</span>
-                  <img src="http://placehold.it/45x45" style="border-radius: 50%" class="people-card__level">
-                </div>
+            </fieldset>
+            <fieldset class="people-filter__section">
+              <div class="people-filter__top-wrapper">
+                <legend class="people-filter__section-header">Еда</legend>
+                <button class="people-filter__btn people-filter__btn--open" aria-label="Свернуть"
+                  type="button"></button>
               </div>
-            </li>
-            <li class="people-card">
-              <img src="img/smolov-mobile@1x.jpg" width="70" height="70" alt="Фото попутчика"
-                class="people-card__photo">
-              <div class="people-card__top-wrapper">
-                <span class="people-card__name">Марк Смолов</span>
-                <button class="people-card__likes-btn" aria-label="Лайкнуть"></button>
-                <small class="people-card__likes">1700</small>
-                <ul class="people-card__tags tag-list">
-                  <li>
-                    <a href="#" class="tag-list__item">#рэп</a>
+              <div class="people-filter__bottom-wrapper people-filter__bottom-wrapper--food">
+                <ul class="people-filter__list">
+                  <li class="people-filter__item">
+                    <input type="checkbox" checked name="food" id="meat">
+                    <label for="meat">Мясоед</label>
                   </li>
-                  <li>
-                    <a href="#" class="tag-list__item">#тату</a>
+                  <li class="people-filter__item">
+                    <input type="checkbox" name="food" id="healthy">
+                    <label for="healthy">Сидит на ПП</label>
                   </li>
-                  <li>
-                    <a href="#" class="tag-list__item">#хайпбист</a>
-                  </li>
-                  <li>
-                    <a href="#" class="tag-list__item">#кроссовки</a>
-                  </li>
-                  <li>
-                    <a href="#" class="tag-list__item">#суприм</a>
+                  <li class="people-filter__item">
+                    <input type="checkbox" name="food" id="vegan">
+                    <label for="vegan">Веган-сыроед</label>
                   </li>
                 </ul>
-                <a href="#" class="people-card__invite-btn">Позвать!</a>
               </div>
-              <span class="people-card__text people-card__text--countries">хочет посетить:</span>
-              <ul class="people-card__countries">
-                <li class="people-card__country">
-                  <img src="img/USA.png" width="26" height="18" alt="США">
-                  США</li>
-                <li class="people-card__country">
-                  <img src="img/Australia.png" width="26" height="18" alt="Австралия">
-                  Австралия</li>
-                <li class="people-card__country">
-                  <img src="img/Dominica.png" width="26" height="18" alt="Доминикана">
-                  Доминикана</li>
-              </ul>
-              <div class="people-card__bottom-wrapper">
-                <div>
-                  <span class="people-card__text people-card__text--transport">транспорт:</span>
-                  <ul class="people-card__transport-list transport-list">
-                    <li
-                      class="transport-list__item transport-list__item--catalog transport-list__item--plane transport-list__item--active">
-                    </li>
-                    <li class="transport-list__item transport-list__item--bus transport-list__item--catalog"></li>
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--bicycle"></li>
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--onfoot"></li>
-                  </ul>
-                </div>
-                <div class="people-card__level-wrapper">
-                  <span class="people-card__text people-card__text--level">левел:</span>
-                  <img src="http://placehold.it/45x45" style="border-radius: 50%" class="people-card__level">
-                </div>
+            </fieldset>
+            <fieldset class="people-filter__section">
+              <div class="people-filter__top-wrapper">
+                <legend class="people-filter__section-header">Транспорт</legend>
+                <button class="people-filter__btn" aria-label="Свернуть" type="button"></button>
               </div>
-            </li>
-            <li class="people-card">
-              <img src="img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="Фото попутчика"
-                class="people-card__photo">
-              <div class="people-card__top-wrapper">
-                <span class="people-card__name">Лариса Роговая</span>
-                <button class="people-card__likes-btn" aria-label="Лайкнуть"></button>
-                <small class="people-card__likes">23</small>
-                <ul class="people-card__tags tag-list">
-                  <li>
-                    <a href="#" class="tag-list__item">#образование</a>
+              <div class="people-filter__bottom-wrapper">
+                <ul class="people-filter__transport transport-list">
+                  <li
+                    class="transport-list__item transport-list__item--catalog transport-list__item--plane transport-list__item--active">
                   </li>
-                  <li>
-                    <a href="#" class="tag-list__item">#карьера</a>
+                  <li
+                    class="transport-list__item transport-list__item--catalog transport-list__item--bus transport-list__item--active">
                   </li>
-                  <li>
-                    <a href="#" class="tag-list__item">#учеба</a>
-                  </li>
-                  <li>
-                    <a href="#" class="tag-list__item">#линкедин</a>
+                  <li class="transport-list__item transport-list__item--catalog transport-list__item--bicycle"></li>
+                  <li
+                    class="transport-list__item transport-list__item--catalog transport-list__item--onfoot transport-list__item--active">
                   </li>
                 </ul>
-                <a href="#" class="people-card__invite-btn">Позвать!</a>
               </div>
-              <span class="people-card__text people-card__text--countries">хочет посетить:</span>
-              <ul class="people-card__countries">
-                <li class="people-card__country">
-                  <img src="img/UK.png" width="26" height="18" alt="Великобритания">
-                  Великобритания</li>
-                <li class="people-card__country">
-                  <img src="img/Germany.png" width="26" height="18" alt="Германия">
-                  Германия</li>
-              </ul>
-              <div class="people-card__bottom-wrapper">
-                <div>
-                  <span class="people-card__text people-card__text--transport">транспорт:</span>
-                  <ul class="people-card__transport-list transport-list">
-                    <li
-                      class="transport-list__item transport-list__item--catalog transport-list__item--plane transport-list__item--active">
+            </fieldset>
+            <fieldset class="people-filter__section">
+              <div class="people-filter__top-wrapper">
+                <legend class="people-filter__section-header">Левел</legend>
+                <button class="people-filter__btn" aria-label="Свернуть" type="button"></button>
+              </div>
+              <div class="people-filter__range range">
+                <div class="range__inputs">
+                  <input type="text" name="range-min" id="range-min" value="30"
+                    class="range__input range__input--min" />
+                  <input type="text" name="range-max" id="range-max" value="100"
+                    class="range__input range__input--max" />
+                </div>
+                <div class="range__block">
+                  <div class="range__wrapper">
+                    <div class="range__line"></div>
+                    <div class="range__min-toggle" tabindex="0" aria-label="Минимальная цена"></div>
+                    <div class="range__max-toggle" tabindex="0" aria-label="Максимальная цена"></div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <button type="submit" class="people-filter__submit-btn">Показать</button>
+          </form>
+        </div>
+        <div class="catalog__travelmates people">
+          <div class="people__container">
+            <ul class="people__list">
+              <li class="people-card">
+                <img src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="Фото попутчика"
+                  class="people-card__photo">
+                <div class="people-card__top-wrapper">
+                  <span class="people-card__name">Таня Фирсова</span>
+                  <button class="people-card__likes-btn" aria-label="Лайкнуть"></button>
+                  <small class="people-card__likes">1,5 M</small>
+                  <ul class="people-card__tags tag-list">
+                    <li>
+                      <a href="#" class="tag-list__item tag-list__item--catalog">#ЗОЖ</a>
                     </li>
-                    <li class="transport-list__item transport-list__item--bus transport-list__item--catalog"></li>
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--bicycle"></li>
-                    <li class="transport-list__item transport-list__item--catalog transport-list__item--onfoot"></li>
+                    <li>
+                      <a href="#" class="tag-list__item tag-list__item--catalog">#ПП</a>
+                    </li>
+                    <li>
+                      <a href="#" class="tag-list__item tag-list__item--catalog">#Фитнес</a>
+                    </li>
+                    <li>
+                      <a href="#" class="tag-list__item tag-list__item--catalog">#пляж</a>
+                    </li>
+                    <li>
+                      <a href="#" class="tag-list__item tag-list__item--catalog">#авокадо</a>
+                    </li>
+                    <li>
+                      <a href="#" class="tag-list__item tag-list__item--catalog">#смузи</a>
+                    </li>
                   </ul>
+                  <a href="#" class="people-card__invite-btn">Позвать!</a>
                 </div>
-                <div class="people-card__level-wrapper">
-                  <span class="people-card__text people-card__text--level">левел:</span>
-                  <img src="http://placehold.it/45x45" style="border-radius: 50%" class="people-card__level">
+                <span class="people-card__text people-card__text--countries">хочет посетить:</span>
+                <ul class="people-card__countries">
+                  <li class="people-card__country">
+                    <img src="img/Sri-Lanka.png" width="26" height="18" alt="Шри-Ланка">
+                    Шри Ланка</li>
+                  <li class="people-card__country">
+                    <img src="img/Thailand.png" width="26" height="18" alt="Тайланд">
+                    Тайланд</li>
+                  <li class="people-card__country">
+                    <img src="img/Seychelles.png" width="26" height="18" alt="Сейшелы">
+                    Сейшелы</li>
+                </ul>
+                <div class="people-card__bottom-wrapper">
+                  <div>
+                    <span class="people-card__text people-card__text--transport">транспорт:</span>
+                    <ul class="people-card__transport-list transport-list">
+                      <li
+                        class="transport-list__item transport-list__item--catalog transport-list__item--plane transport-list__item--active">
+                      </li>
+                      <li class="transport-list__item transport-list__item--bus transport-list__item--catalog"></li>
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--bicycle"></li>
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--onfoot"></li>
+                    </ul>
+                  </div>
+                  <div class="people-card__level-wrapper">
+                    <span class="people-card__text people-card__text--level">левел:</span>
+                    <img src="http://placehold.it/45x45" style="border-radius: 50%" class="people-card__level">
+                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
-          <a class="people__more-btn" aria-label="Показать еще">Показать еще</a>
-          <ul class="people__nav catalog-nav">
-            <li><a href="#" class="catalog-nav__num catalog-nav__num--active">1</a></li>
-            <li><a href="#" class="catalog-nav__num">2</a></li>
-            <li><a href="#" class="catalog-nav__num">3</a></li>
-            <li><a href="#" class="catalog-nav__num">4</a></li>
-            <li class="catalog-nav__arrow catalog-nav__arrow--back">
-              <a class="catalog-nav__btn catalog-nav__btn--back" aria-label="Назад"></a>
-            </li>
-            <li class="catalog-nav__arrow">
-              <a class="catalog-nav__btn catalog-nav__btn--next" aria-label="Вперёд"></a>
-            </li>
-          </ul>
+              </li>
+              <li class="people-card">
+                <img src="img/demin-mobile@1x.jpg" width="70" height="70" alt="Фото попутчика"
+                  class="people-card__photo">
+                <div class="people-card__top-wrapper">
+                  <span class="people-card__name">Петя Демин</span>
+                  <button class="people-card__likes-btn" aria-label="Лайкнуть"></button>
+                  <small class="people-card__likes">150</small>
+                  <ul class="people-card__tags tag-list">
+                    <li>
+                      <a href="#" class="tag-list__item">#бургер</a>
+                    </li>
+                    <li>
+                      <a href="#" class="tag-list__item">#бар</a>
+                    </li>
+                    <li>
+                      <a href="#" class="tag-list__item">#футбол</a>
+                    </li>
+                    <li>
+                      <a href="#" class="tag-list__item">#концерт</a>
+                    </li>
+                    <li>
+                      <a href="#" class="tag-list__item">#крафт</a>
+                    </li>
+                  </ul>
+                  <a href="#" class="people-card__invite-btn">Позвать!</a>
+                </div>
+                <span class="people-card__text people-card__text--countries">хочет посетить:</span>
+                <ul class="people-card__countries">
+                  <li class="people-card__country">
+                    <img src="img/Belgium.png" width="26" height="18" alt="Бельгия">
+                    Бельгия</li>
+                  <li class="people-card__country">
+                    <img src="img/Czech.png" width="26" height="18" alt="Чехия">
+                    Чехия</li>
+                </ul>
+                <div class="people-card__bottom-wrapper">
+                  <div>
+                    <span class="people-card__text people-card__text--transport">транспорт:</span>
+                    <ul class="people-card__transport-list transport-list">
+                      <li
+                        class="transport-list__item transport-list__item--catalog transport-list__item--plane transport-list__item--active">
+                      </li>
+                      <li class="transport-list__item transport-list__item--bus transport-list__item--catalog"></li>
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--bicycle"></li>
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--onfoot"></li>
+                    </ul>
+                  </div>
+                  <div class="people-card__level-wrapper">
+                    <span class="people-card__text people-card__text--level">левел:</span>
+                    <img src="http://placehold.it/45x45" style="border-radius: 50%" class="people-card__level">
+                  </div>
+                </div>
+              </li>
+              <li class="people-card">
+                <img src="img/smolov-mobile@1x.jpg" width="70" height="70" alt="Фото попутчика"
+                  class="people-card__photo">
+                <div class="people-card__top-wrapper">
+                  <span class="people-card__name">Марк Смолов</span>
+                  <button class="people-card__likes-btn" aria-label="Лайкнуть"></button>
+                  <small class="people-card__likes">1700</small>
+                  <ul class="people-card__tags tag-list">
+                    <li>
+                      <a href="#" class="tag-list__item">#рэп</a>
+                    </li>
+                    <li>
+                      <a href="#" class="tag-list__item">#тату</a>
+                    </li>
+                    <li>
+                      <a href="#" class="tag-list__item">#хайпбист</a>
+                    </li>
+                    <li>
+                      <a href="#" class="tag-list__item">#кроссовки</a>
+                    </li>
+                    <li>
+                      <a href="#" class="tag-list__item">#суприм</a>
+                    </li>
+                  </ul>
+                  <a href="#" class="people-card__invite-btn">Позвать!</a>
+                </div>
+                <span class="people-card__text people-card__text--countries">хочет посетить:</span>
+                <ul class="people-card__countries">
+                  <li class="people-card__country">
+                    <img src="img/USA.png" width="26" height="18" alt="США">
+                    США</li>
+                  <li class="people-card__country">
+                    <img src="img/Australia.png" width="26" height="18" alt="Австралия">
+                    Австралия</li>
+                  <li class="people-card__country">
+                    <img src="img/Dominica.png" width="26" height="18" alt="Доминикана">
+                    Доминикана</li>
+                </ul>
+                <div class="people-card__bottom-wrapper">
+                  <div>
+                    <span class="people-card__text people-card__text--transport">транспорт:</span>
+                    <ul class="people-card__transport-list transport-list">
+                      <li
+                        class="transport-list__item transport-list__item--catalog transport-list__item--plane transport-list__item--active">
+                      </li>
+                      <li class="transport-list__item transport-list__item--bus transport-list__item--catalog"></li>
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--bicycle"></li>
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--onfoot"></li>
+                    </ul>
+                  </div>
+                  <div class="people-card__level-wrapper">
+                    <span class="people-card__text people-card__text--level">левел:</span>
+                    <img src="http://placehold.it/45x45" style="border-radius: 50%" class="people-card__level">
+                  </div>
+                </div>
+              </li>
+              <li class="people-card">
+                <img src="img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="Фото попутчика"
+                  class="people-card__photo">
+                <div class="people-card__top-wrapper">
+                  <span class="people-card__name">Лариса Роговая</span>
+                  <button class="people-card__likes-btn" aria-label="Лайкнуть"></button>
+                  <small class="people-card__likes">23</small>
+                  <ul class="people-card__tags tag-list">
+                    <li>
+                      <a href="#" class="tag-list__item">#образование</a>
+                    </li>
+                    <li>
+                      <a href="#" class="tag-list__item">#карьера</a>
+                    </li>
+                    <li>
+                      <a href="#" class="tag-list__item">#учеба</a>
+                    </li>
+                    <li>
+                      <a href="#" class="tag-list__item">#линкедин</a>
+                    </li>
+                  </ul>
+                  <a href="#" class="people-card__invite-btn">Позвать!</a>
+                </div>
+                <span class="people-card__text people-card__text--countries">хочет посетить:</span>
+                <ul class="people-card__countries">
+                  <li class="people-card__country">
+                    <img src="img/UK.png" width="26" height="18" alt="Великобритания">
+                    Великобритания</li>
+                  <li class="people-card__country">
+                    <img src="img/Germany.png" width="26" height="18" alt="Германия">
+                    Германия</li>
+                </ul>
+                <div class="people-card__bottom-wrapper">
+                  <div>
+                    <span class="people-card__text people-card__text--transport">транспорт:</span>
+                    <ul class="people-card__transport-list transport-list">
+                      <li
+                        class="transport-list__item transport-list__item--catalog transport-list__item--plane transport-list__item--active">
+                      </li>
+                      <li class="transport-list__item transport-list__item--bus transport-list__item--catalog"></li>
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--bicycle"></li>
+                      <li class="transport-list__item transport-list__item--catalog transport-list__item--onfoot"></li>
+                    </ul>
+                  </div>
+                  <div class="people-card__level-wrapper">
+                    <span class="people-card__text people-card__text--level">левел:</span>
+                    <img src="http://placehold.it/45x45" style="border-radius: 50%" class="people-card__level">
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <a class="people__more-btn" aria-label="Показать еще">Показать еще</a>
+            <ul class="people__nav catalog-nav">
+              <li><a href="#" class="catalog-nav__num catalog-nav__num--active">1</a></li>
+              <li><a href="#" class="catalog-nav__num">2</a></li>
+              <li><a href="#" class="catalog-nav__num">3</a></li>
+              <li><a href="#" class="catalog-nav__num">4</a></li>
+              <li class="catalog-nav__arrow catalog-nav__arrow--back">
+                <a class="catalog-nav__btn catalog-nav__btn--back" aria-label="Назад"></a>
+              </li>
+              <li class="catalog-nav__arrow">
+                <a class="catalog-nav__btn catalog-nav__btn--next" aria-label="Вперёд"></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -720,6 +727,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -15,6 +15,32 @@
         <a href="index.html" class="page-header__logo">
           <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип">
         </a>
+        <div class="page-header__menu-wrapper menu">
+          <nav>
+            <ul class="menu__nav site-list">
+              <li><a href="#" class="site-list__item">О сервисе</a></li>
+              <li><a href="form.html" class="site-list__item">Направления</a></li>
+              <li><a href="catalog.html" class="site-list__item">Попутчики</a></li>
+            </ul>
+          </nav>
+          <a href="#" class="menu__auth-btn">Авторизация</a>
+          <a href="#" class="menu__contacts menu__contacts--phone">8 800 555-86-28</a>
+          <a href="#" class="menu__contacts menu__contacts--email">mail@htmlacademy.ru</a>
+          <ul class="menu__socials header-socials">
+            <li>
+              <a href="#" class="header-socials__item header-socials__item--fb"><span
+                  class="visually-hidden">Facebook</span></a>
+            </li>
+            <li>
+              <a href="#" class="header-socials__item header-socials__item--vk"><span
+                  class="visually-hidden">Vkontakte</span></a>
+            </li>
+            <li>
+              <a href="#" class="header-socials__item header-socials__item--inst"><span
+                  class="visually-hidden">Instagram</span></a>
+            </li>
+          </ul>
+        </div>
         <button aria-label="Меню" class="page-header__menu-btn"></button>
         <ul class="page-header__actions user-actions">
           <li class="user-actions__item">
@@ -29,32 +55,6 @@
         </ul>
       </div>
       <h1 class="page-header__header">Направления</h1>
-    </div>
-    <div class="page-header__menu-wrapper menu">
-      <nav>
-        <ul class="menu__nav site-list">
-          <li><a href="#" class="site-list__item">О сервисе</a></li>
-          <li><a href="form.html" class="site-list__item">Направления</a></li>
-          <li><a href="catalog.html" class="site-list__item">Попутчики</a></li>
-        </ul>
-      </nav>
-      <a href="#" class="menu__auth-btn">Авторизация</a>
-      <a href="#" class="menu__contacts menu__contacts--phone">8 800 555-86-28</a>
-      <a href="#" class="menu__contacts menu__contacts--email">mail@htmlacademy.ru</a>
-      <ul class="menu__socials header-socials">
-        <li>
-          <a href="#" class="header-socials__item header-socials__item--fb"><span
-              class="visually-hidden">Facebook</span></a>
-        </li>
-        <li>
-          <a href="#" class="header-socials__item header-socials__item--vk"><span
-              class="visually-hidden">Vkontakte</span></a>
-        </li>
-        <li>
-          <a href="#" class="header-socials__item header-socials__item--inst"><span
-              class="visually-hidden">Instagram</span></a>
-        </li>
-      </ul>
     </div>
   </header>
   <main>
@@ -120,6 +120,11 @@
     <section class="add-plan border-top-radius border-top-radius--form">
       <div class="add-plan__container">
         <h2 class="add-plan__header">Добавить план:</h2>
+        <ul class="steps__step-list steps__step-list--mobile">
+          <li class="steps__step-active">Даты</li>
+          <li>Маршрут</li>
+          <li>Развлечения</li>
+        </ul>
         <div class="steps steps--step1">
           <h3 class="steps__header">Шаг 1. <br>Даты пребывания</h3>
           <p class="steps__text">Укажите предпочтительное количество попутчиков, которых
@@ -270,6 +275,51 @@
                 <button class="countries-select__dropdown-btn" aria-label="Выбрать страну"></button>
                 <button class="countries-select__clear-btn" aria-label="Сбросить выбор"></button>
               </div>
+              <div class="countries-select__modal-wrapper">
+                <div class="countries-select__letters letters letters--modal">
+                  <input type="radio" name="letters" id="l1" checked><label for="l1" class="letters__item">а</label>
+                  <input type="radio" name="letters" id="l2"><label for="l2" class="letters__item">б</label>
+                  <input type="radio" name="letters" id="l3"><label for="l3" class="letters__item">в</label>
+                  <input type="radio" name="letters" id="l4"><label for="l4" class="letters__item">г</label>
+                  <input type="radio" name="letters" id="l5"><label for="l5" class="letters__item">д</label>
+                  <input type="radio" name="letters" id="l6"><label for="l6" class="letters__item">е</label>
+                  <input type="radio" name="letters" id="l7"><label for="l7" class="letters__item">ё</label>
+                  <input type="radio" name="letters" id="l8"><label for="l8" class="letters__item">ж</label>
+                  <input type="radio" name="letters" id="l9"><label for="l9" class="letters__item">з</label>
+                  <input type="radio" name="letters" id="l10"><label for="l10" class="letters__item">и</label>
+                  <input type="radio" name="letters" id="l11"><label for="l11" class="letters__item">й</label>
+                  <input type="radio" name="letters" id="l12"><label for="l12" class="letters__item">к</label>
+                  <input type="radio" name="letters" id="l13"><label for="l13" class="letters__item">л</label>
+                  <input type="radio" name="letters" id="l14"><label for="l14" class="letters__item">м</label>
+                  <input type="radio" name="letters" id="l15"><label for="l15" class="letters__item">н</label>
+                  <input type="radio" name="letters" id="l16"><label for="l16" class="letters__item">о</label>
+                  <input type="radio" name="letters" id="l17"><label for="l17" class="letters__item">п</label>
+                  <input type="radio" name="letters" id="l18"><label for="l18" class="letters__item">р</label>
+                  <input type="radio" name="letters" id="l19"><label for="l19" class="letters__item">с</label>
+                  <input type="radio" name="letters" id="l20"><label for="l20" class="letters__item">т</label>
+                  <input type="radio" name="letters" id="l21"><label for="l21" class="letters__item">у</label>
+                  <input type="radio" name="letters" id="l22"><label for="l22" class="letters__item">ф</label>
+                  <input type="radio" name="letters" id="l23"><label for="l23" class="letters__item">х</label>
+                  <input type="radio" name="letters" id="l24"><label for="l24" class="letters__item">ц</label>
+                  <input type="radio" name="letters" id="l25"><label for="l25" class="letters__item">ч</label>
+                  <input type="radio" name="letters" id="l26"><label for="l26" class="letters__item">ш</label>
+                  <input type="radio" name="letters" id="l27"><label for="l27" class="letters__item">щ</label>
+                  <input type="radio" name="letters" id="l28"><label for="l28" class="letters__item">э</label>
+                  <input type="radio" name="letters" id="l29"><label for="l29" class="letters__item">ю</label>
+                  <input type="radio" name="letters" id="l30"><label for="l30" class="letters__item">я</label>
+                </div>
+                <ul class="countries-select__list">
+                  <li class="countries-lists__item">Афганистан</li>
+                  <li class="countries-lists__item">Албания</li>
+                  <li class="countries-lists__item">Алгерия</li>
+                  <li class="countries-lists__item">Андорра</li>
+                  <li class="countries-lists__item">Аргентина</li>
+                  <li class="countries-lists__item">Армения</li>
+                  <li class="countries-lists__item">Австралия</li>
+                  <li class="countries-lists__item">Австрия</li>
+                  <li class="countries-lists__item">Азербайджан</li>
+                </ul>
+              </div>
             </li>
             <li class="countries-select__item">
               <div class="countries-select__dropdown countries-select__dropdown--add">
@@ -337,6 +387,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
