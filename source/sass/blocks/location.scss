@@ -1,0 +1,140 @@
+.location {
+  position: relative;
+  background-color: #ffd74b;
+  margin-top: -30px;
+  padding-top: 62px;
+  padding-bottom: 30px;
+  z-index: 1;
+}
+
+.location__container {
+  width: 84.376%;
+  margin: 0 auto;
+}
+
+.location__address {
+  position: relative;
+  font-weight: 700;
+  color: #192144;
+  font-style: normal;
+  text-transform: uppercase;
+  width: 200px;
+  margin-left: 60px;
+  margin-bottom: 31px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/contacts-location.svg");
+    background-repeat: no-repeat;
+    background-size: 14px 22px;
+    background-position: center;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-color: #121936;
+    top: -2px;
+    left: -60px;
+  }
+}
+
+.location__route-btn {
+  position: relative;
+  border: 3px solid #192144;
+  border-radius: 10px;
+  height: 66px;
+  width: 100%;
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #1d2e5b;
+  text-align: left;
+  padding-left: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 20px;
+    background-image: url("../../img/triangle-arrow-right.svg");
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 14px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .location {
+    margin-top: -55px;
+    padding-top: 122px;
+    padding-bottom: 83px;
+  }
+
+  .location__container {
+    width: 89.6%;
+    padding: 0;
+  }
+
+  .location__address {
+    width: fit-content;
+    margin-left: 18.5%;
+    margin-bottom: 59px;
+
+    &::before {
+      width: 68px;
+      height: 68px;
+      top: -20px;
+      left: -91px;
+      background-size: 21px 32px;
+    }
+  }
+
+  .location__route-btn {
+    border-radius: 20px;
+    width: 622px;
+    height: 81px;
+    margin-left: 5%;
+    font-size: 24px;
+    line-height: 24px;
+    padding-left: 32px;
+    color: #192144;
+
+    &::after {
+      top: 31px;
+      right: 37px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location {
+    padding-top: 115px;
+    padding-bottom: 25px;
+  }
+
+  .location__container {
+    width: 1320px;
+    display: flex;
+    align-items: baseline;
+  }
+
+  .location__address {
+    margin-left: 345px;
+    margin-right: 147px;
+
+    &::before {
+      width: 90px;
+      height: 90px;
+      top: -30px;
+      left: -121px;
+      background-size: 28px 43px;
+    }
+  }
+
+  .location__route-btn {
+    width: 325px;
+    height: 80px;
+    margin: 0;
+  }
+}

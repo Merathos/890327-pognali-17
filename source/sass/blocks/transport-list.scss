@@ -4,29 +4,45 @@
 }
 
 .transport-list__item {
-  margin-right: 15px;
-}
-
-.transport-list__item--plane {
-  width: 19px;
-  height: 21px;
-  background: url("../../img/plane.svg") no-repeat;
-}
-
-.transport-list__item--bus {
-  width: 17px;
-  height: 21px;
-  background: url("../../img/bus.svg") no-repeat;
-}
-
-.transport-list__item--bicycle {
   width: 24px;
-  height: 21px;
-  background: url("../../img/bike.svg") no-repeat;
+  height: 24px;
+  margin-right: 13px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--plane {
+    background-image: url("../../img/plane.svg");
+    background-size: 19px 21px;
+  }
+
+  &--bus {
+    background-image: url("../../img/bus.svg");
+    background-size: 17px 21px;
+  }
+
+  &--bicycle {
+    background-image: url("../../img/bike.svg");
+    background-size: 24px 21px;
+  }
+
+  &--onfoot {
+    background-image: url("../../img/run.svg");
+    background-size: 20px 21px;
+  }
+
+  &--catalog {
+    border-radius: 50%;
+    width: 33px;
+    height: 32px;
+    background-color: #edeff6;
+    background-size: 42%;
+    margin-right: 0;
+  }
 }
 
-.transport-list__item--onfoot {
-  width: 20px;
-  height: 21px;
-  background: url("../../img/run.svg") no-repeat;
+@media (min-width: $tablet-width) and (max-width: 1439px) {
+  .transport-list__item {
+    width: 43px;
+    height: 43px;
+  }
 }

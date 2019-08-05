@@ -1,6 +1,6 @@
 .people {
   background-color: $bg-lightgrey;
-  padding-top: 20px;
+  padding-top: 28px;
   padding-bottom: 50px;
 }
 
@@ -11,9 +11,12 @@
 
 .people__list {
   @include reset-list;
+  margin-bottom: 28px;
 }
 
 .people__more-btn {
+  display: block;
+  position: relative;
   border: none;
   background-color: transparent;
   font-size: 17px;
@@ -21,4 +24,79 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #1d2e5b;
+  padding-left: 40px;
+  margin-left: 20%;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 4px;
+    width: 18px;
+    height: 18px;
+    background: url("../../img/show-more-plus.svg") no-repeat;
+    background-position: center;
+  }
+}
+
+.people__nav {
+  width: 272px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .people {
+    padding-top: 40px;
+  }
+
+  .people__container {
+    width: 688px;
+  }
+
+  .people__list {
+    margin-bottom: 47px;
+  }
+
+  .people__more-btn {
+    width: fit-content;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 auto;
+    margin-bottom: 46px;
+
+    &::before {
+      width: 27px;
+      height: 27px;
+      left: -10px;
+      top: -2px;
+    }
+  }
+
+  .people__nav {
+    width: 688px;
+    align-items: center;
+    margin-bottom: 73px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .people__container {
+    width: 950px;
+  }
+
+  .people__list {
+    margin-bottom: 67px;
+  }
+
+  .people__more-btn {
+    margin-left: 355px;
+    margin-bottom: 67px;
+  }
+
+  .people__nav {
+    width: 950px;
+    margin-bottom: 86px;
+  }
 }

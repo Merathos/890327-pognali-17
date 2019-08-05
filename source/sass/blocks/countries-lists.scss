@@ -1,0 +1,203 @@
+.countries-lists {
+  margin-left: 26px;
+}
+
+.countries-lists__list {
+  @include reset-list;
+  display: none;
+}
+
+.countries-lists__list--l1 {
+  display: block;
+}
+
+.countries-lists__item {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .countries-lists {
+    margin-left: 65px;
+    margin-top: 43px;
+  }
+
+  .countries-lists__item {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .countries-lists {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 32px;
+  }
+
+  .countries-lists__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 200px;
+    padding-top: 75px;
+    margin-bottom: 65px;
+
+    &::before {
+      content: "A";
+      position: absolute;
+      font-size: 60px;
+      line-height: 24px;
+      font-weight: 700;
+      color: #192144;
+      top: 18px;
+      left: 0;
+    }
+
+    &--l2 {
+      &::before {
+        content: "Б";
+      }
+    }
+
+    &--l3 {
+      &::before {
+        content: "В";
+      }
+    }
+
+    &--l4 {
+      &::before {
+        content: "Г";
+      }
+    }
+
+    &--l5 {
+      &::before {
+        content: "Д";
+      }
+    }
+
+    &--l6 {
+      &::before {
+        content: "Е";
+      }
+    }
+
+    &--l9 {
+      &::before {
+        content: "З";
+      }
+    }
+
+    &--l10 {
+      &::before {
+        content: "И";
+      }
+    }
+
+    &--l12 {
+      &::before {
+        content: "К";
+      }
+    }
+
+    &--l13 {
+      &::before {
+        content: "Л";
+      }
+    }
+
+    &--l14 {
+      &::before {
+        content: "М";
+      }
+    }
+
+    &--l15 {
+      &::before {
+        content: "Н";
+      }
+    }
+
+    &--l16 {
+      &::before {
+        content: "О";
+      }
+    }
+
+    &--l17 {
+      &::before {
+        content: "П";
+      }
+    }
+
+    &--l19 {
+      &::before {
+        content: "С";
+      }
+    }
+
+    &--l20 {
+      &::before {
+        content: "Т";
+      }
+    }
+
+    &--l21 {
+      &::before {
+        content: "У";
+      }
+    }
+
+    &--l22 {
+      &::before {
+        content: "Ф";
+      }
+    }
+
+    &--l23 {
+      &::before {
+        content: "Х";
+      }
+    }
+
+    &--l25 {
+      &::before {
+        content: "Ч";
+      }
+    }
+
+    &--l26 {
+      &::before {
+        content: "Ш";
+      }
+    }
+
+    &--l28 {
+      &::before {
+        content: "Э";
+      }
+    }
+
+    &--l29 {
+      &::before {
+        content: "Ю";
+      }
+    }
+
+    &--l30 {
+      &::before {
+        content: "Я";
+      }
+    }
+  }
+
+  .countries-lists__list:not(:nth-child(6n)) {
+    margin-right: 9px;
+  }
+}

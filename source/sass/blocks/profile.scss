@@ -1,0 +1,266 @@
+.profile {
+  background-color: #edeff6;
+  padding-top: 52px;
+  padding-bottom: 60px;
+  margin-top: -30px;
+}
+
+.profile__container {
+  width: 270px;
+  margin: 0 auto;
+}
+
+.profile__level {
+  border-radius: 50%;
+  margin-left: 22px;
+  margin-right: 32px;
+  margin-bottom: 16px;
+}
+
+.profile__photo {
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.profile__photo-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 270px;
+  height: 40px;
+  border: none;
+  background-color: #dfe3f0;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #161c35;
+  margin-bottom: 30px;
+}
+
+.profile__btn-text--desktop {
+  display: none;
+}
+
+.profile__tags {
+  position: relative;
+  width: 270px;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+  padding: 23px 25px;
+  padding-bottom: 20px;
+  margin-bottom: 26px;
+}
+
+.profile__header {
+  position: absolute;
+  top: -23px;
+  left: 97px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  z-index: 2;
+  background-color: #edeff6;
+  padding: 0 19px;
+
+  &--transport {
+    top: -24px;
+    left: 74px;
+  }
+}
+
+.profile__tag-list {
+  justify-content: flex-start;
+}
+
+.profile__transport {
+  position: relative;
+  width: 270px;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+  padding: 14px 25px;
+}
+
+.profile__transport-list {
+  justify-content: center;
+
+  li {
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+    background-color: #ffffff;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .profile {
+    margin-top: -55px;
+    padding-top: 119px;
+    padding-bottom: 120px;
+  }
+
+  .profile__container {
+    width: 89.6%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .profile__level {
+    order: 1;
+    margin-left: 37px;
+    width: 90px;
+    height: 90px;
+  }
+
+  .profile__header {
+    font-size: 20px;
+    line-height: 18px;
+    top: 66px;
+    left: 263px;
+    letter-spacing: 0.07em;
+
+    &--transport {
+      top: 65px;
+      left: 77px;
+    }
+  }
+
+  .profile__transport {
+    order: 2;
+    width: 308px;
+    margin-left: 30px;
+    margin-bottom: 22px;
+    padding: 24px 40px;
+    padding-left: 50px;
+    margin-right: 63px;
+  }
+
+  .profile__transport-list {
+    li {
+      width: 43px;
+      height: 43px;
+      margin-right: 8px;
+    }
+  }
+
+  .profile__photo {
+    order: 3;
+    border-radius: 10px;
+    width: 94px;
+    height: 94px;
+  }
+
+  .profile__photo-btn {
+    order: 4;
+    width: 618px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 50px;
+  }
+
+  .profile__tags {
+    order: 5;
+    margin: 0 auto;
+    width: 618px;
+    padding: 28px 39px;
+    padding-bottom: 31px;
+  }
+
+  .profile__tag-list {
+    width: 100%;
+
+    li {
+      margin-right: 3px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .profile {
+    padding-top: 0;
+    margin-top: -190px;
+    padding-bottom: 105px;
+  }
+
+  .profile__container {
+    width: 1320px;
+  }
+
+  .profile__level {
+    order: 1;
+    margin-left: 897px;
+    margin-top: 46px;
+    margin-right: 48px;
+    z-index: 5;
+  }
+
+  .profile__photo {
+    order: 2;
+    width: 190px;
+    height: 190px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 0;
+    z-index: 5;
+  }
+
+  .profile__photo-btn {
+    order: 3;
+    width: 190px;
+    height: 47px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-left: 1035px;
+    margin-top: 0;
+    margin-bottom: 27px;
+  }
+
+  .profile__tags {
+    width: 730px;
+    order: 4;
+    margin-left: 64px;
+    padding-top: 35px;
+    padding-bottom: 0;
+    margin-bottom: 21px;
+    margin-right: 112px;
+  }
+
+  .profile__header {
+    left: 18px;
+
+    &--transport {
+      left: 115px;
+    }
+  }
+
+  .profile__transport {
+    order: 5;
+    margin-right: 0;
+    width: 384px;
+    padding-left: 47px;
+  }
+
+  .profile__transport-list {
+    li {
+      margin-right: 0;
+    }
+  }
+
+  .profile__btn-text {
+    display: none;
+
+    &--desktop {
+      display: inline-block;
+    }
+  }
+}

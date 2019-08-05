@@ -9,6 +9,7 @@
 }
 
 .travelmate-card__footer {
+  width: 270px;
   position: relative;
   padding-top: 25px;
   border-bottom-left-radius: 10px;
@@ -37,7 +38,7 @@
   line-height: 21px;
   color: #1d2e5b;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .travelmate-card__tags {
@@ -46,4 +47,47 @@
 
 .travelmate-card__transport {
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .travelmate-card__footer {
+    width: 285px;
+    height: 197px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .travelmate-card__photo {
+    width: 285px;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .travelmate-card__name {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .travelmate-card {
+    margin-right: 60px;
+  }
+
+  .travelmate-card__footer {
+    padding-top: 32px;
+  }
+
+  .travelmate-card__name {
+    margin-bottom: 20px;
+  }
+
+  .travelmate-card__tags {
+    margin-bottom: 23px;
+  }
+
+  .travelmate-card__transport {
+    margin-left: 15px;
+  }
 }

@@ -1,0 +1,66 @@
+.plans {
+  background-color: #dfe3f0;
+  margin-top: -27px;
+  padding-top: 29px;
+  padding-bottom: 52px;
+}
+
+.plans__container {
+  width: 270px;
+  margin: 0 auto;
+}
+
+.plans__header {
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #1d2e5b;
+  margin-bottom: 29px;
+}
+
+.plans__list {
+  @include reset-list;
+}
+
+@media (min-width: $tablet-width) {
+  .plans {
+    margin-top: -60px;
+    padding-top: 50px;
+    padding-bottom: 122px;
+  }
+
+  .plans__container {
+    width: 89.6%;
+  }
+
+  .plans__header {
+    font-size: 36px;
+    line-height: 50px;
+    margin-left: 5.1%;
+    margin-bottom: 41px;
+  }
+
+  .plans__list {
+    margin-left: 5.1%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .plans {
+    padding-top: 48px;
+    padding-bottom: 105px;
+  }
+
+  .plans__container {
+    width: 1320px;
+  }
+
+  .plans__header {
+    margin-left: 70px;
+  }
+
+  .plans__list {
+    margin-left: 65px;
+  }
+}

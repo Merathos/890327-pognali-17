@@ -1,17 +1,24 @@
 .people-card {
+  position: relative;
+  width: 270px;
   border-radius: 20px;
   background-color: #ffffff;
-  margin-bottom: 10px;
-  min-height: 415px;
+  margin-bottom: 11px;
+  padding-bottom: 76px;
 }
 
 .people-card__photo {
   border-radius: 50%;
+  float: left;
+  margin-left: 18px;
+  margin-top: 16px;
 }
 
 .people-card__tags {
   justify-content: flex-start;
   margin-left: 25px;
+  margin-top: 3px;
+  margin-bottom: 9px;
 }
 
 .people-card__name {
@@ -21,20 +28,67 @@
   line-height: 20px;
   font-weight: 700;
   color: #1d2e5b;
+  margin-top: 16px;
+  margin-right: 50px;
+  margin-left: 15px;
 }
 
 .people-card__likes {
+  position: relative;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
   color: #161c35;
+  top: -11px;
+  left: -20px;
 }
 
 .people-card__text {
   font-size: 15px;
-  line-height: 18px;
+  line-height: 15px;
   font-weight: 400;
   color: #444444;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &::before,
+  &::after {
+    content: "";
+    border-top: 1px solid #edeff6;
+    margin: 0 12px 0 0;
+    flex: 1 0 15px;
+  }
+
+  &::before {
+    flex-grow: 0;
+  }
+
+  &::after {
+    margin: 0 0 0 12px;
+  }
+
+  &--countries {
+    margin-bottom: 13px;
+  }
+
+  &--transport {
+    margin-bottom: 14px;
+  }
+
+  &--level {
+    &::before {
+      flex-basis: 49px;
+    }
+  }
+}
+
+.people-card__countries {
+  @include reset-list;
+  margin-left: 25px;
+  margin-bottom: 12px;
 }
 
 .people-card__country {
@@ -43,9 +97,19 @@
   font-weight: 500;
   color: #1d2e5b;
   text-transform: uppercase;
+  margin-bottom: 4px;
+
+  img {
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+  }
 }
 
 .people-card__invite-btn {
+  position: absolute;
+  bottom: 22px;
+  left: 20px;
   display: flex;
   border-radius: 20px;
   align-items: center;
@@ -59,4 +123,261 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #161c35;
+}
+
+.people-card__likes-btn {
+  position: relative;
+  border-radius: 50%;
+  width: 31px;
+  height: 31px;
+  border: none;
+  background-color: #f9eaea;
+  background-image: url("../../img/heart-active.svg");
+  background-repeat: no-repeat;
+  background-size: 13px 11px;
+  background-position: center;
+  top: -2px;
+  left: -21px;
+}
+
+.people-card__transport-list {
+  margin-left: 24px;
+}
+
+.people-card__bottom-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.people-card__level-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.people-card__level {
+  margin-left: 48px;
+  margin-top: 9px;
+}
+
+@media (min-width: $tablet-width) {
+  .people-card {
+    width: 688px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+  }
+
+  .people-card:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .people-card__name {
+    width: 400px;
+    font-size: 30px;
+    line-height: 30px;
+    margin-left: 33px;
+    margin-top: 33px;
+    flex-shrink: 0;
+  }
+
+  .people-card__photo {
+    width: 190px;
+    height: 190px;
+    border-radius: 20px;
+    margin-left: 34px;
+    margin-top: 34px;
+  }
+
+  .people-card__text {
+    &--countries {
+      order: 3;
+      margin-top: 25px;
+
+      &::before {
+        flex-basis: 71px;
+      }
+    }
+
+    &--transport {
+      display: none;
+    }
+
+    &--level {
+      display: none;
+    }
+  }
+
+  .people-card__top-wrapper {
+    width: 290px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+  }
+
+  .people-card__tags {
+    margin-left: 36px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 230px;
+
+    li {
+      margin-right: 1px;
+      height: 25px;
+    }
+  }
+
+  .people-card__likes-btn {
+    order: 4;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-size: 20px 17px;
+  }
+
+  .people-card__likes {
+    order: 5;
+    width: fit-content;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 12px;
+    margin-left: 8px;
+  }
+
+  .people-card__bottom-wrapper {
+    order: 2;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 35px;
+    margin-top: 25px;
+  }
+
+  .people-card__countries {
+    order: 4;
+    display: flex;
+    margin: 0;
+    margin-top: 2px;
+    margin-left: 35px;
+  }
+
+  .people-card__transport-list {
+    flex-direction: column;
+
+    .transport-list__item {
+      background-color: transparent;
+      margin-bottom: -8px;
+    }
+  }
+
+  .people-card__level {
+    margin-left: 23px;
+  }
+
+  .people-card__invite-btn {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 148px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 30px;
+    margin-left: 30px;
+  }
+
+  .people-card__country {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 28px;
+
+    img {
+      width: 35px;
+      height: 24px;
+      margin-right: 6px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .people-card {
+    width: 950px;
+    padding-bottom: 0;
+  }
+
+  .people-card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .people-card__photo {
+    width: 285px;
+    height: 285px;
+    margin: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .people-card__name {
+    margin-left: 59px;
+    margin-top: 48px;
+  }
+
+  .people-card__tags {
+    margin-top: -25px;
+    margin-left: 62px;
+    width: 240px;
+    flex-shrink: 0;
+    margin-bottom: -2px;
+    height: 50px;
+  }
+
+  .people-card__transport-list {
+    flex-direction: row;
+    margin: 0;
+    position: relative;
+    left: -48px;
+
+    li {
+      width: 47px;
+      height: 47px;
+      margin-right: -10px;
+    }
+  }
+
+  .people-card__top-wrapper {
+    width: 354px;
+  }
+
+  .people-card__bottom-wrapper {
+    flex-direction: row;
+    order: 4;
+    margin-top: -93px;
+  }
+
+  .people-card__text {
+    &--countries {
+      display: none;
+    }
+  }
+
+  .people-card__invite-btn {
+    width: 148px;
+    margin-left: 55px;
+  }
+
+  .people-card__countries {
+    flex-direction: column;
+    height: 200px;
+    margin-top: 46px;
+
+    img {
+      margin-right: 13px;
+    }
+  }
+
+  .people-card__level {
+    margin: 0;
+    margin-right: 15px;
+  }
 }

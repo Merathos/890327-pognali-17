@@ -1,0 +1,39 @@
+.catalog {
+  background-color: #edeff6;
+  margin-top: -30px;
+}
+
+.catalog__filter {
+  position: relative;
+  z-index: 0;
+  padding-top: 54px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    margin-top: -55px;
+  }
+
+  .catalog__filter {
+    padding-top: 102px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    display: flex;
+    padding: 0 60px;
+    justify-content: space-between;
+    padding-top: 92px;
+  }
+
+  .catalog__filter {
+    padding-top: 40px;
+    order: 2;
+  }
+
+  .catalog__travelmates {
+    padding: 0;
+    order: 1;
+  }
+}

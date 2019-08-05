@@ -1,0 +1,143 @@
+.plans-card {
+  border-radius: 10px;
+  width: 270px;
+  background-color: #ffffff;
+  padding: 24px 23px;
+  padding-bottom: 20px;
+  margin-bottom: 8px;
+}
+
+.plans-card__destination {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #1d2e5b;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.plans-card__text {
+  display: block;
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  margin-bottom: 6px;
+}
+
+.plans-card__btn {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #000000;
+  opacity: 0.3;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0 2px;
+  margin-top: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .plans-card {
+    position: relative;
+    width: 618px;
+    padding: 27px 31px;
+    padding-bottom: 10px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 619px;
+      height: 1px;
+      background-color: #eff0f4;
+      left: 0;
+      top: 97px;
+    }
+  }
+
+  .plans-card__destination {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    line-height: 50px;
+    margin-bottom: 27px;
+  }
+
+  .plans-card__country {
+    margin-left: 4px;
+  }
+
+  .plans-card__number {
+    order: 2;
+    font-size: 20px;
+  }
+
+  .plans-card__text {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 18px;
+
+    &--travelmates {
+      margin-right: 36px;
+    }
+
+    &--thai {
+      margin-right: 53px;
+    }
+  }
+
+  .plans-card__btn {
+    font-size: 20px;
+    line-height: 18px;
+    margin-left: 67px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .plans-card {
+    display: flex;
+    width: 1256px;
+    align-items: center;
+    padding: 25px 42px;
+    padding-bottom: 22px;
+    padding-right: 38px;
+    margin-bottom: 15px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .plans-card__number {
+    order: 0;
+    font-weight: 500;
+    margin-right: 32px;
+  }
+
+  .plans-card__destination {
+    margin: 0;
+    margin-right: auto;
+  }
+
+  .plans-card__text {
+    margin: 0;
+
+    &--travelmates {
+      margin-right: 33px;
+    }
+
+    &--thai {
+      margin-right: 50px;
+    }
+  }
+
+  .plans-card__btn {
+    margin: 0;
+    margin-left: 125px;
+  }
+}

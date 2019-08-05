@@ -1,19 +1,9 @@
 .rates {
   background-color: $bg-lightgrey;
-  padding-top: 50px;
+  padding-top: 60px;
   position: relative;
   z-index: 3;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 99px;
-    height: 99px;
-    top: 50px;
-    right: 25px;
-    background: url("../../img/rates@1x.png") no-repeat;
-    background-size: 100%;
-  }
+  margin-top: -30px;
 }
 
 .rates__container {
@@ -27,34 +17,55 @@
   line-height: 24px;
   font-weight: 700;
   color: #ff8d30;
-  width: 50px;
+  width: 110px;
 }
 
 .rates__list {
   @include reset-list;
-  margin-bottom: 30px;
-  margin-top: 35px;
+  margin-bottom: 28px;
+  margin-top: 41px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    top: -130px;
+    right: 0;
+    background: url("../../img/rates@1x.png") no-repeat;
+    background-size: 100%;
+  }
 }
 
 .rates__item {
   color: #444444;
   width: 245px;
-  height: 70px;
+  height: 67px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  flex-wrap: wrap;
 }
 
 .rates__item:last-child {
-  .rates__text {
+  .rates__price {
     border-bottom: 1px solid rgba(0, 0, 0, 0.051);
+    padding-bottom: 10px;
+    margin-top: -7px;
   }
 }
 
 .rates__text {
-  width: 210px;
+  width: 190px;
   border-top: 1px solid rgba(0, 0, 0, 0.051);
-  padding: 13px 0;
+  padding-top: 13px;
+}
+
+.rates__price {
+  width: 190px;
+  order: 3;
+  margin-top: -15px;
 }
 
 .rates__number {
@@ -67,6 +78,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 
   &--first {
     background-color: #ffa530;
@@ -81,11 +93,152 @@
   }
 }
 
-.rates__buisuness-btn {
+.rates__business-btn {
   display: inline-block;
   line-height: 16px;
   font-weight: 700;
   color: #192144;
   text-decoration: none;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
+}
+
+@media (min-width: $tablet-width) {
+  .rates {
+    margin-top: -55px;
+    padding-top: 130px;
+    padding-bottom: 48px;
+  }
+
+  .rates__container {
+    width: 89.6%;
+    padding: 0;
+  }
+
+  .rates__header {
+    font-size: 45px;
+    line-height: 45px;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .rates__list {
+    margin-top: 72px;
+    margin-bottom: 54px;
+
+    &::before {
+      content: "";
+      border-radius: 20px;
+      background-color: #e2e5f2;
+      position: absolute;
+      top: -40px;
+      right: 0;
+      width: 198px;
+      height: 285px;
+      z-index: -3;
+    }
+
+    &::after {
+      top: 218px;
+      right: 46px;
+    }
+  }
+
+  .rates__item {
+    width: 100%;
+    height: 66px;
+    flex-wrap: nowrap;
+
+    &:not(:first-child) {
+      .rates__price {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .rates__item:last-child {
+    .rates__text {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.051);
+      padding-bottom: 15px;
+    }
+
+    .rates__price {
+      padding-bottom: 15px;
+    }
+  }
+
+  .rates__text {
+    order: 2;
+    display: block;
+    width: 100%;
+    margin-left: 23px;
+  }
+
+  .rates__price {
+    order: 3;
+    margin-left: auto;
+    padding: 13px 0;
+    width: 210px;
+    border-top: 1px solid rgba(0, 0, 0, 0.051);
+    margin-right: 18px;
+  }
+
+  .rates__number {
+    flex-shrink: 0;
+    width: 67px;
+    height: 67px;
+  }
+
+  .rates__business-btn {
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 89px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 67px;
+      height: 67px;
+      border-radius: 50%;
+      background-color: #e2e5f2;
+      top: -25px;
+      left: -90px;
+      background-image: url("../../img/business.svg");
+      background-size: 17px 21px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .rates {
+    padding-top: 163px;
+    padding-bottom: 149px;
+  }
+
+  .rates__container {
+    width: 1320px;
+    padding-left: 70px;
+  }
+
+  .rates__list {
+    position: relative;
+    width: 957px;
+    margin-top: 132px;
+
+    &::before {
+      top: -50px;
+      right: -106px;
+      width: 444px;
+      height: 300px;
+    }
+
+    &::after {
+      width: 198px;
+      height: 198px;
+      top: 0;
+      right: -220px;
+    }
+  }
 }
