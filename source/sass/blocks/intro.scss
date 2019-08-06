@@ -8,7 +8,7 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../../img/globe-back-mobile@2x.jpg"),
-    linear-gradient(to bottom, $bg-darkblue 690px, $bg-lightblue 690px);
+      linear-gradient(to bottom, $bg-darkblue 690px, $bg-lightblue 690px);
   }
 }
 
@@ -67,7 +67,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../../img/globe-back-tablet@2x.jpg"),
-      linear-gradient(to bottom, #182044 895px, $bg-lightblue 895px);
+        linear-gradient(to bottom, #182044 895px, $bg-lightblue 895px);
     }
   }
 
