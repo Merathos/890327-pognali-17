@@ -13,7 +13,13 @@
     <div class="page-header__container">
       <div class="page-header__top-wrapper">
         <a href="index.html" class="page-header__logo">
-          <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип">
+          <picture>
+            <source media="(min-width: 1440px)"
+              srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
+            <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Логотип">
+          </picture>
         </a>
         <div class="page-header__menu-wrapper menu">
           <nav>
@@ -62,7 +68,13 @@
       <h2 class="visually-hidden">Ваш профиль</h2>
       <div class="profile__container">
         <img src="http://placehold.it/94x94" alt="asdasd" class="profile__level">
-        <img src="img/photo-account-mobile@1x.jpg" alt="Ваше фото" width="99" height="100" class="profile__photo">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/photo-account-tablet@1x.jpg 1x, img/photo-account-tablet@2x.jpg 2x">
+          <img src="img/photo-account-mobile@1x.jpg" alt="Ваше фото" srcset="img/photo-account-mobile@2x.jpg 2x"
+            class="profile__photo">
+        </picture>
         <button class="profile__photo-btn"><span class="profile__btn-text">Сменить фото</span><span
             class="profile__btn-text--desktop">Фото</span></button>
         <div class="profile__tags">
@@ -153,8 +165,8 @@
             </div>
           </div>
           <div class="steps__kids">
-            <label for="kids">Можно с детьми</label>
             <input type="checkbox" name="kids" id="kids" checked>
+            <label for="kids">Можно с детьми</label>
           </div>
           <div class="steps__calendar calendar">
             <div class="calendar__month-wrapper">
@@ -255,7 +267,7 @@
                 <button class="countries-select__dropdown-btn" aria-label="Выбрать страну"></button>
               </div>
               <div class="countries-select__flag-wrapper">
-                <img src="img/Bosnia-and-Herzegovina.png" width="35" height="24" alt="Босния и Герцеговина">
+                <img src="img/flag-bosnia.svg" width="35" height="24" alt="Босния и Герцеговина">
                 <button class="countries-select__clear-btn" aria-label="Сбросить выбор"></button>
               </div>
             </li>
@@ -265,7 +277,7 @@
                 <button class="countries-select__dropdown-btn" aria-label="Выбрать страну"></button>
               </div>
               <div class="countries-select__flag-wrapper">
-                <img src="img/Czech.png" alt="Чехословакия" width="35" height="24">
+                <img src="img/flag-czech.svg" alt="Чехословакия" width="35" height="24">
                 <button class="countries-select__clear-btn" aria-label="Сбросить выбор"></button>
               </div>
             </li>
@@ -344,13 +356,13 @@
           </ul>
           <div class="steps__textarea-wrapper">
             <label for="wishlist" class="steps__textarea-header">Босния и герцеговина</label>
-            <img src="img/Bosnia-and-Herzegovina.png" width="35" height="24" alt="Босния и Герцеговина">
+            <img src="img/flag-bosnia.svg" width="35" height="24" alt="Босния и Герцеговина">
           </div>
           <textarea name="wishlist" id="wishlist" cols="30" rows="10" class="steps__textarea"
             placeholder="План действий"></textarea>
           <div class="steps__textarea-wrapper">
             <label for="wishlist" class="steps__textarea-header">Чехословакия</label>
-            <img src="img/Czech.png" alt="Чехословакия" width="35" height="24">
+            <img src="img/flag-czech.svg" alt="Чехословакия" width="35" height="24">
           </div>
           <textarea name="wishlist" id="wishlist" cols="20" rows="10"
             class="steps__textarea">Пить пиво и лазить по старым замкам, наслаждаться аритектурой и вот это все.</textarea>
@@ -363,7 +375,12 @@
   <footer class="page-footer border-top-radius">
     <div class="page-footer__container">
       <a>
-        <img src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип" class="page-footer__logo">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+          <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@1x.png 2x" alt="Логотип"
+            class="page-footer__logo">
+        </picture>
       </a>
       <ul class="page-footer__socials footer-socials">
         <li>

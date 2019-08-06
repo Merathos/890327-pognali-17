@@ -72,10 +72,13 @@
     border-radius: 20px;
     width: 618px;
     height: 140px;
+
+    picture {
+      order: 2;
+    }
   }
 
   .countries-card__image {
-    order: 2;
     width: 186px;
     height: 140px;
     border-radius: 0;

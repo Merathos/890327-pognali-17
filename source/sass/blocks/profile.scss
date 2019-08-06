@@ -107,6 +107,10 @@
     width: 688px;
     display: flex;
     flex-wrap: wrap;
+
+    picture {
+      order: 3;
+    }
   }
 
   .profile__level {
@@ -194,6 +198,12 @@
 
   .profile__container {
     width: 1320px;
+
+    picture {
+      order: 2;
+      z-index: 5;
+      display: flex;
+    }
   }
 
   .profile__level {
@@ -205,7 +215,6 @@
   }
 
   .profile__photo {
-    order: 2;
     width: 190px;
     height: 190px;
     border-bottom-left-radius: 0;
