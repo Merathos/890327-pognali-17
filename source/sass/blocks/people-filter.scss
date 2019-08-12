@@ -1,7 +1,7 @@
 .people-filter {
   width: 270px;
   margin: 0 auto;
-  padding: 25px 25px;
+  padding: 23px 25px;
   border-radius: 20px;
   background-color: #ffd74b;
   padding-bottom: 20px;
@@ -59,15 +59,16 @@
 
 .people-filter__btn {
   position: relative;
-  top: 6px;
-  right: -2px;
+  right: -4px;
+  top: 0;
   border: none;
   background-color: transparent;
-  width: 8px;
-  height: 4px;
+  width: 15px;
+  height: 15px;
   background-image: url("../../img/dropdown.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 8px 4px;
   transform: rotate(180deg);
 
   &--open {
@@ -89,7 +90,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: -4px;
+      top: 0;
       left: -27px;
       border-radius: 4px;
       width: 18px;
@@ -99,7 +100,10 @@
   }
 
   input:checked + label::before {
-    background-color: red;
+    background-image: url("../../img/tick.svg");
+    background-size: 9px 9px;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
@@ -110,6 +114,22 @@
 .people-filter__transport {
   margin-top: 7px;
   margin-bottom: 18px;
+
+  input {
+    display: none;
+  }
+
+  input:checked + label {
+    color: rgba($color: #1d2e5b, $alpha: 1.0);
+  }
+
+  label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .people-filter__submit-btn {
@@ -130,19 +150,35 @@
   color: #161c35;
 }
 
-@media (min-width: $tablet-width) and (max-width: 1439px) {
+@media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
   .people-filter {
+    position: relative;
     width: 688px;
     margin: 0 auto;
     padding: 36px 34px;
     border-radius: 20px;
     padding-bottom: 20px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 103px;
+      left: 35px;
+      width: 618px;
+      height: 1px;
+      background-color: #f3c72b;
+    }
+
+    &::after {
+      top: 425px;
+    }
   }
 
   .people-filter__header {
     font-size: 30px;
     line-height: 30px;
-    margin-bottom: 58px;
+    margin-bottom: 55px;
   }
 
   .people-filter__section-header {
@@ -192,6 +228,10 @@
         height: 24px;
       }
     }
+
+    input:checked + label::before {
+      background-size: 12px 12px;
+    }
   }
 
   .people-filter__item:not(:last-child) {
@@ -202,7 +242,7 @@
   .people-filter__transport {
     position: relative;
     left: -5px;
-    margin-top: 2px;
+    margin-top: 5px;
     margin-bottom: 13px;
   }
 
@@ -256,16 +296,22 @@
         height: 24px;
       }
     }
+
+    input:checked + label::before {
+      background-size: 12px 12px;
+    }
   }
 
   .people-filter__btn {
-    top: 10px;
-    right: -1px;
+    top: 8px;
+    right: -2px;
+    background-size: 10px 5px;
   }
 
   .people-filter__transport {
-    margin-top: 9px;
-    margin-bottom: 28px;
+    margin-top: 13px;
+    margin-left: -3px;
+    margin-bottom: 24px;
 
     li {
       width: 43px;

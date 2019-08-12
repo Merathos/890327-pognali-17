@@ -106,12 +106,9 @@
   &::after {
     content: "";
     position: absolute;
-    top: 25px;
-    right: 25px;
-    background-image: url("../../img/triangle-arrow-right.svg");
-    background-repeat: no-repeat;
-    width: 10px;
-    height: 14px;
+    top: 24px;
+    right: 23px;
+    @include triangle(right, 10px, 7px, #1d2e5b);
   }
 }
 
@@ -125,7 +122,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 36px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 @media (min-width: $tablet-width) {
@@ -235,10 +232,7 @@
       position: absolute;
       top: 33px;
       right: 35px;
-      background-image: url("../../img/triangle-arrow-right.svg");
-      background-repeat: no-repeat;
-      width: 10px;
-      height: 14px;
+      @include triangle(right, 10px, 7px, #1d2e5b);
     }
   }
 

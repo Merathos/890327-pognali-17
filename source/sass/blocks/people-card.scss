@@ -3,7 +3,7 @@
   width: 270px;
   border-radius: 20px;
   background-color: #ffffff;
-  margin-bottom: 11px;
+  margin-bottom: 9px;
   padding-bottom: 76px;
 }
 
@@ -18,7 +18,12 @@
   justify-content: flex-start;
   margin-left: 25px;
   margin-top: 3px;
-  margin-bottom: 9px;
+  margin-bottom: 22px;
+  width: 200px;
+
+  li {
+    height: 16px;
+  }
 }
 
 .people-card__name {
@@ -71,7 +76,7 @@
   }
 
   &--countries {
-    margin-bottom: 13px;
+    margin-bottom: 15px;
   }
 
   &--transport {
@@ -80,7 +85,7 @@
 
   &--level {
     &::before {
-      flex-basis: 49px;
+      flex-basis: 103px;
     }
   }
 }
@@ -88,7 +93,7 @@
 .people-card__countries {
   @include reset-list;
   margin-left: 25px;
-  margin-bottom: 12px;
+  margin-bottom: 17px;
 }
 
 .people-card__country {
@@ -99,6 +104,7 @@
   text-transform: uppercase;
   margin-bottom: 4px;
 
+  svg,
   img {
     position: relative;
     top: 3px;
@@ -142,6 +148,15 @@
 
 .people-card__transport-list {
   margin-left: 24px;
+  margin-bottom: 8px;
+
+  .transport-list__item {
+    width: 33px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #edeff6;
+    margin-right: -1px;
+  }
 }
 
 .people-card__bottom-wrapper {
@@ -155,8 +170,23 @@
 }
 
 .people-card__level {
-  margin-left: 48px;
-  margin-top: 9px;
+  margin-left: 52px;
+  margin-top: 22px;
+  width: 45px;
+  height: 45px;
+  background-color: #ffffff;
+
+  .level__number {
+    color: #1d2e5b;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -264,15 +294,34 @@
 
   .people-card__transport-list {
     flex-direction: column;
+    margin-right: 6px;
+    margin-top: 8px;
 
     .transport-list__item {
       background-color: transparent;
-      margin-bottom: -8px;
     }
   }
 
   .people-card__level {
-    margin-left: 23px;
+    margin-left: 12px;
+    margin-top: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+
+    .level__number {
+      color: #1d2e5b;
+
+      &::after {
+        display: block;
+        color: rgba($color: #444444, $alpha: 0.4);
+      }
+
+      &::before {
+        display: block;
+        background-color: rgba($color: #444444, $alpha: 0.4);
+      }
+    }
   }
 
   .people-card__invite-btn {
@@ -292,6 +341,7 @@
     line-height: 30px;
     margin-right: 28px;
 
+    svg,
     img {
       width: 35px;
       height: 24px;
@@ -335,13 +385,9 @@
   .people-card__transport-list {
     flex-direction: row;
     margin: 0;
-    position: relative;
-    left: -48px;
 
-    li {
-      width: 47px;
-      height: 47px;
-      margin-right: -10px;
+    .transport-list__item {
+      margin-right: 0;
     }
   }
 
@@ -352,7 +398,8 @@
   .people-card__bottom-wrapper {
     flex-direction: row;
     order: 4;
-    margin-top: -93px;
+    margin-top: -85px;
+    margin-right: 151px;
   }
 
   .people-card__text {
@@ -367,17 +414,46 @@
   }
 
   .people-card__countries {
+    position: relative;
     flex-direction: column;
-    height: 200px;
     margin-top: 46px;
 
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -44px;
+      width: 1px;
+      height: 187px;
+      background: linear-gradient(to bottom, #ffffff 1%,#e5e5e5 50%,#ffffff 100%);
+    }
+
+    svg,
     img {
       margin-right: 13px;
     }
   }
 
+  .people-card__country {
+    margin-bottom: 6px;
+  }
+
   .people-card__level {
     margin: 0;
-    margin-right: 15px;
+    margin-left: 47px;
+    margin-top: -15px;
   }
+}
+
+e5e5e5
+
+.div {
+  background-image: url("div.png");
+  opacity: 0.102;
+  position: absolute;
+  left: 690px;
+  top: 3210px;
+  width: 1px;
+  height: 187px;
+  z-index: 17;
 }

@@ -12,25 +12,32 @@
 }
 
 .catalog-nav__btn {
+  position: relative;
   display: inline-block;
   width: 135px;
   height: 50px;
   border: none;
   background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-size: 10px 24px;
-  background-position: center;
+
+  &::after {
+    position: absolute;
+    top: 14px;
+    left: 62px;
+    @include triangle(left, 10px, 10px, #192144);
+  }
 
   &--back {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-image: url("../../img/triangle-arrow-left.svg");
   }
 
   &--next {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-image: url("../../img/triangle-arrow-right.svg");
+
+    &::after {
+      transform: rotate(180deg);
+    }
   }
 }
 
@@ -74,6 +81,11 @@
   .catalog-nav__btn {
     width: 43px;
     height: 100px;
+
+    &::after {
+      top: 40px;
+      left: 17px;
+    }
   }
 }
 
