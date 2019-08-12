@@ -425,7 +425,7 @@
       left: -44px;
       width: 1px;
       height: 187px;
-      background: linear-gradient(to bottom, #ffffff 1%,#e5e5e5 50%,#ffffff 100%);
+      background: linear-gradient(to bottom, #ffffff 1%, #e5e5e5 50%, #ffffff 100%);
     }
 
     svg,
@@ -443,17 +443,4 @@
     margin-left: 47px;
     margin-top: -15px;
   }
-}
-
-e5e5e5
-
-.div {
-  background-image: url("div.png");
-  opacity: 0.102;
-  position: absolute;
-  left: 690px;
-  top: 3210px;
-  width: 1px;
-  height: 187px;
-  z-index: 17;
 }

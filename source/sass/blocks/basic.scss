@@ -108,6 +108,7 @@
     position: absolute;
     top: 24px;
     right: 23px;
+
     @include triangle(right, 10px, 7px, #1d2e5b);
   }
 }
@@ -232,6 +233,7 @@
       position: absolute;
       top: 33px;
       right: 35px;
+
       @include triangle(right, 10px, 7px, #1d2e5b);
     }
   }

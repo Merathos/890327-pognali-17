@@ -23,6 +23,7 @@
     position: absolute;
     top: 14px;
     left: 62px;
+
     @include triangle(left, 10px, 10px, #192144);
   }
 
