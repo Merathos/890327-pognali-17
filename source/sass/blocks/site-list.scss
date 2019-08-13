@@ -49,9 +49,39 @@
   }
 
   .site-list__item {
+    position: relative;
     font-size: 20px;
+    display: inline-block;
     line-height: 30px;
     font-weight: 500;
     color: #ffffff;
+    height: 24px;
+    overflow: hidden;
+    outline: none;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+
+    span {
+      position: relative;
+      display: inline-block;
+      transition: transform 0.3s;
+      padding: 0 5px;
+
+      &::before {
+        position: absolute;
+        top: 100%;
+        content: attr(data-hover);
+        font-weight: 700;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    &:hover span {
+      transform: translateY(-100%);
+      color: #ffd74b;
+    }
+
+    &:active span {
+      opacity: 0.3;
+    }
   }
 }
