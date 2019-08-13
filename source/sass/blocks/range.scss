@@ -8,9 +8,30 @@
 }
 
 .range__inputs {
+  position: relative;
   display: flex;
   margin: 0 auto;
   margin-top: 3px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 102px;
+    width: 16px;
+    height: 11px;
+    background-color: #ffffff;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 102px;
+    width: 16px;
+    height: 1px;
+    background-color: #cbced9;
+  }
 }
 
 .range__input {
@@ -87,6 +108,20 @@
   .range__inputs {
     order: 2;
     margin-left: 70px;
+
+    &::before {
+      top: 15px;
+      left: 65px;
+      width: 21px;
+      height: 15px;
+    }
+
+    &::after {
+      top: 22px;
+      left: 65px;
+      width: 21px;
+      height: 1px;
+    }
   }
 
   .range__input {
@@ -107,7 +142,7 @@
     width: 13px;
     height: 13px;
     top: -5px;
-    right: -5px;
+    right: -10px;
   }
 }
 
@@ -125,6 +160,20 @@
   .range__inputs {
     margin-top: 7px;
     margin-bottom: 37px;
+
+    &::before {
+      top: 15px;
+      left: 85px;
+      width: 21px;
+      height: 15px;
+    }
+
+    &::after {
+      top: 22px;
+      left: 85px;
+      width: 21px;
+      height: 1px;
+    }
   }
 
   .range__input {

@@ -1,0 +1,55 @@
+.level {
+  position: absolute;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+  display: flex;
+  justify-content: center;
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotateZ(-90deg);
+  }
+}
+
+.level__circle {
+  fill: none;
+  stroke: #ff8d30;
+  stroke-width: 3px;
+  stroke-dasharray: 190px;
+}
+
+.level__number {
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-top: 12px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: -3px;
+    width: 31px;
+    height: 1px;
+    background-color: #ffffff;
+    opacity: 0.3;
+  }
+
+  &::after {
+    position: absolute;
+    content: "level";
+    width: 31px;
+    bottom: 8px;
+    left: 0;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+  }
+}

@@ -66,10 +66,13 @@
   width: 60px;
   height: 62px;
   margin-left: -20px;
-  background-image: url("../../img/triangle-arrow-right.svg");
-  background-size: 10px 14px;
-  background-repeat: no-repeat;
-  background-position: center;
+
+  &::after {
+    @include triangle(right, 10px, 7px, #1d2e5b);
+    position: absolute;
+    top: 24px;
+    right: 23px;
+  }
 }
 
 .cta-form__desktop-btn {
@@ -109,7 +112,7 @@
     text-transform: uppercase;
 
     &::before {
-      background-image: url("../../img/topmenu-mail.svg");
+      background-image: url("../../img/contacts-mail.svg");
       background-size: 18px 13px;
     }
   }
@@ -169,6 +172,11 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     margin-bottom: 38px;
+
+    &::after {
+      top: 33px;
+      right: 37px;
+    }
   }
 
   .cta-form__contacts {
@@ -186,6 +194,14 @@
     &--phone {
       margin-top: -4px;
       margin-bottom: 38px;
+
+      &::before {
+        background-size: 27px 27px;
+      }
+    }
+
+    &--email::before {
+      background-size: 27px 20px;
     }
   }
 }
@@ -251,6 +267,14 @@
 
     &--phone {
       margin-right: -111px;
+
+      &::before {
+        background-size: 36px 36px;
+      }
+    }
+
+    &--email::before {
+      background-size: 36px 26px;
     }
   }
 }
