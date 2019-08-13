@@ -4,6 +4,8 @@
   list-style: none;
 }
 
+/* stylelint-disable */
+
 @mixin triangle($direction, $sizeH, $sizeV, $color) {
   content: "";
   display: block;
@@ -31,3 +33,5 @@
     border-color: transparent transparent transparent $color;
   }
 }
+
+/* stylelint-enable */
