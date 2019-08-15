@@ -16,6 +16,15 @@
   line-height: 22px;
   font-weight: 400;
   color: #444444;
+  cursor: pointer;
+
+  &:hover {
+    color: #1d2e5b;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

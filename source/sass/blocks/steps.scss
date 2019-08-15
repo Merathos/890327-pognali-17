@@ -116,8 +116,19 @@
     color: #1d2e5b;
     font-weight: 500;
     padding-top: 5px;
+    outline: none;
+
+    &:hover {
+      border: 1px solid #959bb2;
+    }
+
+    &:focus {
+      border: 1px solid #161c35;
+      z-index: 3;
+    }
   }
 }
+
 
 .steps__num-btn {
   position: absolute;
@@ -132,10 +143,19 @@
   background-image: url("../../img/qty-minus-mobile.svg");
   background-repeat: no-repeat;
   background-position: center;
+  opacity: 0.2;
 
   &--plus {
     left: 193px;
     background-image: url("../../img/qty-plus-mobile.svg");
+  }
+
+  &:hover {
+    opacity: 0.4;
+  }
+
+  &:active {
+    opacity: 0.1;
   }
 }
 
@@ -159,6 +179,16 @@
       height: 26px;
       border: 1px solid #cbced9;
       border-radius: 4px;
+    }
+
+    &:hover::before {
+      border: 1px solid #959bb2;
+    }
+
+    &:active::before {
+      background-color: #cdd4f1;
+      border: none;
+      opacity: 0.3;
     }
   }
 
@@ -194,6 +224,14 @@
   color: #161c35;
   text-transform: uppercase;
   margin-left: -4px;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: rgba($color: #1d2e5b, $alpha: 0.3);
+  }
 }
 
 .steps__countries {
@@ -278,9 +316,18 @@
   padding: 9px 15px;
   margin-bottom: 20px;
   line-height: 21px;
+  outline: none;
 
   &::placeholder {
     opacity: 0.3;
+  }
+
+  &:hover {
+    border: 1px solid #959bb2;
+  }
+
+  &:focus {
+    border: 1px solid #161c35;
   }
 }
 
@@ -430,6 +477,7 @@
   }
 
   .steps__next-btn {
+    position: relative;
     order: 7;
     border-radius: 20px;
     width: 285px;
@@ -440,11 +488,28 @@
     text-transform: none;
     justify-content: flex-start;
     padding-left: 32px;
-    background-image: url("../../img/triangle-arrow-right.svg");
-    background-size: 10px 14px;
-    background-repeat: no-repeat;
-    background-position: top 35px right 37px;
     display: inline-flex;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 35px;
+      right: 37px;
+
+      @include triangle(right, 9px, 7px, #161c35);
+    }
+
+    &:hover {
+      background-color: #ffbd30;
+    }
+
+    &:active {
+      color: rgba($color: #1d2e5b, $alpha: 0.3);
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
   }
 
   .steps__countries {
@@ -467,6 +532,14 @@
     background-size: 10px 14px;
     background-repeat: no-repeat;
     background-position: top 22px left 5px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .steps__textarea-wrapper {

@@ -94,4 +94,25 @@
   .catalog-nav {
     padding-right: 28px;
   }
+
+  .catalog-nav__num {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 1;
+      background-color: #ffd74b;
+    }
+  }
+
+  .catalog-nav__btn {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }

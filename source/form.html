@@ -32,9 +32,9 @@
         <div class="page-header__menu-wrapper menu">
           <nav>
             <ul class="menu__nav site-list">
-              <li><a href="#" class="site-list__item">О сервисе</a></li>
-              <li><a href="form.html" class="site-list__item">Направления</a></li>
-              <li><a href="catalog.html" class="site-list__item">Попутчики</a></li>
+              <li><a href="#" class="site-list__item"><span data-hover="О сервисе">О сервисе</span></a></li>
+              <li><a href="form.html" class="site-list__item"><span data-hover="Направления">Направления</span></a></li>
+              <li><a href="catalog.html" class="site-list__item"><span data-hover="Попутчики">Попутчики</span></a></li>
             </ul>
           </nav>
           <a href="#" class="menu__auth-btn">Авторизация</a>
@@ -411,15 +411,15 @@
             </svg>
           </div>
           <textarea name="wishlist" id="wishlist" cols="30" rows="10" class="steps__textarea"
-            placeholder="План действий"></textarea>
+            placeholder="План действий" required></textarea>
           <div class="steps__textarea-wrapper">
             <label for="wishlist" class="steps__textarea-header">Чехословакия</label>
             <svg width="35" height="24">
               <use xlink:href="#flag-czech"></use>
             </svg>
           </div>
-          <textarea name="wishlist" id="wishlist" cols="20" rows="10"
-            class="steps__textarea">Пить пиво и лазить по старым замкам, наслаждаться аритектурой и вот это все.</textarea>
+          <textarea name="wishlist" id="wishlist" cols="20" rows="10" class="steps__textarea"
+            required>Пить пиво и лазить по старым замкам, наслаждаться аритектурой и вот это все.</textarea>
           <button class="steps__next-btn">Отправить</button>
           <button class="steps__back-btn">На шаг назад</button>
         </div>
@@ -468,7 +468,7 @@
         </li>
       </ul>
       <div class="page-footer__bottom-wrapper">
-        <span>Разработано</span>
+        <span class="page-footer__text">Разработано</span>
         <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="page-footer__academy">
           <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML academy">
         </a>

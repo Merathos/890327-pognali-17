@@ -63,6 +63,14 @@
   font-weight: 700;
   color: #161c35;
   margin-bottom: 30px;
+
+  &:hover {
+    background-color: #d1d7e9;
+  }
+
+  &:active {
+    color: rgba($color: #1d2e5b, $alpha: 0.3);
+  }
 }
 
 .profile__btn-text--desktop {
@@ -72,18 +80,26 @@
 .profile__tags {
   position: relative;
   width: 270px;
-  border: 1px solid #cbced9;
-  border-radius: 10px;
-  padding: 22px 22px;
-  padding-bottom: 16px;
-  margin-bottom: 24px;
+  padding: 0;
+  margin-bottom: 18px;
 
   textarea {
     background-color: #edeff6;
-    border: none;
+    border: 1px solid #cbced9;
+    border-radius: 10px;
     resize: none;
-    width: 230px;
+    width: 100%;
     line-height: 20px;
+    padding: 24px 24px;
+    outline: none;
+
+    &:hover {
+      border: 1px solid #aeb4cb;
+    }
+
+    &:focus {
+      border: 1px solid #161c35;
+    }
   }
 }
 
@@ -122,6 +138,8 @@
   }
 
   label {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,6 +147,10 @@
 
   input:checked + label {
     color: rgba($color: #1d2e5b, $alpha: 1);
+
+    &:active {
+      color: rgba($color: #1d2e5b, $alpha: 0.3);
+    }
   }
 
   .transport-list__item {
@@ -137,6 +159,17 @@
     height: 33px;
     background-color: #ffffff;
     margin-right: 0;
+
+    &:hover {
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.08);
+      color: rgba($color: #000000, $alpha: 0.3);
+    }
+
+    &:active {
+      box-shadow: none;
+      background-color: #e2e5f1;
+      color: rgba($color: #000000, $alpha: 0.1);
+    }
   }
 }
 
@@ -144,7 +177,7 @@
   .profile {
     margin-top: -55px;
     padding-top: 119px;
-    padding-bottom: 120px;
+    padding-bottom: 115px;
   }
 
   .profile__container {
@@ -230,14 +263,13 @@
     order: 5;
     margin: 0 auto;
     width: 618px;
-    padding: 31px 38px;
-    padding-bottom: 25px;
 
     textarea {
       font-size: 20px;
       line-height: 24px;
       width: 100%;
-      height: 30px;
+      padding: 31px 38px;
+      padding-bottom: 13px;
     }
   }
 }
@@ -246,7 +278,7 @@
   .profile {
     padding-top: 0;
     margin-top: -190px;
-    padding-bottom: 105px;
+    padding-bottom: 97px;
   }
 
   .profile__container {
@@ -296,10 +328,14 @@
     width: 730px;
     order: 4;
     margin-left: 64px;
-    padding-top: 30px;
-    padding-bottom: 0;
     margin-bottom: 21px;
     margin-right: 112px;
+
+    textarea {
+      width: 100%;
+      padding-top: 30px;
+      padding-bottom: 14px;
+    }
   }
 
   .profile__header {
@@ -315,6 +351,8 @@
     margin-right: 0;
     width: 384px;
     padding-left: 47px;
+    padding-bottom: 15px;
+    margin-bottom: 27px;
   }
 
   .profile__transport-list {

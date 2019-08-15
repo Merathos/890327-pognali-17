@@ -205,8 +205,10 @@
         </div>
         <ul class="basic__travelmates">
           <li class="travelmate-card">
-            <img src="img/firsova-desktop@1x.jpg" srcset="img/firsova-desktop@2x.jpg 2x" alt="Фото попутчика"
-              class="travelmate-card__photo">
+            <div class="travelmate-card__photo-wrapper">
+              <img src="img/firsova-desktop@1x.jpg" srcset="img/firsova-desktop@2x.jpg 2x" alt="Фото попутчика"
+                class="travelmate-card__photo">
+            </div>
             <div class="travelmate-card__level level">
               <svg viewbox="0 0 63 63">
                 <circle r="30" cx="50%" cy="50%" class="level__circle" stroke-dashoffset="7"></circle>
@@ -215,23 +217,23 @@
             </div>
             <div class="travelmate-card__footer">
               <ul class="travelmate-card__countries-list">
-                <li class="travelmate-card__country">
+                <li class="travelmate-card__country " data-hover="Шри-Ланка">
                   <svg width="35" height="24">
                     <use xlink:href="#flag-sri-lanka"></use>
                   </svg>
                 </li>
-                <li class="travelmate-card__country">
+                <li class="travelmate-card__country" data-hover="Тайланд">
                   <svg width="35" height="24">
                     <use xlink:href="#flag-thailand"></use>
                   </svg>
                 </li>
-                <li class="travelmate-card__country">
+                <li class="travelmate-card__country" data-hover="Сейшелы">
                   <svg width="35" height="24">
                     <use xlink:href="#flag-seychelles"></use>
                   </svg>
                 </li>
               </ul>
-              <span class="travelmate-card__name">Таня Фирсова</span>
+              <span class="travelmate-card__name"><a href="#">Таня Фирсова</a></span>
               <ul class="travelmate-card__tags tag-list">
                 <li>
                   <a href="#" class="tag-list__item">
@@ -279,8 +281,10 @@
             </div>
           </li>
           <li class="travelmate-card">
-            <img src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg 2x" alt="Фото попутчика"
-              class="travelmate-card__photo">
+            <div class="travelmate-card__photo-wrapper">
+              <img src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg 2x" alt="Фото попутчика"
+                class="travelmate-card__photo">
+            </div>
             <div class="travelmate-card__level level">
               <svg viewbox="0 0 63 63">
                 <circle r="30" cx="50%" cy="50%" class="level__circle" stroke-dashoffset="35"></circle>
@@ -289,18 +293,18 @@
             </div>
             <div class="travelmate-card__footer">
               <ul class="travelmate-card__countries-list">
-                <li class="travelmate-card__country">
+                <li class="travelmate-card__country" data-hover="Бельгия">
                   <svg width="35" height="24">
                     <use xlink:href="#flag-belgium"></use>
                   </svg>
                 </li>
-                <li class="travelmate-card__country">
+                <li class="travelmate-card__country" data-hover="Чехия">
                   <svg width="35" height="24">
                     <use xlink:href="#flag-czech"></use>
                   </svg>
                 </li>
               </ul>
-              <span class="travelmate-card__name">Петя Демин</span>
+              <span class="travelmate-card__name"><a href="#">Петя Демин</a></span>
               <ul class="travelmate-card__tags tag-list">
                 <li>
                   <a href="#" class="tag-list__item">#бургер</a>
@@ -370,7 +374,7 @@
           Тогда скорее <a href="#" class="cta-form__auth">авторизуйтесь</a>
         </p>
         <form action="https://echo.htmlacademy.ru" method="post" class="cta-form__form">
-          <input type="email" name="email" id="email" placeholder="E-mail" class="cta-form__email-input">
+          <input type="email" name="email" id="email" placeholder="E-mail" required class="cta-form__email-input">
           <button type="submit" class="cta-form__submit-btn" aria-label="Зарегестрироваться"><span
               class="cta-form__desktop-btn">Регистрация</span></button>
         </form>

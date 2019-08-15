@@ -50,6 +50,14 @@
     background-position: center;
   }
 
+  &:hover {
+    border: 1px solid #959bb2;
+
+    .countries-select__dropdown-btn {
+      opacity: 0.5;
+    }
+  }
+
   &--choose {
     width: 222px;
 
@@ -78,6 +86,19 @@
     &::after {
       display: none;
     }
+
+    &:hover {
+      border: none;
+      background-color: #dfe3f0;
+    }
+
+    &:active {
+      color: rgba($color: #1d2e5b, $alpha: 0.1);
+
+      .countries-select__dropdown-btn {
+        opacity: 0.1;
+      }
+    }
   }
 
   &--active {
@@ -99,6 +120,15 @@
       background-image: url("../../img/small-cross.svg");
       width: 9px;
       height: 9px;
+      opacity: 0.3;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:active {
+        opacity: 0.1;
+      }
     }
   }
 }
@@ -132,11 +162,12 @@
   background-position: center;
   margin-left: auto;
   margin-right: 14px;
+  opacity: 0.3;
 
   &--add {
     width: 14px;
     height: 14px;
-    background-image: url("../../img/qty-plus-mobile.svg");
+    background-image: url("../../img/show-more-plus.svg");
   }
 }
 
@@ -149,10 +180,19 @@
   height: 21px;
   background-color: #edeff6;
   border: none;
-  background-image: url("../../img/small-cross.svg");
+  background-image: url("../../img/menu-close.svg");
   background-repeat: no-repeat;
   background-size: 9px 9px;
   background-position: center;
+  opacity: 0.1;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.05;
+  }
 }
 
 .countries-select__modal-wrapper {
@@ -178,6 +218,10 @@
   input:checked + label {
     background-color: #edeff6;
     color: #1d2e5b;
+  }
+
+  label:hover {
+    border: 1px solid #959bb2;
   }
 }
 
