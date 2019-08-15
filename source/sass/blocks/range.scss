@@ -106,7 +106,7 @@
 
 .range__min-toggle:active,
 .range__max-toggle:active {
-  box-shadow: 0px 3px 7px 0px rgba(29, 46, 91, 0.35);
+  box-shadow: 0 3px 7px 0 rgba(29, 46, 91, 0.35);
 }
 
 @media (min-width: $tablet-width) and (max-width: $tablet-maxwidth) {
