@@ -1,7 +1,14 @@
 .menu {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  picture {
+    position: absolute;
+    top: 28px;
+    left: 7.8%;
+  }
 }
 
 .menu__nav {
@@ -71,6 +78,11 @@
 @media (min-width: $tablet-width) {
   .menu {
     align-items: flex-start;
+
+    picture {
+      top: 45px;
+      left: 5.2%;
+    }
   }
 
   .menu__auth-btn {
@@ -78,7 +90,7 @@
   }
 
   .menu__nav {
-    margin-top: 70px;
+    margin-top: 65px;
     margin-left: 25%;
     margin-bottom: 155px;
   }
@@ -117,6 +129,10 @@
     display: inline-flex;
     position: relative;
     padding: 0;
+
+    picture {
+      display: none;
+    }
   }
 
   .menu__contacts {

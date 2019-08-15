@@ -23,6 +23,17 @@
   &:active {
     color: rgba($color: #1d2e5b, $alpha: 0.3);
   }
+
+  &--index {
+    &:hover {
+      background-color: #192144;
+      color: #ffffff;
+    }
+
+    &:active {
+      color: rgba($color: #ffffff, $alpha: 0.3);
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
