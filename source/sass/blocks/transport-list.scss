@@ -15,6 +15,7 @@
 }
 
 .transport-list__item {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,6 +26,75 @@
 
   &--active {
     color: rgba($color: #1d2e5b, $alpha: 1);
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 130%;
+    width: fit-content;
+    height: 57px;
+    padding: 23px 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #101d41;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 24px;
+    border-radius: 5px;
+    z-index: 2;
+  }
+
+  &--plane {
+    &::after {
+      content: "Авиаперелёт";
+    }
+  }
+
+  &--bus {
+    &::after {
+      content: "Автотранспорт";
+    }
+  }
+
+  &--bicycle {
+    &::after {
+      content: "Велосипед";
+    }
+  }
+
+  &--onfoot {
+    &::after {
+      content: "Пешком";
+    }
+  }
+
+  &--plane,
+  &--bus,
+  &--bicycle,
+  &--onfoot {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+
+      @include triangle(top, 14px, 13px, #101d41);
+      display: none;
+      z-index: 2;
+    }
+
+    &:hover {
+      &::before {
+        display: block;
+      }
+    }
+  }
+
+  &:hover {
+    &::after {
+      display: flex;
+    }
   }
 }
 
