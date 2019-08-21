@@ -31,6 +31,7 @@
 }
 
 .people-card__name {
+  position: relative;
   display: inline-block;
   width: 100px;
   font-size: 20px;
@@ -48,6 +49,28 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: -45px;
+    border-radius: 50%;
+    background-color: #f97676;
+    width: 6px;
+    height: 6px;
+  }
+
+  &--online {
+    &::after {
+      background-color: #81e31e;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
   }
 }
 
@@ -159,27 +182,61 @@
   height: 31px;
   border: none;
   background-color: #edeff6;
-  background-image: url("../../img/heart.svg");
-  background-repeat: no-repeat;
-  background-size: 13px 11px;
-  background-position: center;
   opacity: 1;
   top: -2px;
   left: -21px;
 
-  &--active {
-    background-image: url("../../img/heart-active.svg");
-    background-color: #f9eaea;
-    opacity: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 31px;
+    height: 31px;
+    top: 0;
+    left: 0;
+    background-image: url("../../img/heart.svg");
+    background-repeat: no-repeat;
+    background-size: 13px 11px;
+    background-position: center;
+    opacity: 0.3;
+  }
 
-    &:hover {
-      background-color: #f9d8d8;
+  &:hover {
+    background-color: #e2e5f2;
+
+    &::before {
+      opacity: 0.5;
+    }
+  }
+
+  &:active {
+    background-color: #e2e5f2;
+
+    &::before {
+      opacity: 0.1;
+    }
+  }
+
+  &--active {
+    background-color: #f9eaea;
+
+    &::before {
+      background-image: url("../../img/heart-active.svg");
       opacity: 1;
     }
 
+    &:hover {
+      background-color: #f9d8d8;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
     &:active {
-      background-color: #e2b6b6;
-      opacity: 0.5;
+      &::before {
+        opacity: 0.3;
+      }
     }
   }
 }
@@ -240,12 +297,21 @@
   }
 
   .people-card__name {
-    width: 400px;
+    width: 290px;
     font-size: 30px;
     line-height: 30px;
     margin-left: 33px;
     margin-top: 33px;
     flex-shrink: 0;
+
+    &::after {
+      position: relative;
+      display: inline-block;
+      top: -7px;
+      left: 24px;
+      width: 7px;
+      height: 7px;
+    }
   }
 
   .people-card__photo {
@@ -300,7 +366,12 @@
     left: 0;
     width: 50px;
     height: 50px;
-    background-size: 20px 17px;
+
+    &::before {
+      width: 50px;
+      height: 50px;
+      background-size: 20px 17px;
+    }
   }
 
   .people-card__likes {
@@ -393,7 +464,7 @@
     width: 950px;
     padding-bottom: 0;
 
-    picture {
+    a {
       overflow: hidden;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
@@ -422,10 +493,16 @@
   .people-card__name {
     margin-left: 59px;
     margin-top: 48px;
+
+    &::after {
+      position: absolute;
+      top: 12px;
+      left: -25px;
+    }
   }
 
   .people-card__tags {
-    margin-top: -25px;
+    margin-top: -27px;
     margin-left: 62px;
     width: 240px;
     flex-shrink: 0;
@@ -462,16 +539,6 @@
   .people-card__invite-btn {
     width: 148px;
     margin-left: 55px;
-  }
-
-  .people-card__likes-btn {
-    &:hover {
-      opacity: 0.5;
-    }
-
-    &:active {
-      opacity: 0.25;
-    }
   }
 
   .people-card__countries {

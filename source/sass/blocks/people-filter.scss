@@ -23,6 +23,7 @@
 }
 
 .people-filter__section-header {
+  margin: 0;
   font-size: 16px;
   line-height: 18px;
   color: #1d2e5b;
@@ -51,8 +52,7 @@
 }
 
 .people-filter__bottom-wrapper {
-  &--hobby,
-  &--food {
+  &--closed {
     display: none;
   }
 }
@@ -70,11 +70,6 @@
   background-position: center;
   background-size: 8px 4px;
   transform: rotate(180deg);
-
-  &--open {
-    background-image: url("../../img/dropdown.svg");
-    transform: rotate(0);
-  }
 }
 
 .people-filter__item {

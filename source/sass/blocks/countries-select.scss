@@ -231,6 +231,27 @@
   margin-left: 20px;
 }
 
+.countries-select__list-item {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #444444;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &:hover {
+    color: #1d2e5b;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .countries-select {
     position: relative;
@@ -373,6 +394,11 @@
     margin-top: 0;
     margin-left: 21px;
   }
+
+  .countries-select__list-item {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 
@@ -416,6 +442,10 @@
     &--add {
       width: 730px;
     }
+  }
+
+  .countries-select__country-text {
+    overflow: visible;
   }
 
   .countries-select__flag-wrapper {

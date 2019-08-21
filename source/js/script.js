@@ -28,6 +28,8 @@ if (open_btn) {
 const menu_btn = document.querySelector(".page-header__menu-btn");
 const menu_wrapper = document.querySelector(".page-header__menu-wrapper");
 
+menu_wrapper.classList.remove("page-header__menu-wrapper--no-js");
+
 if (menu_btn) {
   menu_btn.addEventListener('click', evt => {
     evt.preventDefault();

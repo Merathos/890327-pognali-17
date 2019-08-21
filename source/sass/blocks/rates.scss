@@ -239,7 +239,7 @@
       top: -50px;
       right: -106px;
       width: 444px;
-      height: 300px;
+      height: 150%;
     }
 
     &::after {
@@ -248,5 +248,9 @@
       top: 0;
       right: -220px;
     }
+  }
+
+  .rates__header {
+    width: 490px;
   }
 }

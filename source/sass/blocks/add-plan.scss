@@ -20,11 +20,56 @@
   margin-bottom: 29px;
 }
 
+.add-plan__step-list {
+  @include reset-list;
+    position: absolute;
+    top: 32px;
+    right: -12px;
+    display: flex;
+
+    li {
+      position: relative;
+      font-size: 0;
+      line-height: 20px;
+      font-weight: 400;
+      color: #000000;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 25px;
+      opacity: 0.6;
+      margin-right: 20px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: -42px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #1d2e5b;
+      }
+    }
+
+    .add-plan__step-active {
+      opacity: 1;
+    }
+}
+
 @media (min-width: $tablet-width) {
   .add-plan {
     margin-top: -57px;
     padding-top: 50px;
     padding-bottom: 79px;
+  }
+
+  .add-plan__step-list {
+    top: 63px;
+    right: 2px;
+
+    li {
+      margin-right: 35px;
+    }
   }
 
   .add-plan__container {
@@ -44,6 +89,10 @@
     margin-top: -57px;
     padding-top: 49px;
     padding-bottom: 85px;
+  }
+
+  .add-plan__step-list {
+    display: none;
   }
 
   .add-plan__container {

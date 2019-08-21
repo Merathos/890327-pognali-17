@@ -410,5 +410,9 @@
   .basic__travelmates {
     margin-top: 3px;
     margin-left: 140px;
+    margin-right: 0;
+    width: 630px;
+    flex-wrap: wrap;
+    align-items: flex-start;
   }
 }

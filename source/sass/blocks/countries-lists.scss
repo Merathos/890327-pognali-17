@@ -25,6 +25,11 @@
   &:active {
     opacity: 0.3;
   }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 @media (min-width: $tablet-width) {

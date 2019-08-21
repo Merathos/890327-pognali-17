@@ -46,7 +46,7 @@
   .catalog-nav {
     border-radius: 20px;
     width: 688px;
-    height: 100px;
+    min-height: 100px;
     background-color: #ffffff;
     padding-left: 28px;
     padding-right: 19px;
@@ -93,6 +93,7 @@
 @media (min-width: $desktop-width) {
   .catalog-nav {
     padding-right: 28px;
+    flex-wrap: wrap;
   }
 
   .catalog-nav__num {

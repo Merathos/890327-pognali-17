@@ -3,6 +3,7 @@
   display: flex;
   align-items: flex-end;
   width: 140px;
+  flex-wrap: wrap;
   margin: 0 auto;
 }
 
@@ -37,6 +38,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .footer-socials {
+    width: 190px;
+  }
+
   .footer-socials__item {
     width: 60px;
     height: 60px;

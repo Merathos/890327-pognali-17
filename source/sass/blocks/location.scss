@@ -39,6 +39,9 @@
 }
 
 .location__route-btn {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
   position: relative;
   border: 3px solid #192144;
   border-radius: 10px;
@@ -135,6 +138,7 @@
   .location__address {
     margin-left: 345px;
     margin-right: 147px;
+    width: 440px;
 
     &::before {
       width: 90px;

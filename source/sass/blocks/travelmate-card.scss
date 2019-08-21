@@ -104,11 +104,23 @@
 }
 
 .travelmate-card__name {
+  position: relative;
   font-size: 21px;
   line-height: 21px;
   color: #1d2e5b;
   font-weight: 700;
   margin-bottom: 15px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -15px;
+    border-radius: 50%;
+    background-color: #f97676;
+    width: 5px;
+    height: 5px;
+  }
 
   &:hover {
     opacity: 0.7;
@@ -121,6 +133,12 @@
   a {
     text-decoration: none;
     color: inherit;
+  }
+
+  &--online {
+    &::before {
+      background-color: #81e31e;
+    }
   }
 }
 
@@ -148,6 +166,7 @@
     height: 197px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    padding-top: 28px;
   }
 
   .travelmate-card__photo {
@@ -168,6 +187,12 @@
   .travelmate-card__name {
     font-size: 24px;
     line-height: 24px;
+
+    &::before {
+      left: -21px;
+      width: 7px;
+      height: 7px;
+    }
   }
 
   .travelmate-card__tags {
@@ -182,7 +207,11 @@
 
 @media (min-width: $desktop-width) {
   .travelmate-card {
-    margin-right: 60px;
+    margin-right: 50px;
+  }
+
+  .travelmate-card:nth-child(even) {
+    margin-right: 0;
   }
 
   .travelmate-card__footer {

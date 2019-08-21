@@ -9,6 +9,14 @@
   min-height: 570px;
   z-index: 19;
 
+  &--no-js {
+    display: flex;
+
+    & + .page-header__menu-btn {
+      display: none;
+    }
+  }
+
   &--show {
     display: flex;
 

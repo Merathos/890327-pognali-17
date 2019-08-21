@@ -79,9 +79,10 @@
     </div>
   </header>
   <main>
-    <section class="filter border-bottom-radius--catalog">
+    <section class="filter border-bottom-radius border-bottom-radius--catalog">
+      <h2 class="visually-hidden">Фильтр по странам</h2>
       <div class="filter__container">
-        <div class="filter__top-wrapper">
+        <div class="filter__top-wrapper filter__top-wrapper--open">
           <button class="filter__header">Фильтрация по странам</button>
           <button class="filter__open-btn" aria-label="Фильтр"><span class="filter__open-text">Показать все</span><span
               class="filter__close-text">Свернуть</span></button>
@@ -92,7 +93,7 @@
             <li class="filter__regions-item">Острова</li>
           </ul>
         </div>
-        <div class="filter__bottom-wrapper">
+        <div class="filter__bottom-wrapper filter__bottom-wrapper--show">
           <div class="filter__letters letters">
             <input type="radio" name="letters" id="l1" checked=""><label for="l1" class="letters__item">а</label>
             <input type="radio" name="letters" id="l2"><label for="l2" class="letters__item">б</label>
@@ -127,234 +128,234 @@
           </div>
           <div class="countries-lists">
             <ul class="countries-lists__list countries-lists__list--l1">
-              <li class="countries-lists__item">Австралия</li>
-              <li class="countries-lists__item">Австрия</li>
-              <li class="countries-lists__item">Азербайджан</li>
-              <li class="countries-lists__item">Албания</li>
-              <li class="countries-lists__item">Алжир</li>
-              <li class="countries-lists__item">Ангола</li>
-              <li class="countries-lists__item">Андорра</li>
-              <li class="countries-lists__item">Антигуа и Барбуда</li>
-              <li class="countries-lists__item">Аргентина</li>
-              <li class="countries-lists__item">Армения</li>
-              <li class="countries-lists__item">Афганистан</li>
+              <li class="countries-lists__item"><a href="#">Австралия</a></li>
+              <li class="countries-lists__item"><a href="/europe/france.html">Австрия</a></li>
+              <li class="countries-lists__item"><a href="#">Азербайджан</a></li>
+              <li class="countries-lists__item"><a href="#">Албания</a></li>
+              <li class="countries-lists__item"><a href="#">Алжир</a></li>
+              <li class="countries-lists__item"><a href="#">Ангола</a></li>
+              <li class="countries-lists__item"><a href="#">Андорра</a></li>
+              <li class="countries-lists__item"><a href="#">Антигуа и Барбуда</a></li>
+              <li class="countries-lists__item"><a href="#">Аргентина</a></li>
+              <li class="countries-lists__item"><a href="#">Армения</a></li>
+              <li class="countries-lists__item"><a href="#">Афганистан</a></li>
             </ul>
             <ul class="countries-lists__list countries-lists__list--l2">
-              <li class="countries-lists__item">Багамские Острова</li>
-              <li class="countries-lists__item">Бангладеш</li>
-              <li class="countries-lists__item">Барбадос</li>
-              <li class="countries-lists__item">Бахрейн</li>
-              <li class="countries-lists__item">Белоруссия</li>
-              <li class="countries-lists__item">Белиз</li>
-              <li class="countries-lists__item">Бельгия</li>
-              <li class="countries-lists__item">Бенин</li>
-              <li class="countries-lists__item">Болгария</li>
-              <li class="countries-lists__item">Боливия</li>
-              <li class="countries-lists__item">Босния и Герцеговина</li>
-              <li class="countries-lists__item">Ботсвана</li>
-              <li class="countries-lists__item">Бразилия</li>
-              <li class="countries-lists__item">Бруней</li>
-              <li class="countries-lists__item">Буркина-Фасо</li>
-              <li class="countries-lists__item">Бурунди</li>
-              <li class="countries-lists__item">Бутан</li>
+              <li class="countries-lists__item"><a href="#">Багамские Острова</a></li>
+              <li class="countries-lists__item"><a href="#">Бангладеш</a></li>
+              <li class="countries-lists__item"><a href="#">Барбадос</a></li>
+              <li class="countries-lists__item"><a href="#">Бахрейн</a></li>
+              <li class="countries-lists__item"><a href="#">Белоруссия</a></li>
+              <li class="countries-lists__item"><a href="#">Белиз</a></li>
+              <li class="countries-lists__item"><a href="#">Бельгия</a></li>
+              <li class="countries-lists__item"><a href="#">Бенин</a></li>
+              <li class="countries-lists__item"><a href="#">Болгария</a></li>
+              <li class="countries-lists__item"><a href="#">Боливия</a></li>
+              <li class="countries-lists__item"><a href="#">Босния и Герцеговина</a></li>
+              <li class="countries-lists__item"><a href="#">Ботсвана</a></li>
+              <li class="countries-lists__item"><a href="#">Бразилия</a></li>
+              <li class="countries-lists__item"><a href="#">Бруней</a></li>
+              <li class="countries-lists__item"><a href="#">Буркина-Фасо</a></li>
+              <li class="countries-lists__item"><a href="#">Бурунди</a></li>
+              <li class="countries-lists__item"><a href="#">Бутан</a></li>
             </ul>
             <ul class="countries-lists__list countries-lists__list--l3">
-              <li class="countries-lists__item">Вануату</li>
-              <li class="countries-lists__item">Великобритания</li>
-              <li class="countries-lists__item">Венгрия</li>
-              <li class="countries-lists__item">Венесуэла</li>
-              <li class="countries-lists__item">Восточный Тимор</li>
-              <li class="countries-lists__item">Вьетнам</li>
+              <li class="countries-lists__item"><a href="#">Вануату</a></li>
+              <li class="countries-lists__item"><a href="#">Великобритания</a></li>
+              <li class="countries-lists__item"><a href="#">Венгрия</a></li>
+              <li class="countries-lists__item"><a href="#">Венесуэла</a></li>
+              <li class="countries-lists__item"><a href="#">Восточный Тимор</a></li>
+              <li class="countries-lists__item"><a href="#">Вьетнам</a></li>
             </ul>
             <ul class="countries-lists__list countries-lists__list--l4">
-              <li class="countries-lists__item">Габон</li>
-              <li class="countries-lists__item">Гаити</li>
-              <li class="countries-lists__item">Гайана</li>
-              <li class="countries-lists__item">Гамбия</li>
-              <li class="countries-lists__item">Гана</li>
-              <li class="countries-lists__item">Гватемала</li>
-              <li class="countries-lists__item">Гвинея</li>
-              <li class="countries-lists__item">Гвинея-Бисау</li>
-              <li class="countries-lists__item">Германия</li>
-              <li class="countries-lists__item">Гондурас</li>
-              <li class="countries-lists__item">Гренада</li>
-              <li class="countries-lists__item">Греция</li>
-              <li class="countries-lists__item">Грузия</li>
+              <li class="countries-lists__item"><a href="#">Габон</a></li>
+              <li class="countries-lists__item"><a href="#">Гаити</a></li>
+              <li class="countries-lists__item"><a href="#">Гайана</a></li>
+              <li class="countries-lists__item"><a href="#">Гамбия</a></li>
+              <li class="countries-lists__item"><a href="#">Гана</a></li>
+              <li class="countries-lists__item"><a href="#">Гватемала</a></li>
+              <li class="countries-lists__item"><a href="#">Гвинея</a></li>
+              <li class="countries-lists__item"><a href="#">Гвинея-Бисау</a></li>
+              <li class="countries-lists__item"><a href="#">Германия</a></li>
+              <li class="countries-lists__item"><a href="#">Гондурас</a></li>
+              <li class="countries-lists__item"><a href="#">Гренада</a></li>
+              <li class="countries-lists__item"><a href="#">Греция</a></li>
+              <li class="countries-lists__item"><a href="#">Грузия</a></li>
             </ul>
             <ul class="countries-lists__list countries-lists__list--l5">
-              <li class="countries-lists__item">Дания</li>
-              <li class="countries-lists__item">Джибути</li>
-              <li class="countries-lists__item">Доминика</li>
-              <li class="countries-lists__item">Доминикана</li>
+              <li class="countries-lists__item"><a href="#">Дания</a></li>
+              <li class="countries-lists__item"><a href="#">Джибути</a></li>
+              <li class="countries-lists__item"><a href="#">Доминика</a></li>
+              <li class="countries-lists__item"><a href="#">Доминикана</a></li>
             </ul>
             <ul class="countries-lists__list countries-lists__list--l6">
-              <li class="countries-lists__item">Египет</li>
+              <li class="countries-lists__item"><a href="#">Египет</a></li>
             </ul>
             <ul class="countries-lists__list countries-lists__list--l9">
-              <li class="countries-lists__item">Замбия</li>
-              <li class="countries-lists__item">Зимбабве</li>
+              <li class="countries-lists__item"><a href="#">Замбия</a></li>
+              <li class="countries-lists__item"><a href="#">Зимбабве</a></li>
             </ul>
             <ul class="countries-lists__list countries-lists__list--l10">
-              <li class="countries-lists__item">Израиль</li>
-              <li class="countries-lists__item">Индия</li>
-              <li class="countries-lists__item">Индонезия</li>
-              <li class="countries-lists__item">Иордания</li>
-              <li class="countries-lists__item">Ирак</li>
-              <li class="countries-lists__item">Иран</li>
-              <li class="countries-lists__item">Ирландия</li>
-              <li class="countries-lists__item">Исландия</li>
-              <li class="countries-lists__item">Испания</li>
-              <li class="countries-lists__item">Италия</li>
+              <li class="countries-lists__item"><a href="#">Израиль</a></li>
+              <li class="countries-lists__item"><a href="#">Индия</a></li>
+              <li class="countries-lists__item"><a href="#">Индонезия</a></li>
+              <li class="countries-lists__item"><a href="#">Иордания</a></li>
+              <li class="countries-lists__item"><a href="#">Ирак</a></li>
+              <li class="countries-lists__item"><a href="#">Иран</a></li>
+              <li class="countries-lists__item"><a href="#">Ирландия</a></li>
+              <li class="countries-lists__item"><a href="#">Исландия</a></li>
+              <li class="countries-lists__item"><a href="#">Испания</a></li>
+              <li class="countries-lists__item"><a href="#">Италия</a></li>
             </ul>
             <ul class="countries-lists__list countries-lists__list--l12">
-              <li class="countries-lists__item">Кабо-Верде</li>
-              <li class="countries-lists__item">Казахстан</li>
-              <li class="countries-lists__item">Камбоджа</li>
-              <li class="countries-lists__item">Камерун</li>
-              <li class="countries-lists__item">Канада</li>
-              <li class="countries-lists__item">Катар</li>
-              <li class="countries-lists__item">Кения</li>
-              <li class="countries-lists__item">Кипр</li>
-              <li class="countries-lists__item">Киргизия</li>
-              <li class="countries-lists__item">Кирибати</li>
-              <li class="countries-lists__item">Китай</li>
-              <li class="countries-lists__item">Колумбия</li>
-              <li class="countries-lists__item">Коморы</li>
-              <li class="countries-lists__item">Конго</li>
-              <li class="countries-lists__item">КНДР</li>
-              <li class="countries-lists__item">Республика Корея</li>
-              <li class="countries-lists__item">Коста-Рика</li>
-              <li class="countries-lists__item">Кот-д’Ивуар</li>
-              <li class="countries-lists__item">Куба</li>
-              <li class="countries-lists__item">Кувейт</li>
+              <li class="countries-lists__item"><a href="#">Кабо-Верде</a></li>
+              <li class="countries-lists__item"><a href="#">Казахстан</a></li>
+              <li class="countries-lists__item"><a href="#">Камбоджа</a></li>
+              <li class="countries-lists__item"><a href="#">Камерун</a></li>
+              <li class="countries-lists__item"><a href="#">Канада</a></li>
+              <li class="countries-lists__item"><a href="#">Катар</a></li>
+              <li class="countries-lists__item"><a href="#">Кения</a></li>
+              <li class="countries-lists__item"><a href="#">Кипр</a></li>
+              <li class="countries-lists__item"><a href="#">Киргизия</a></li>
+              <li class="countries-lists__item"><a href="#">Кирибати</a></li>
+              <li class="countries-lists__item"><a href="#">Китай</a></li>
+              <li class="countries-lists__item"><a href="#">Колумбия</a></li>
+              <li class="countries-lists__item"><a href="#">Коморы</a></li>
+              <li class="countries-lists__item"><a href="#">Конго</a></li>
+              <li class="countries-lists__item"><a href="#">КНДР</a></li>
+              <li class="countries-lists__item"><a href="#">Республика Корея</a></li>
+              <li class="countries-lists__item"><a href="#">Коста-Рика</a></li>
+              <li class="countries-lists__item"><a href="#">Кот-д’Ивуар</a></li>
+              <li class="countries-lists__item"><a href="#">Куба</a></li>
+              <li class="countries-lists__item"><a href="#">Кувейт</a></li>
             </ul>
             <ul class="countries-lists__list countries-lists__list--l13">
-              <li class="countries-lists__item">Лаос</li>
-              <li class="countries-lists__item">Латвия</li>
-              <li class="countries-lists__item">Лесото</li>
-              <li class="countries-lists__item">Либерия</li>
-              <li class="countries-lists__item">Ливан</li>
-              <li class="countries-lists__item">Ливия</li>
-              <li class="countries-lists__item">Литва</li>
-              <li class="countries-lists__item">Лихтенштейн</li>
-              <li class="countries-lists__item">Люксембург</li>
+              <li class="countries-lists__item"><a href="#">Лаос</a></li>
+              <li class="countries-lists__item"><a href="#">Латвия</a></li>
+              <li class="countries-lists__item"><a href="#">Лесото</a></li>
+              <li class="countries-lists__item"><a href="#">Либерия</a></li>
+              <li class="countries-lists__item"><a href="#">Ливан</a></li>
+              <li class="countries-lists__item"><a href="#">Ливия</a></li>
+              <li class="countries-lists__item"><a href="#">Литва</a></li>
+              <li class="countries-lists__item"><a href="#">Лихтенштейн</a></li>
+              <li class="countries-lists__item"><a href="#">Люксембург</a></li>
             </ul>
             <ul class="countries-lists__list countries-lists__list--l14">
-              <li class="countries-lists__item">Маврикий</li>
-              <li class="countries-lists__item">Мавритания</li>
-              <li class="countries-lists__item">Мадагаскар</li>
-              <li class="countries-lists__item">Малави</li>
-              <li class="countries-lists__item">Малайзия</li>
-              <li class="countries-lists__item">Мали</li>
-              <li class="countries-lists__item">Мальдивы</li>
-              <li class="countries-lists__item">Мальта</li>
-              <li class="countries-lists__item">Марокко</li>
-              <li class="countries-lists__item">Маршалловы Острова</li>
-              <li class="countries-lists__item">Мексика</li>
-              <li class="countries-lists__item">Мозамбик</li>
-              <li class="countries-lists__item">Молдавия</li>
-              <li class="countries-lists__item">Монако</li>
-              <li class="countries-lists__item">Монголия</li>
-              <li class="countries-lists__item">Мьянма</li>
+              <li class="countries-lists__item"><a href="#">Маврикий</a></li>
+              <li class="countries-lists__item"><a href="#">Мавритания</a></li>
+              <li class="countries-lists__item"><a href="#">Мадагаскар</a></li>
+              <li class="countries-lists__item"><a href="#">Малави</a></li>
+              <li class="countries-lists__item"><a href="#">Малайзия</a></li>
+              <li class="countries-lists__item"><a href="#">Мали</a></li>
+              <li class="countries-lists__item"><a href="#">Мальдивы</a></li>
+              <li class="countries-lists__item"><a href="#">Мальта</a></li>
+              <li class="countries-lists__item"><a href="#">Марокко</a></li>
+              <li class="countries-lists__item"><a href="#">Маршалловы Острова</a></li>
+              <li class="countries-lists__item"><a href="#">Мексика</a></li>
+              <li class="countries-lists__item"><a href="#">Мозамбик</a></li>
+              <li class="countries-lists__item"><a href="#">Молдавия</a></li>
+              <li class="countries-lists__item"><a href="#">Монако</a></li>
+              <li class="countries-lists__item"><a href="#">Монголия</a></li>
+              <li class="countries-lists__item"><a href="#">Мьянма</a></li>
             </ul>
             <ul class="countries-lists__list countries-lists__list--l15">
-              <li class="countries-lists__item">Намибия</li>
-              <li class="countries-lists__item">Науру</li>
-              <li class="countries-lists__item">Непал</li>
-              <li class="countries-lists__item">Нигер</li>
-              <li class="countries-lists__item">Нигерия</li>
-              <li class="countries-lists__item">Нидерланды</li>
-              <li class="countries-lists__item">Никарагуа</li>
-              <li class="countries-lists__item">Новая Зеландия</li>
-              <li class="countries-lists__item">Норвегия</li>
+              <li class="countries-lists__item"><a href="#">Намибия</a></li>
+              <li class="countries-lists__item"><a href="#">Науру</a></li>
+              <li class="countries-lists__item"><a href="#">Непал</a></li>
+              <li class="countries-lists__item"><a href="#">Нигер</a></li>
+              <li class="countries-lists__item"><a href="#">Нигерия</a></li>
+              <li class="countries-lists__item"><a href="#">Нидерланды</a></li>
+              <li class="countries-lists__item"><a href="#">Никарагуа</a></li>
+              <li class="countries-lists__item"><a href="#">Новая Зеландия</a></li>
+              <li class="countries-lists__item"><a href="#">Норвегия</a></li>
             </ul>
             <ul class="countries-lists__list countries-lists__list--l16">
-              <li class="countries-lists__item">ОАЭ</li>
-              <li class="countries-lists__item">Оман</li>
+              <li class="countries-lists__item"><a href="#">ОАЭ</a></li>
+              <li class="countries-lists__item"><a href="#">Оман</a></li>
             </ul>
             <ul class="countries-lists__list countries-lists__list--l17">
-              <li class="countries-lists__item">Пакистан</li>
-              <li class="countries-lists__item">Палау</li>
-              <li class="countries-lists__item">Панама</li>
-              <li class="countries-lists__item">Папуа — Новая Гвинея</li>
-              <li class="countries-lists__item">Парагвай</li>
-              <li class="countries-lists__item">Перу</li>
-              <li class="countries-lists__item">Польша</li>
-              <li class="countries-lists__item">Португалия</li>
+              <li class="countries-lists__item"><a href="#">Пакистан</a></li>
+              <li class="countries-lists__item"><a href="#">Палау</a></li>
+              <li class="countries-lists__item"><a href="#">Панама</a></li>
+              <li class="countries-lists__item"><a href="#">Папуа — Новая Гвинея</a></li>
+              <li class="countries-lists__item"><a href="#">Парагвай</a></li>
+              <li class="countries-lists__item"><a href="#">Перу</a></li>
+              <li class="countries-lists__item"><a href="#">Польша</a></li>
+              <li class="countries-lists__item"><a href="#">Португалия</a></li>
             </ul>
             <ul class="countries-lists__list countries-lists__list--l19">
-              <li class="countries-lists__item">Сальвадор</li>
-              <li class="countries-lists__item">Самоа</li>
-              <li class="countries-lists__item">Сан-Марино</li>
-              <li class="countries-lists__item">Сан-Томе и Принсипи</li>
-              <li class="countries-lists__item">Саудовская Аравия</li>
-              <li class="countries-lists__item">Северная Македония</li>
-              <li class="countries-lists__item">Сейшелы</li>
-              <li class="countries-lists__item">Сенегал</li>
-              <li class="countries-lists__item">Сент-Люсия</li>
-              <li class="countries-lists__item">Сербия</li>
-              <li class="countries-lists__item">Сингапур</li>
-              <li class="countries-lists__item">Сирия</li>
-              <li class="countries-lists__item">Словакия</li>
-              <li class="countries-lists__item">Словения</li>
-              <li class="countries-lists__item">США</li>
-              <li class="countries-lists__item">Сомали</li>
-              <li class="countries-lists__item">Судан</li>
-              <li class="countries-lists__item">Суринам</li>
-              <li class="countries-lists__item">Сьерра-Леоне</li>
+              <li class="countries-lists__item"><a href="#">Сальвадор</a></li>
+              <li class="countries-lists__item"><a href="#">Самоа</a></li>
+              <li class="countries-lists__item"><a href="#">Сан-Марино</a></li>
+              <li class="countries-lists__item"><a href="#">Сан-Томе и Принсипи</a></li>
+              <li class="countries-lists__item"><a href="#">Саудовская Аравия</a></li>
+              <li class="countries-lists__item"><a href="#">Северная Македония</a></li>
+              <li class="countries-lists__item"><a href="#">Сейшелы</a></li>
+              <li class="countries-lists__item"><a href="#">Сенегал</a></li>
+              <li class="countries-lists__item"><a href="#">Сент-Люсия</a></li>
+              <li class="countries-lists__item"><a href="#">Сербия</a></li>
+              <li class="countries-lists__item"><a href="#">Сингапур</a></li>
+              <li class="countries-lists__item"><a href="#">Сирия</a></li>
+              <li class="countries-lists__item"><a href="#">Словакия</a></li>
+              <li class="countries-lists__item"><a href="#">Словения</a></li>
+              <li class="countries-lists__item"><a href="#">США</a></li>
+              <li class="countries-lists__item"><a href="#">Сомали</a></li>
+              <li class="countries-lists__item"><a href="#">Судан</a></li>
+              <li class="countries-lists__item"><a href="#">Суринам</a></li>
+              <li class="countries-lists__item"><a href="#">Сьерра-Леоне</a></li>
             </ul>
             <ul class="countries-lists__list countries-lists__list--l20">
-              <li class="countries-lists__item">Таджикистан</li>
-              <li class="countries-lists__item">Таиланд</li>
-              <li class="countries-lists__item">Танзания</li>
-              <li class="countries-lists__item">Того</li>
-              <li class="countries-lists__item">Тонга</li>
-              <li class="countries-lists__item">Тринидад и Тобаго</li>
-              <li class="countries-lists__item">Тувалу</li>
-              <li class="countries-lists__item">Тунис</li>
-              <li class="countries-lists__item">Туркмения</li>
-              <li class="countries-lists__item">Турция</li>
+              <li class="countries-lists__item"><a href="#">Таджикистан</a></li>
+              <li class="countries-lists__item"><a href="#">Таиланд</a></li>
+              <li class="countries-lists__item"><a href="#">Танзания</a></li>
+              <li class="countries-lists__item"><a href="#">Того</a></li>
+              <li class="countries-lists__item"><a href="#">Тонга</a></li>
+              <li class="countries-lists__item"><a href="#">Тринидад и Тобаго</a></li>
+              <li class="countries-lists__item"><a href="#">Тувалу</a></li>
+              <li class="countries-lists__item"><a href="#">Тунис</a></li>
+              <li class="countries-lists__item"><a href="#">Туркмения</a></li>
+              <li class="countries-lists__item"><a href="#">Турция</a></li>
             </ul>
             <ul class="countries-lists__list countries-lists__list--l21">
-              <li class="countries-lists__item">Уганда</li>
-              <li class="countries-lists__item">Узбекистан</li>
-              <li class="countries-lists__item">Украина</li>
-              <li class="countries-lists__item">Уругвай</li>
+              <li class="countries-lists__item"><a href="#">Уганда</a></li>
+              <li class="countries-lists__item"><a href="#">Узбекистан</a></li>
+              <li class="countries-lists__item"><a href="#">Украина</a></li>
+              <li class="countries-lists__item"><a href="#">Уругвай</a></li>
             </ul>
             <ul class="countries-lists__list countries-lists__list--l22">
-              <li class="countries-lists__item">Фиджи</li>
-              <li class="countries-lists__item">Филиппины</li>
-              <li class="countries-lists__item">Финляндия</li>
-              <li class="countries-lists__item">Франция</li>
+              <li class="countries-lists__item"><a href="#">Фиджи</a></li>
+              <li class="countries-lists__item"><a href="#">Филиппины</a></li>
+              <li class="countries-lists__item"><a href="#">Финляндия</a></li>
+              <li class="countries-lists__item"><a href="#">Франция</a></li>
             </ul>
             <ul class="countries-lists__list countries-lists__list--l23">
-              <li class="countries-lists__item">Хорватия</li>
+              <li class="countries-lists__item"><a href="#">Хорватия</a></li>
             </ul>
             <ul class="countries-lists__list countries-lists__list--l25">
-              <li class="countries-lists__item">Чад</li>
-              <li class="countries-lists__item">Черногория</li>
-              <li class="countries-lists__item">Чехия</li>
-              <li class="countries-lists__item">Чили</li>
+              <li class="countries-lists__item"><a href="#">Чад</a></li>
+              <li class="countries-lists__item"><a href="#">Черногория</a></li>
+              <li class="countries-lists__item"><a href="#">Чехия</a></li>
+              <li class="countries-lists__item"><a href="#">Чили</a></li>
             </ul>
             <ul class="countries-lists__list countries-lists__list--l26">
-              <li class="countries-lists__item">Швейцария</li>
-              <li class="countries-lists__item">Швеция</li>
-              <li class="countries-lists__item">Шри-Ланка</li>
+              <li class="countries-lists__item"><a href="#">Швейцария</a></li>
+              <li class="countries-lists__item"><a href="#">Швеция</a></li>
+              <li class="countries-lists__item"><a href="#">Шри-Ланка</a></li>
             </ul>
             <ul class="countries-lists__list countries-lists__list--l28">
-              <li class="countries-lists__item">Эквадор</li>
-              <li class="countries-lists__item">Эритрея</li>
-              <li class="countries-lists__item">Эсватини</li>
-              <li class="countries-lists__item">Эстония</li>
-              <li class="countries-lists__item">Эфиопия</li>
+              <li class="countries-lists__item"><a href="#">Эквадор</a></li>
+              <li class="countries-lists__item"><a href="#">Эритрея</a></li>
+              <li class="countries-lists__item"><a href="#">Эсватини</a></li>
+              <li class="countries-lists__item"><a href="#">Эстония</a></li>
+              <li class="countries-lists__item"><a href="#">Эфиопия</a></li>
             </ul>
             <ul class="countries-lists__list countries-lists__list--l29">
-              <li class="countries-lists__item">ЮАР</li>
-              <li class="countries-lists__item">Южный Судан</li>
+              <li class="countries-lists__item"><a href="#">ЮАР</a></li>
+              <li class="countries-lists__item"><a href="#">Южный Судан</a></li>
             </ul>
             <ul class="countries-lists__list countries-lists__list--l30">
-              <li class="countries-lists__item">Ямайка</li>
-              <li class="countries-lists__item">Япония</li>
+              <li class="countries-lists__item"><a href="#">Ямайка</a></li>
+              <li class="countries-lists__item"><a href="#">Япония</a></li>
             </ul>
           </div>
           <button class="filter__close-btn" aria-label="Закрыть фильтр">Свернуть</button>
@@ -368,7 +369,7 @@
             <h2 class="people-filter__header">Подберите идеального попутчика</h2>
             <fieldset class="people-filter__section">
               <div class="people-filter__top-wrapper">
-                <legend class="people-filter__section-header">Хобби</legend>
+                <h3 class="people-filter__section-header">Хобби</h3>
                 <button class="people-filter__btn people-filter__btn--open" aria-label="Свернуть"
                   type="button"></button>
               </div>
@@ -391,7 +392,7 @@
             </fieldset>
             <fieldset class="people-filter__section">
               <div class="people-filter__top-wrapper">
-                <legend class="people-filter__section-header">Музыка</legend>
+                <h3 class="people-filter__section-header">Музыка</h3>
                 <button class="people-filter__btn people-filter__btn" aria-label="Свернуть" type="button"></button>
               </div>
               <div class="people-filter__bottom-wrapper">
@@ -413,7 +414,7 @@
             </fieldset>
             <fieldset class="people-filter__section">
               <div class="people-filter__top-wrapper">
-                <legend class="people-filter__section-header">Еда</legend>
+                <h3 class="people-filter__section-header">Еда</h3>
                 <button class="people-filter__btn people-filter__btn--open" aria-label="Свернуть"
                   type="button"></button>
               </div>
@@ -436,7 +437,7 @@
             </fieldset>
             <fieldset class="people-filter__section">
               <div class="people-filter__top-wrapper">
-                <legend class="people-filter__section-header">Транспорт</legend>
+                <h3 class="people-filter__section-header">Транспорт</h3>
                 <button class="people-filter__btn" aria-label="Свернуть" type="button"></button>
               </div>
               <div class="people-filter__bottom-wrapper">
@@ -478,13 +479,15 @@
             </fieldset>
             <fieldset class="people-filter__section">
               <div class="people-filter__top-wrapper">
-                <legend class="people-filter__section-header">Левел</legend>
+                <h3 class="people-filter__section-header">Левел</h3>
                 <button class="people-filter__btn" aria-label="Свернуть" type="button"></button>
               </div>
               <div class="people-filter__range range">
                 <div class="range__inputs">
                   <input type="text" name="range-min" id="range-min" value="30" class="range__input range__input--min">
+                  <label for="range-min" class="visually-hidden">Минимальный уровень попутчика</label>
                   <input type="text" name="range-max" id="range-max" value="100" class="range__input range__input--max">
+                  <label for="range-max" class="visually-hidden">Максимальный уровень попутчика</label>
                 </div>
                 <div class="range__block">
                   <div class="range__wrapper">
@@ -502,21 +505,23 @@
           <div class="people__container">
             <ul class="people__list">
               <li class="people-card">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1440px)"
-                    srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
-                  <source media="(min-width: 1440px)"
-                    srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
-                  <img src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Фото попутчика"
-                    class="people-card__photo">
-                </picture>
+                <a href="profile/firsova.html">
+                  <picture class="people-card__photo-wrapper">
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
+                    <source media="(min-width: 1440px)"
+                      srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+                    <img src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Фото попутчика"
+                      class="people-card__photo">
+                  </picture>
+                </a>
                 <div class="people-card__top-wrapper">
-                  <span class="people-card__name">Таня Фирсова</span>
+                  <span class="people-card__name"><a href="profile/firsova.html">Таня Фирсова</a></span>
                   <button class="people-card__likes-btn people-card__likes-btn--active" aria-label="Лайкнуть"></button>
                   <small class="people-card__likes">1,5 M</small>
                   <ul class="people-card__tags tag-list">
@@ -597,19 +602,22 @@
                 </div>
               </li>
               <li class="people-card">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1440px)"
-                    srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
-                  <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
-                  <img src="img/demin-mobile@1x.jpg" srcset="img/img/demin-mobile@2x.jpg 2x" alt="Фото попутчика"
-                    class="people-card__photo">
-                </picture>
+                <a href="profile/demin.html">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
+                    <source media="(min-width: 1440px)"
+                      srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                    <img src="img/demin-mobile@1x.jpg" srcset="img/img/demin-mobile@2x.jpg 2x" alt="Фото попутчика"
+                      class="people-card__photo">
+                  </picture>
+                </a>
                 <div class="people-card__top-wrapper">
-                  <span class="people-card__name">Петя Демин</span>
+                  <span class="people-card__name"><a href="profile/demin.html">Петя Демин</a></span>
                   <button class="people-card__likes-btn" aria-label="Лайкнуть"></button>
                   <small class="people-card__likes">150</small>
                   <ul class="people-card__tags tag-list">
@@ -682,20 +690,23 @@
                 </div>
               </li>
               <li class="people-card">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1440px)"
-                    srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
-                  <source media="(min-width: 1440px)"
-                    srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
-                  <img src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" alt="Фото попутчика"
-                    class="people-card__photo">
-                </picture>
+                <a href="profile/smolov.html">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
+                    <source media="(min-width: 1440px)"
+                      srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+                    <img src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" alt="Фото попутчика"
+                      class="people-card__photo">
+                  </picture>
+                </a>
                 <div class="people-card__top-wrapper">
-                  <span class="people-card__name">Марк Смолов</span>
+                  <span class="people-card__name"><a href="profile/smolov.html">Марк Смолов</a></span>
                   <button class="people-card__likes-btn" aria-label="Лайкнуть"></button>
                   <small class="people-card__likes">1700</small>
                   <ul class="people-card__tags tag-list">
@@ -773,21 +784,24 @@
                 </div>
               </li>
               <li class="people-card">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1440px)"
-                    srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x">
-                  <source media="(min-width: 1440px)"
-                    srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
-                  <img src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" alt="Фото попутчика"
-                    class="people-card__photo">
-                </picture>
+                <a href="profile/rogovaya.html">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x">
+                    <source media="(min-width: 1440px)"
+                      srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
+                    <img src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" alt="Фото попутчика"
+                      class="people-card__photo">
+                  </picture>
+                </a>
                 <div class="people-card__top-wrapper">
-                  <span class="people-card__name">Лариса Роговая</span>
+                  <span class="people-card__name people-card__name--online"><a href="profile/rogovaya.html">Лариса
+                      Роговая</a></span>
                   <button class="people-card__likes-btn" aria-label="Лайкнуть"></button>
                   <small class="people-card__likes">23</small>
                   <ul class="people-card__tags tag-list">

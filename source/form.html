@@ -98,7 +98,7 @@
             class="profile__photo">
         </picture>
         <button class="profile__photo-btn"><span class="profile__btn-text">Сменить фото</span><span
-            class="profile__btn-text--desktop">Фото</span></button>
+            class="profile__btn-text profile__btn-text--desktop">Фото</span></button>
         <div class="profile__tags">
           <h3 class="profile__header">Тэги</h3>
           <textarea name="tags" id="tags">#бургер #бар #футбол #концерт #крафт</textarea>
@@ -166,12 +166,12 @@
     <section class="add-plan border-top-radius border-top-radius--form">
       <div class="add-plan__container">
         <h2 class="add-plan__header">Добавить план:</h2>
-        <ul class="steps__step-list steps__step-list--mobile">
-          <li class="steps__step-active">Даты</li>
+        <ul class="add-plan__step-list">
+          <li class="add-plan__step-active">Даты</li>
           <li>Маршрут</li>
           <li>Развлечения</li>
         </ul>
-        <div class="steps steps--step1">
+        <div class="steps steps--step1" id="step1">
           <h3 class="steps__header">Шаг 1. <br>Даты пребывания</h3>
           <p class="steps__text">Укажите предпочтительное количество попутчиков, которых
             вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
@@ -224,7 +224,7 @@
                 </th>
                 <th class="calendar__weekend">В</th>
               </tr>
-              <tr class="calendar__days-row--tablet">
+              <tr class="calendar__days-row calendar__days-row--tablet">
                 <th>Пн
                 </th>
                 <th>Вт
@@ -240,64 +240,64 @@
                 <th class="calendar__weekend">Вс</th>
               </tr>
               <tr>
-                <td>23</td>
-                <td>24</td>
-                <td>25</td>
-                <td>26</td>
-                <td>27</td>
-                <td>28</td>
-                <td>1</td>
+                <td tabindex="0">23</td>
+                <td tabindex="0">24</td>
+                <td tabindex="0">25</td>
+                <td tabindex="0">26</td>
+                <td tabindex="0">27</td>
+                <td tabindex="0">28</td>
+                <td tabindex="0">1</td>
               </tr>
               <tr>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
+                <td tabindex="0">2</td>
+                <td tabindex="0">3</td>
+                <td tabindex="0">4</td>
+                <td tabindex="0">5</td>
+                <td tabindex="0">6</td>
+                <td tabindex="0">7</td>
+                <td tabindex="0">8</td>
               </tr>
               <tr>
-                <td>9</td>
-                <td>10</td>
-                <td>11</td>
-                <td>12</td>
-                <td>13</td>
-                <td>14</td>
-                <td>15</td>
+                <td tabindex="0">9</td>
+                <td tabindex="0">10</td>
+                <td tabindex="0">11</td>
+                <td tabindex="0">12</td>
+                <td tabindex="0">13</td>
+                <td tabindex="0">14</td>
+                <td tabindex="0">15</td>
               </tr>
               <tr>
-                <td>16</td>
-                <td>17</td>
-                <td>18</td>
-                <td>19</td>
-                <td>20</td>
-                <td>21</td>
-                <td>22</td>
+                <td tabindex="0">16</td>
+                <td tabindex="0">17</td>
+                <td tabindex="0">18</td>
+                <td tabindex="0">19</td>
+                <td tabindex="0">20</td>
+                <td tabindex="0">21</td>
+                <td tabindex="0">22</td>
               </tr>
               <tr>
-                <td>23</td>
-                <td>24</td>
-                <td>25</td>
-                <td class="calendar__bluebg calendar__current-day">26</td>
-                <td class="calendar__bluebg">27</td>
-                <td class="calendar__bluebg">28</td>
-                <td class="calendar__graybg">29</td>
+                <td tabindex="0">23</td>
+                <td tabindex="0">24</td>
+                <td tabindex="0">25</td>
+                <td tabindex="0" class="calendar__bluebg">26</td>
+                <td tabindex="0" class="calendar__bluebg">27</td>
+                <td tabindex="0" class="calendar__bluebg">28</td>
+                <td tabindex="0" class="calendar__graybg">29</td>
               </tr>
               <tr>
-                <td class="calendar__graybg">30</td>
-                <td class="calendar__graybg">31</td>
-                <td class="calendar__graybg">1</td>
-                <td class="calendar__graybg">2</td>
-                <td class="calendar__graybg">3</td>
-                <td class="calendar__graybg">4</td>
-                <td class="calendar__graybg">5</td>
+                <td tabindex="0" class="calendar__graybg">30</td>
+                <td tabindex="0" class="calendar__graybg">31</td>
+                <td tabindex="0" class="calendar__graybg">1</td>
+                <td tabindex="0" class="calendar__graybg">2</td>
+                <td tabindex="0" class="calendar__graybg">3</td>
+                <td tabindex="0" class="calendar__graybg">4</td>
+                <td tabindex="0" class="calendar__graybg">5</td>
               </tr>
             </table>
           </div>
-          <button class="steps__next-btn">Следующий шаг</button>
+          <a href="#step2" class="steps__next-btn">Следующий шаг</a>
         </div>
-        <div class="steps steps--step2">
+        <div class="steps steps--step2" id="step2">
           <h3 class="steps__header">Шаг 2. <br>Маршрут</h3>
           <p class="steps__text steps__text--step2">Укажите страны, которые вы хотели по посетить.
             Это может быть одна или сразу несколько.</p>
@@ -371,15 +371,15 @@
                   <input type="radio" name="letters" id="l30"><label for="l30" class="letters__item">я</label>
                 </div>
                 <ul class="countries-select__list">
-                  <li class="countries-lists__item">Афганистан</li>
-                  <li class="countries-lists__item">Албания</li>
-                  <li class="countries-lists__item">Алгерия</li>
-                  <li class="countries-lists__item">Андорра</li>
-                  <li class="countries-lists__item">Аргентина</li>
-                  <li class="countries-lists__item">Армения</li>
-                  <li class="countries-lists__item">Австралия</li>
-                  <li class="countries-lists__item">Австрия</li>
-                  <li class="countries-lists__item">Азербайджан</li>
+                  <li class="countries-select__list-item"><a href="#">Афганистан</a></li>
+                  <li class="countries-select__list-item"><a href="#">Албания</a></li>
+                  <li class="countries-select__list-item"><a href="#">Алгерия</a></li>
+                  <li class="countries-select__list-item"><a href="#">Андорра</a></li>
+                  <li class="countries-select__list-item"><a href="#">Аргентина</a></li>
+                  <li class="countries-select__list-item"><a href="#">Армения</a></li>
+                  <li class="countries-select__list-item"><a href="#">Австралия</a></li>
+                  <li class="countries-select__list-item"><a href="#">Австрия</a></li>
+                  <li class="countries-select__list-item"><a href="#">Азербайджан</a></li>
                 </ul>
               </div>
             </li>
@@ -391,10 +391,10 @@
               </div>
             </li>
           </ul>
-          <button class="steps__next-btn">Следующий шаг</button>
-          <button class="steps__back-btn">На шаг назад</button>
+          <a href="#step3" class="steps__next-btn">Следующий шаг</a>
+          <a href="#step1" class="steps__back-btn">На шаг назад</a>
         </div>
-        <div class="steps steps--step3">
+        <div class="steps steps--step3" id="step3">
           <h3 class="steps__header">Шаг 3. <br>Развлечения</h3>
           <p class="steps__text steps__text--step3">Наконец, расскажите о своих планах времяпровождения.
             Можно писать в свободной форме и ставить тэги.
@@ -405,23 +405,29 @@
             <li class="steps__step-active">Развлечения</li>
           </ul>
           <div class="steps__textarea-wrapper">
-            <label for="wishlist" class="steps__textarea-header">Босния и герцеговина</label>
+            <label for="wishlist1" class="steps__textarea-header">Босния и герцеговина</label>
             <svg width="35" height="24">
               <use xlink:href="#flag-bosnia"></use>
             </svg>
           </div>
-          <textarea name="wishlist" id="wishlist" cols="30" rows="10" class="steps__textarea"
-            placeholder="План действий" required></textarea>
+          <div class="steps__textarea-container">
+            <textarea name="wishlist" id="wishlist1" cols="30" rows="10" class="steps__textarea"
+              placeholder="План действий" required></textarea>
+            <div class="steps__textarea-error">Это поле должно быть заполнено</div>
+          </div>
           <div class="steps__textarea-wrapper">
-            <label for="wishlist" class="steps__textarea-header">Чехословакия</label>
+            <label for="wishlist2" class="steps__textarea-header">Чехословакия</label>
             <svg width="35" height="24">
               <use xlink:href="#flag-czech"></use>
             </svg>
           </div>
-          <textarea name="wishlist" id="wishlist" cols="20" rows="10" class="steps__textarea"
-            required>Пить пиво и лазить по старым замкам, наслаждаться аритектурой и вот это все.</textarea>
-          <button class="steps__next-btn">Отправить</button>
-          <button class="steps__back-btn">На шаг назад</button>
+          <div class="steps__textarea-container">
+            <textarea name="wishlist" id="wishlist2" cols="20" rows="10" class="steps__textarea"
+              required>Пить пиво и лазить по старым замкам, наслаждаться аритектурой и вот это все.</textarea>
+            <div class="steps__textarea-error">Это поле должно быть заполнено</div>
+          </div>
+          <button type="submit" class="steps__next-btn">Отправить</button>
+          <a href="#step2" class="steps__back-btn">На шаг назад</a>
         </div>
       </div>
     </section>

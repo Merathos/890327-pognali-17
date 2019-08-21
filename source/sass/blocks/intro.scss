@@ -91,7 +91,7 @@
 
   .intro__blockquote {
     width: 290px;
-    margin-bottom: 191px;
+    margin-bottom: 205px;
     margin-left: 5%;
   }
 
@@ -100,8 +100,9 @@
   }
 
   .intro__feedback-author {
+    display: block;
     font-size: 21px;
-    line-height: 21px;
+    line-height: 28px;
   }
 
   .intro__steps {
