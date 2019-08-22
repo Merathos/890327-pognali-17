@@ -45,6 +45,7 @@
 
 @media (min-width: $tablet-width) {
   .user-actions__auth-btn {
+    position: relative;
     height: 50px;
     font-size: 20px;
     line-height: 30px;

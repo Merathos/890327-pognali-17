@@ -3,12 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  picture {
-    position: absolute;
-    top: 28px;
-    left: 7.8%;
-  }
 }
 
 .menu__nav {
@@ -147,5 +141,19 @@
     margin: 0;
     margin-bottom: 9px;
     margin-left: 140px;
+
+    &--scroll {
+      position: fixed;
+      top: 29px;
+      left: 19%;
+
+      &::before {
+        background-color: #192144;
+      }
+
+      .site-list__item {
+        color: #192144;
+      }
+    }
   }
 }
