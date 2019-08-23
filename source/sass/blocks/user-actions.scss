@@ -53,6 +53,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .user-actions {
+    height: 50px;
+  }
+
   .user-actions__contacts {
     display: inline-block;
     width: 50px;
@@ -100,6 +104,10 @@
         opacity: 0.3;
       }
     }
+  }
+
+  .user-actions__item {
+    height: 50px;
   }
 
   .user-actions__auth-btn:hover {

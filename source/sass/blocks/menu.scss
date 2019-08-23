@@ -123,10 +123,6 @@
     display: inline-flex;
     position: relative;
     padding: 0;
-
-    picture {
-      display: none;
-    }
   }
 
   .menu__contacts {
@@ -139,7 +135,7 @@
 
   .menu__nav {
     margin: 0;
-    margin-bottom: 9px;
+    margin-bottom: 4px;
     margin-left: 140px;
 
     &--scroll {

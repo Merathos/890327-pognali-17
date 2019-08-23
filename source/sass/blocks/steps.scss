@@ -601,7 +601,7 @@
   }
 
   .steps__text {
-    width: 550px;
+    width: 580px;
     margin-bottom: 113px;
     order: 2;
 
@@ -684,7 +684,9 @@
   }
 
   .steps__kids {
-    margin-left: 753px;
+    position: relative;
+    top: -10px;
+    margin-left: 756px;
     margin-top: -88px;
     order: 4;
   }

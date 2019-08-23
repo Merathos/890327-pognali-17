@@ -476,6 +476,10 @@
         transition: 0.3s;
       }
     }
+
+    .people-card__invite-btn {
+      border-radius: 30px;
+    }
   }
 
   .people-card:not(:last-child) {

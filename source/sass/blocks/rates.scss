@@ -127,10 +127,14 @@
     line-height: 45px;
     width: fit-content;
     margin: 0 auto;
+
+    &::after {
+      content: "!";
+    }
   }
 
   .rates__list {
-    margin-top: 72px;
+    margin-top: 74px;
     margin-bottom: 54px;
 
     &::before {
@@ -251,6 +255,6 @@
   }
 
   .rates__header {
-    width: 490px;
+    width: 560px;
   }
 }

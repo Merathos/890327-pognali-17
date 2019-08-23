@@ -286,7 +286,7 @@
 
     picture {
       order: 2;
-      z-index: 5;
+      z-index: 3;
       display: flex;
     }
   }
@@ -296,7 +296,7 @@
     margin-left: 897px;
     margin-top: 46px;
     margin-right: 48px;
-    z-index: 5;
+    z-index: 3;
 
     .level__number {
       color: #ffffff;
@@ -310,7 +310,7 @@
     border-bottom-right-radius: 0;
     margin: 0;
     margin-left: -4px;
-    z-index: 5;
+    z-index: 4;
   }
 
   .profile__photo-btn {
