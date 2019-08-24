@@ -261,7 +261,11 @@
     }
 
     &--form {
-      position: unset;
+      position: static;
+
+      .page-header__header {
+        width: 358px;
+      }
     }
   }
 
@@ -278,7 +282,7 @@
   }
 
   .page-header__logo {
-    width: 200px;
+    width: 290px;
     height: 52px;
     margin-top: -10px;
 
