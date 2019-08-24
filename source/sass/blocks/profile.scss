@@ -133,10 +133,6 @@
 .profile__transport-list {
   justify-content: center;
 
-  input {
-    display: none;
-  }
-
   label {
     width: 100%;
     height: 100%;
@@ -151,6 +147,13 @@
     &:active {
       color: rgba($color: #1d2e5b, $alpha: 0.3);
     }
+  }
+
+  input:focus + label {
+    outline-color: rgb(77, 144, 254);
+    outline-offset: -2px;
+    outline-style: auto;
+    outline-width: 5px;
   }
 
   .transport-list__item {
@@ -277,8 +280,8 @@
 @media (min-width: $desktop-width) {
   .profile {
     padding-top: 0;
-    margin-top: -190px;
     padding-bottom: 97px;
+    margin-top: 0;
   }
 
   .profile__container {
@@ -296,7 +299,9 @@
     margin-left: 897px;
     margin-top: 46px;
     margin-right: 48px;
-    z-index: 3;
+    z-index: 2;
+    position: absolute;
+    top: -190px;
 
     .level__number {
       color: #ffffff;
@@ -310,7 +315,10 @@
     border-bottom-right-radius: 0;
     margin: 0;
     margin-left: -4px;
-    z-index: 4;
+    z-index: 2;
+    position: absolute;
+    top: -190px;
+    right: 95px;
   }
 
   .profile__photo-btn {
