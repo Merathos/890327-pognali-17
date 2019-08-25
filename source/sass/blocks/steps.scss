@@ -104,14 +104,14 @@
   background-color: transparent;
   font-size: 21px;
   line-height: 21px;
-  background-image: url("../../img/qty-minus-mobile.svg");
+  background-image: url("../img/qty-minus-mobile.svg");
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.2;
 
   &--plus {
     left: 193px;
-    background-image: url("../../img/qty-plus-mobile.svg");
+    background-image: url("../img/qty-plus-mobile.svg");
   }
 
   &:hover {
@@ -157,7 +157,7 @@
   }
 
   input:checked + label::before {
-    background-image: url("../../img/tick.svg");
+    background-image: url("../img/tick.svg");
     background-repeat: no-repeat;
     background-size: 9px 9px;
     background-position: center;
@@ -494,7 +494,7 @@
     text-transform: none;
     padding-left: 37px;
     text-align: right;
-    background-image: url("../../img/triangle-arrow-left.svg");
+    background-image: url("../img/triangle-arrow-left.svg");
     background-size: 10px 14px;
     background-repeat: no-repeat;
     background-position: top 22px left 5px;

@@ -21,12 +21,12 @@
   height: 18px;
   border: none;
   background-color: transparent;
-  background-image: url("../../img/month-arrow-left.svg");
+  background-image: url("../img/month-arrow-left.svg");
   background-repeat: no-repeat;
   opacity: 0.3;
 
   &--right {
-    background-image: url("../../img/month-arrow-right.svg");
+    background-image: url("../img/month-arrow-right.svg");
   }
 
   &:hover {

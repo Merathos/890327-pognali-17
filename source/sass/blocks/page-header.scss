@@ -21,7 +21,7 @@
     display: flex;
 
     & + .page-header__menu-btn {
-      background-image: url("../../img/menu-close.svg");
+      background-image: url("../img/menu-close.svg");
       background-size: 19px 19px;
       background-repeat: no-repeat;
       background-position: center;
@@ -226,7 +226,7 @@
     text-decoration: none;
     text-transform: uppercase;
     text-align: left;
-    background-image: url("../../img/return.svg");
+    background-image: url("../img/return.svg");
     background-repeat: no-repeat;
     background-size: 32px 16px;
     background-position: top 0 right 4px;

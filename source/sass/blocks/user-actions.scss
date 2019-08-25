@@ -14,12 +14,12 @@
   background-position: center;
 
   &--phone {
-    background-image: url("../../img/topmenu-phone.svg");
+    background-image: url("../img/topmenu-phone.svg");
   }
 
   &--email {
     background-color: #ffbd30;
-    background-image: url("../../img/topmenu-mail.svg");
+    background-image: url("../img/topmenu-mail.svg");
   }
 
   @media (min-width: $tablet-width) {
@@ -83,11 +83,11 @@
       background-repeat: no-repeat;
       background-size: 18px 18px;
       background-position: center;
-      background-image: url("../../img/topmenu-phone.svg");
+      background-image: url("../img/topmenu-phone.svg");
     }
 
     &--email::after {
-      background-image: url("../../img/topmenu-mail.svg");
+      background-image: url("../img/topmenu-mail.svg");
     }
 
     &--phone:hover {

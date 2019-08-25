@@ -45,7 +45,7 @@
     right: -3px;
     width: 5px;
     height: 10px;
-    background-image: url("../../img/small-arrow.svg");
+    background-image: url("../img/small-arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -117,7 +117,7 @@
     }
 
     .countries-select__dropdown-btn {
-      background-image: url("../../img/small-cross.svg");
+      background-image: url("../img/small-cross.svg");
       width: 9px;
       height: 9px;
       opacity: 0.3;
@@ -157,7 +157,7 @@
   background-color: transparent;
   width: 12px;
   height: 7px;
-  background-image: url("../../img/dropdown-form.svg");
+  background-image: url("../img/dropdown-form.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-left: auto;
@@ -167,7 +167,7 @@
   &--add {
     width: 14px;
     height: 14px;
-    background-image: url("../../img/show-more-plus.svg");
+    background-image: url("../img/show-more-plus.svg");
   }
 }
 
@@ -180,7 +180,7 @@
   height: 21px;
   background-color: #edeff6;
   border: none;
-  background-image: url("../../img/menu-close.svg");
+  background-image: url("../img/menu-close.svg");
   background-repeat: no-repeat;
   background-size: 9px 9px;
   background-position: center;

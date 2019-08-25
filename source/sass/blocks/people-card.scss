@@ -194,7 +194,7 @@
     height: 31px;
     top: 0;
     left: 0;
-    background-image: url("../../img/heart.svg");
+    background-image: url("../img/heart.svg");
     background-repeat: no-repeat;
     background-size: 13px 11px;
     background-position: center;
@@ -221,7 +221,7 @@
     background-color: #f9eaea;
 
     &::before {
-      background-image: url("../../img/heart-active.svg");
+      background-image: url("../img/heart-active.svg");
       opacity: 1;
     }
 

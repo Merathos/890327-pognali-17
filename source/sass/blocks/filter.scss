@@ -22,7 +22,7 @@
     }
 
     .filter__open-btn {
-      background-image: url("../../img/filter-close.svg");
+      background-image: url("../img/filter-close.svg");
       background-size: 12px 12px;
     }
   }
@@ -53,7 +53,7 @@
     position: absolute;
     width: 15px;
     height: 10px;
-    background-image: url("../../img/filter.svg");
+    background-image: url("../img/filter.svg");
     top: 7px;
     left: 0;
   }
@@ -64,7 +64,7 @@
   height: 25px;
   background-color: transparent;
   border: none;
-  background-image: url("../../img/dots.svg");
+  background-image: url("../img/dots.svg");
   background-repeat: no-repeat;
   background-size: 17px 3px;
   background-position: center;
@@ -142,7 +142,7 @@
   text-transform: uppercase;
   margin-top: 20px;
   padding-left: 109px;
-  background-image: url("../../img/filter-close.svg");
+  background-image: url("../img/filter-close.svg");
   background-repeat: no-repeat;
   background-size: 12px 12px;
   background-position: top 43% left 33%;

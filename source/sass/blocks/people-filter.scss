@@ -65,7 +65,7 @@
   background-color: transparent;
   width: 15px;
   height: 15px;
-  background-image: url("../../img/dropdown.svg");
+  background-image: url("../img/dropdown.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 8px 4px;
@@ -103,7 +103,7 @@
   }
 
   input:checked + label::before {
-    background-image: url("../../img/tick.svg");
+    background-image: url("../img/tick.svg");
     background-size: 9px 9px;
     background-position: center;
     background-repeat: no-repeat;
